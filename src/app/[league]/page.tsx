@@ -1,16 +1,12 @@
 import { fetchNinjaIndex } from "@/libs/fetchNinja";
 import { NextAppPageProps } from "@/types/nextjsHelperType";
 
-export async function getStaticPaths() {
+export async function generateStaticParams() {
   const ninjaIndexState = await fetchNinjaIndex();
-  return ({
-    paths: ninjaIndexState.economyLeagues.map(it=>({
-      params: {
-        league: it.name
-      }
-    })),
-    fallback: true
-  })
+  return ninjaIndexState.economyLeagues.map(it=>({
+    league: it.name
+  }))
+  
 }
 
 export default async function Page({

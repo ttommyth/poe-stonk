@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { NextAppPageProps } from '@/types/nextjsHelperType';
 import { fetchNinjaItem, getBasicCurrencyExchangeRate } from '@/libs/fetchNinja';
 import { fulfillRecipe, getRecipeCategories } from '@/libs/fetchRecipe';
-import {getStaticPaths as parentGetStaticPaths} from '../page';
+import {generateStaticParams as parentGetStaticParams} from '../page';
 import { StonkRecipeList } from '@/components/client/StonkRecipeList';
 
 export const metadata: Metadata = {
@@ -12,21 +12,15 @@ export const metadata: Metadata = {
   description: '',
 };
 
-export async function getStaticPaths() {
-  const parentPaths = await parentGetStaticPaths();
+export async function generateStaticParams() {
+  const parentPaths = await parentGetStaticParams();
   const allCategory = getRecipeCategories();
-  return ({
-    paths: parentPaths.paths.flatMap(props=>{
-      return allCategory.map(cat=>({
-        ...props,
-        params:{
-          ...props.params,
-          category: cat
-        }
-      }))
-    }),
-    fallback:true
-  });
+  return parentPaths.flatMap(param=>
+    allCategory.map(cat=>({
+      ...param,
+      category: cat
+    }))
+  );
 }
 
 
