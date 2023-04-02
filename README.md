@@ -28,7 +28,7 @@ Once the development server is running, you can access the Poe-Stonk web interfa
 
 ## Contributing
 
-If you'd like to contribute to Poe-Stonk, please open an issue or pull request on the [GitHub repository](https://github.com/your-username/poe-stonk). We welcome bug reports, feature requests, and code contributions.
+If you'd like to contribute to Poe-Stonk, please open an issue or pull request on the [GitHub repository](https://github.com/ttommyth/poe-stonk). We welcome bug reports, feature requests, and code contributions.
 
 ## License
 
