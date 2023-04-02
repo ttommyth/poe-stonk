@@ -1,6 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Poe-Stonk
 
-## Getting Started
+Poe-Stonk is a website project inspired by Poe Profit and powered by Poe.ninja. It is written in Next.js and provides a web interface to keep track of different profit methods in Path of Exile.
+
+## Features
+
+- View real-time prices of items from Poe.ninja
+- Calculate profits using different methods such as flipping, crafting, and more
+- Save your preferred profit methods for quick access
+- Track your profit history over time
+
+## Installation
 
 An other day an other side-project.
 First, run the development server:
@@ -13,27 +22,19 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Once the development server is running, you can access the Poe-Stonk web interface at `http://localhost:3000`. From there, you can browse items, calculate profits, save your preferred methods, and view your profit history.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Contributing
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+If you'd like to contribute to Poe-Stonk, please open an issue or pull request on the [GitHub repository](https://github.com/your-username/poe-stonk). We welcome bug reports, feature requests, and code contributions.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## License
 
-## Learn More
+Poe-Stonk is released under the [MIT License](https://opensource.org/licenses/MIT). See `LICENSE` for details.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-To learn more about Next.js, take a look at the following resources:
+## BTW
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This readme is generated in GPT-3.5
