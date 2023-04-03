@@ -1,6 +1,6 @@
 import * as RecipeCategories from "@/assets/recipes"
 import { PathOfProfitRecipe, PathOfProfitRecipeItem } from "@/assets/recipes/prepare/old";
-import { AllNinjaType, CurrencyDetail, CurrencyLine, CurrencyOverview, CurrencyTypeList, ItemLine, ItemOverview, ItemTypeList, fetchNinjaCurrency, fetchNinjaIndex, fetchNinjaItem } from "./fetchNinja";
+import { AllNinjaType, CurrencyDetail, CurrencyLine, CurrencyOverview, CurrencyTypeList, ItemLine, ItemOverview, ItemTypeList, Sparkline, fetchNinjaCurrency, fetchNinjaIndex, fetchNinjaItem } from "./fetchNinja";
 
 declare type RecipeCategories= typeof import("@/assets/recipes");
 
@@ -10,7 +10,17 @@ export interface Recipe extends PathOfProfitRecipe{
 }
 export interface RecipeItem extends PathOfProfitRecipeItem{
   type?:AllNinjaType;
-  ninjaItem?: CurrencyLine | ItemLine
+  ninjaItem?: CurrencyLine | ItemLine;
+  payPrice?:ItemPrice;
+  receivePrice?:ItemPrice;
+}
+export interface ItemPrice{
+  type:"item" | "currency";
+  sparkline: Sparkline;
+  lowConfidenceSparkline: Sparkline;
+  chaosValue:number;
+  exaltedValue?:number;
+  divineValue?:number;
 }
 export type CurrencyDetailReferences = {[key in typeof CurrencyTypeList[number]]?: CurrencyDetail[]};
 
@@ -53,13 +63,21 @@ export const fulfillRecipe= async (league: string, category:string)=>{
   recipes.forEach(recipe=>{
 
     recipe.costItems?.forEach(item=>{
-      if(item.type && item.detailsId)
+      if(item.type && item.detailsId){
+
         item.ninjaItem = indexedNinjaPrices[item.type].get(item.detailsId);
+        item.payPrice = getItemPrice(item.ninjaItem, "pay");
+        item.receivePrice = getItemPrice(item.ninjaItem, "receive");
+
+      }
     })
 
     recipe.revenueItems?.forEach(item=>{
-      if(item.type && item.detailsId)
+      if(item.type && item.detailsId){        
         item.ninjaItem = indexedNinjaPrices[item.type].get(item.detailsId);
+        item.payPrice = getItemPrice(item.ninjaItem, "pay");
+        item.receivePrice = getItemPrice(item.ninjaItem, "receive");
+      }
     })
   });
   
@@ -68,7 +86,7 @@ export const fulfillRecipe= async (league: string, category:string)=>{
     currencyReferences
   };
 }
-export const getItemPrice = (item: CurrencyLine | ItemLine | undefined, pov: "pay"|"receive")=>{ 
+export const getItemPrice = (item: CurrencyLine | ItemLine | undefined, pov: "pay"|"receive"): ItemPrice | undefined=>{ 
   if(!item)
     return undefined;  
   if((item as any).currencyTypeName){

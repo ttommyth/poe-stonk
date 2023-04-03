@@ -1,6 +1,6 @@
 
 // this file is generated in importFromOldScript.ts
-export const Branch = [
+export const Breach = [
   {
     "name": "Tul's Breachstone",
     "costItems": [

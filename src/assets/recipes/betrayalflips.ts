@@ -1,6 +1,6 @@
 
 // this file is generated in importFromOldScript.ts
-export const BestiaryFlips = [
+export const BetrayalFlips = [
   {
     "name": "Xoph's Pure Breachstone",
     "costItems": [
