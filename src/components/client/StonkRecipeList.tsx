@@ -1,7 +1,7 @@
 'use client';
 import { CurrencyDetail } from "@/libs/fetchNinja";
 import { Recipe, getItemPrice } from "@/libs/fetchRecipe";
-import { round, sum } from "lodash-es";
+import { maxBy, round, sortBy, sum } from "lodash-es";
 import { FC, useState } from "react";
 
 export const StonkRecipeList: FC<{ 
@@ -15,18 +15,20 @@ export const StonkRecipeList: FC<{
    return <div className="flex flex-col gap-2 w-full">
      <input type="text" />
      {recipes?.map(recipe => {
-       const costSum = sum(recipe.costItems.map(it=>getItemPrice(it.ninjaItem,"pay")?.chaosValue ?? 0));
-       const revenueSum = sum(recipe.revenueItems.map(it=>(getItemPrice(it.ninjaItem,"pay")?.chaosValue ?? 0) * ((it.count / it.total )||0) ));
-       const roi = costSum / revenueSum;
+       const costSum = sum(recipe.costItems.map(it=>(it.payPrice?.chaosValue ?? 0 )* it.count));
+       const revenueSum = sum(recipe.revenueItems.map(it=>(it.receivePrice?.chaosValue ?? 0) * ((it.count / it.total )||0) ));
+       const roi = revenueSum / costSum;
        const profit = revenueSum - costSum;
-       return <div key={recipe.name} className="rounded-md dark:bg-slate-600 shadow-md daisy-collapse">
+       const isStonk = revenueSum>costSum;
+       const bestReward = maxBy(recipe.revenueItems, v=>v.receivePrice?.chaosValue );
+       return <div key={recipe.name} className="rounded-md dark:bg-slate-600 shadow-md daisy-collapse group" data-stonk={isStonk}>
          <input type="checkbox" />
          <div className="daisy-collapse-title m-0 flex gap-2">
            <h3 className='grow'>{recipe.name}</h3>
            <span className="border-red-500 rounded-md border">{round(costSum, 2)}c</span>
-           <span  className="border-green-500 rounded-md border">{round(revenueSum, 2)}c</span>
-           <span>{round(roi*100, 2)}%</span>
-           <span>{round(profit, 2)}c</span>
+           <span className="border-green-500 rounded-md border">{round(revenueSum, 2)}c</span>
+           <span className="group-data-[stonk~=true]:text-green-500 group-data-[stonk~=false]:text-red-500">{round(roi*100, 2)}%</span>
+           <span className="group-data-[stonk~=true]:text-green-500 group-data-[stonk~=false]:text-red-500">{round(profit, 2)}c</span>
          </div>
          <div className="daisy-collapse-content grid grid-cols-2">
            <div className="flex flex-row">            
@@ -42,13 +44,11 @@ export const StonkRecipeList: FC<{
                <tbody>
                  {
                    recipe.costItems.map(item => {
-
-                     const itemPrice = getItemPrice(item.ninjaItem, "pay");
                      return <tr key={item.name}>
                        <td title={item.detailsId}>{item.name}</td>
                        <td>{item.count}</td>
-                       <td>{itemPrice?.chaosValue ?? "N/A"}</td>
-                       <td>{ itemPrice?.chaosValue ?itemPrice.chaosValue * item.count: "N/A"}</td>
+                       <td>{item.payPrice?.chaosValue ?? "N/A"}</td>
+                       <td>{ item.payPrice?.chaosValue ?item.payPrice.chaosValue * item.count: "N/A"}</td>
                      </tr>
                    })
                  }
@@ -68,12 +68,11 @@ export const StonkRecipeList: FC<{
                <tbody>
                  {
                    recipe.revenueItems.map(item => {
-                     const itemPrice = getItemPrice(item.ninjaItem, "receive");
                      return <tr key={item.name} onClick={v=>console.log(item)}>
                        <td title={item.detailsId}>{item.name}</td>
                        <td title={`${item.count} / ${item.total}`}>{round(((item.count / item.total)|| 0)*100, 2)}%</td>
-                       <td>{itemPrice?.chaosValue ?? "N/A"}</td>
-                       <td>{ itemPrice?.chaosValue ? round(itemPrice.chaosValue * (item.count / item.total), 2): "N/A"}</td>
+                       <td>{item.receivePrice?.chaosValue ?? "N/A"}</td>
+                       <td>{ item.receivePrice?.chaosValue ? round(item.receivePrice.chaosValue * (item.count / item.total), 2): "N/A"}</td>
                      </tr>
                    })
                  }

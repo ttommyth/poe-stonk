@@ -287,7 +287,7 @@ export const Bestiary: PathOfProfitRecipe[] = [
   }
 ]
 
-export const BestiaryFlips: PathOfProfitRecipe[]=[
+export const BetrayalFlips: PathOfProfitRecipe[]=[
   {
     "name": "Xoph's Pure Breachstone",
     "cost": 9,
@@ -1139,7 +1139,7 @@ export const BlessingFlips: PathOfProfitRecipe[] = [
   }
 ]
 
-export const Branch: PathOfProfitRecipe[]  = [
+export const Breach: PathOfProfitRecipe[]  = [
   {
     "name": "Tul's Breachstone",
     "cost": 9,
