@@ -7,6 +7,7 @@ import { StonkRecipeCard } from "./StonkRecipeCard";
 import { atom, useAtom } from 'jotai'
 import { ArrowSmallDownIcon } from "@heroicons/react/20/solid";
 import MiniSearch from 'minisearch'
+import { StonkRecipeModal } from "./StonkRecipeModal";
 
 
 export const recipeStatsAtom = atom<{
@@ -64,7 +65,7 @@ export const StonkRecipeList: FC<{
      }else{      
        setSorting(s=>({
          iterate: iterate,
-         order:"asc"
+         order:"desc"
        }));
      }
    }
@@ -72,39 +73,42 @@ export const StonkRecipeList: FC<{
      const res = miniSearch?.current?.search(str, {fuzzy: 0.2, prefix: true})
      setSearchResult( res as any);
    }
-   return <div className="flex flex-col w-full gap-4">
-     <div className="daisy-form-control w-full">
-       <input type="text" placeholder="Quick Search" onChange={e=>handleSearch(e.target.value)}
-         className="daisy-input daisy-input-bordered daisy-input-lg w-full" />
-       <label className="daisy-label">
-         <span className="daisy-label-text-alt">{searchResult?.length<=0?"No match item":`${searchResult?.length} matched item`}</span>
-       </label>
-     </div>
-     <div>
-       <button type="button" className="daisy-btn" onClick={e=>triggerSorting("costSum")}>
+   return <> 
+     <div className="flex flex-col w-full gap-4">
+       <div className="daisy-form-control w-full">
+         <input type="text" placeholder="Quick Search" onChange={e=>handleSearch(e.target.value)}
+           className="daisy-input daisy-input-bordered daisy-input-lg w-full" />
+         <label className="daisy-label">
+           <span className="daisy-label-text-alt">{searchResult?.length<=0?"No match item":`${searchResult?.length} matched item`}</span>
+         </label>
+       </div>
+       <div>
+         <button type="button" className="daisy-btn" onClick={e=>triggerSorting("costSum")}>
         sort by cost
-         {
-           sorting.iterate=="costSum"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
+           {
+             sorting.iterate=="costSum"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
     
-         }
-       </button>
-       <button type="button" className="daisy-btn" onClick={e=>triggerSorting("revenueSum")}>
+           }
+         </button>
+         <button type="button" className="daisy-btn" onClick={e=>triggerSorting("revenueSum")}>
         sort by revenue
-         {
-           sorting.iterate=="revenueSum"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
+           {
+             sorting.iterate=="revenueSum"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
     
-         }
-       </button>
-       <button type="button" className="daisy-btn" onClick={e=>triggerSorting("profit")}>
+           }
+         </button>
+         <button type="button" className="daisy-btn" onClick={e=>triggerSorting("profit")}>
         sort by profit
-         {
-           sorting.iterate=="profit"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
+           {
+             sorting.iterate=="profit"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
     
-         }
-       </button>
+           }
+         </button>
+       </div>
+       <div className="grid grid-cols-3 gap-2 w-full">
+         {sortedRecipes?.map((recipe,idx) => <StonkRecipeCard recipe={recipe} key={`${recipe.name}.${idx}`} />)}
+       </div>
      </div>
-     <div className="grid grid-cols-3 gap-2 w-full">
-       {sortedRecipes?.map((recipe,idx) => <StonkRecipeCard recipe={recipe} key={`${recipe.name}.${idx}`} />)}
-     </div>
-   </div>
+     <StonkRecipeModal/>
+   </>
  }

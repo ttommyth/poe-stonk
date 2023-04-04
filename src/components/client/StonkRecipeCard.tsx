@@ -3,6 +3,8 @@ import { sum, maxBy, round } from "lodash-es";
 import { recipeStatsAtom } from "./StonkRecipeList";
 import { useAtom } from "jotai";
 import { compactNumberFormat } from "@/libs/formatting";
+import { recipeModalAtom } from "./StonkRecipeModal";
+import { useEffect } from "react";
 const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percentage: number})=>{
   const {type, sum, percentage} = props;
 
@@ -27,17 +29,23 @@ const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percent
 export const StonkRecipeCard = ( props:{recipe: Recipe})=>{  
   const {recipe} = props;     
   const [recipeStats] = useAtom(recipeStatsAtom)
+  const [recipeModal, setRecipeModal] = useAtom(recipeModalAtom)
   const {maxCost, maxRevenue, maxProfit} = recipeStats;
   const {costSum, revenueSum, profit} = recipe;
   const isStonk = revenueSum>costSum;
   const firstCostItem = recipe?.costItems?.[0];
   const bestReward = maxBy(recipe.revenueItems, v=>v.receivePrice?.chaosValue );
-  return <div className="rounded-md bg-base-100 flex flex-col p-2">
+  // useEffect(()=>{    
+  //   setRecipeModal(recipe);
+  // },[recipe])
+  return <div className="rounded-md bg-base-100 flex flex-col p-2 cursor-pointer" tabIndex={0} onClick={()=>{
+    setRecipeModal(recipe);
+  }}>
     <div className="flex flex-row items-center">
       {firstCostItem.imageUrl ?
-        <img src={firstCostItem?.imageUrl} className="object-contain w-10 h-10"/>:
+        <img src={firstCostItem?.imageUrl} className="object-contain w-10 h-10" alt={firstCostItem?.name}/>:
         <div className="w-10 h-10 bg-base-200"/>}
-      <h3 className="grow">{recipe.name}</h3>
+      <h3 className="grow line-clamp-1">{recipe.name}</h3>
       <div className="flex flex-col gap-1 [&>div]:text-xs">
         <CoolPriceBar type="cost" sum={costSum} percentage={costSum / maxCost}/>
         <CoolPriceBar type="revenue" sum={revenueSum} percentage={revenueSum / maxRevenue}/>
