@@ -287,158 +287,158 @@ export const Bestiary: PathOfProfitRecipe[] = [
   }
 ]
 
-export const BetrayalFlips: PathOfProfitRecipe[]=[
-  {
-    "name": "Xoph's Pure Breachstone",
-    "cost": 9,
-    "revenue": 50,
-    "profit": 41,
-    "costItems": [
-      {
-        "name": "Xoph's Breachstone",
-        "value": 9,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "xophs-breachstone",
-        "count": 1,
-        "total": 9
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "Xoph's Pure Breachstone",
-        "value": 50,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "xophs-pure-breachstone",
-        "count": 1,
-        "total": 50
-      }
-    ],
-    "roi": 455.55555555555554,
-    "runs": 1
-  },
-  {
-    "name": "Tul's Pure Breachstone",
-    "cost": 9,
-    "revenue": 50,
-    "profit": 41,
-    "costItems": [
-      {
-        "name": "Tul's Breachstone",
-        "value": 9,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "tuls-breachstone",
-        "count": 1,
-        "total": 9
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "Tul's Pure Breachstone",
-        "value": 50,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "tuls-pure-breachstone",
-        "count": 1,
-        "total": 50
-      }
-    ],
-    "roi": 455.55555555555554,
-    "runs": 1
-  },
-  {
-    "name": "Esh's Pure Breachstone",
-    "cost": 8,
-    "revenue": 50,
-    "profit": 42,
-    "costItems": [
-      {
-        "name": "Esh's Breachstone",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "eshs-breachstone",
-        "count": 1,
-        "total": 8
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "Esh's Pure Breachstone",
-        "value": 50,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "eshs-pure-breachstone",
-        "count": 1,
-        "total": 50
-      }
-    ],
-    "roi": 525,
-    "runs": 1
-  },
-  {
-    "name": "Uul-Netol's Pure Breachstone",
-    "cost": 20,
-    "revenue": 75,
-    "profit": 55,
-    "costItems": [
-      {
-        "name": "Uul-Netol's Breachstone",
-        "value": 20,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "uul-netols-breachstone",
-        "count": 1,
-        "total": 20
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "Uul-Netol's Pure Breachstone",
-        "value": 75,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "uul-netols-pure-breachstone",
-        "count": 1,
-        "total": 75
-      }
-    ],
-    "roi": 275,
-    "runs": 1
-  },
-  {
-    "name": "Chayula's Pure Breachstone",
-    "cost": 47.8421052631579,
-    "revenue": 118.9090909090909,
-    "profit": 71.06698564593302,
-    "costItems": [
-      {
-        "name": "Chayula's Breachstone",
-        "value": 47.8421052631579,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "chayulas-breachstone",
-        "count": 1,
-        "total": 47.8421052631579
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "Chayula's Pure Breachstone",
-        "value": 118.9090909090909,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "chayulas-pure-breachstone",
-        "count": 1,
-        "total": 118.9090909090909
-      }
-    ],
-    "roi": 148.54485448544855,
-    "runs": 1
-  }
-]
+// export const BetrayalFlips: PathOfProfitRecipe[]=[
+//   {
+//     "name": "Xoph's Pure Breachstone",
+//     "cost": 9,
+//     "revenue": 50,
+//     "profit": 41,
+//     "costItems": [
+//       {
+//         "name": "Xoph's Breachstone",
+//         "value": 9,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "xophs-breachstone",
+//         "count": 1,
+//         "total": 9
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "Xoph's Pure Breachstone",
+//         "value": 50,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "xophs-pure-breachstone",
+//         "count": 1,
+//         "total": 50
+//       }
+//     ],
+//     "roi": 455.55555555555554,
+//     "runs": 1
+//   },
+//   {
+//     "name": "Tul's Pure Breachstone",
+//     "cost": 9,
+//     "revenue": 50,
+//     "profit": 41,
+//     "costItems": [
+//       {
+//         "name": "Tul's Breachstone",
+//         "value": 9,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "tuls-breachstone",
+//         "count": 1,
+//         "total": 9
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "Tul's Pure Breachstone",
+//         "value": 50,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "tuls-pure-breachstone",
+//         "count": 1,
+//         "total": 50
+//       }
+//     ],
+//     "roi": 455.55555555555554,
+//     "runs": 1
+//   },
+//   {
+//     "name": "Esh's Pure Breachstone",
+//     "cost": 8,
+//     "revenue": 50,
+//     "profit": 42,
+//     "costItems": [
+//       {
+//         "name": "Esh's Breachstone",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "eshs-breachstone",
+//         "count": 1,
+//         "total": 8
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "Esh's Pure Breachstone",
+//         "value": 50,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "eshs-pure-breachstone",
+//         "count": 1,
+//         "total": 50
+//       }
+//     ],
+//     "roi": 525,
+//     "runs": 1
+//   },
+//   {
+//     "name": "Uul-Netol's Pure Breachstone",
+//     "cost": 20,
+//     "revenue": 75,
+//     "profit": 55,
+//     "costItems": [
+//       {
+//         "name": "Uul-Netol's Breachstone",
+//         "value": 20,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "uul-netols-breachstone",
+//         "count": 1,
+//         "total": 20
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "Uul-Netol's Pure Breachstone",
+//         "value": 75,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "uul-netols-pure-breachstone",
+//         "count": 1,
+//         "total": 75
+//       }
+//     ],
+//     "roi": 275,
+//     "runs": 1
+//   },
+//   {
+//     "name": "Chayula's Pure Breachstone",
+//     "cost": 47.8421052631579,
+//     "revenue": 118.9090909090909,
+//     "profit": 71.06698564593302,
+//     "costItems": [
+//       {
+//         "name": "Chayula's Breachstone",
+//         "value": 47.8421052631579,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "chayulas-breachstone",
+//         "count": 1,
+//         "total": 47.8421052631579
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "Chayula's Pure Breachstone",
+//         "value": 118.9090909090909,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "chayulas-pure-breachstone",
+//         "count": 1,
+//         "total": 118.9090909090909
+//       }
+//     ],
+//     "roi": 148.54485448544855,
+//     "runs": 1
+//   }
+// ]
 
 export const BlessingFlips: PathOfProfitRecipe[] = [
   {
@@ -7416,489 +7416,489 @@ export const Scrab: PathOfProfitRecipe[] = [
   }
 ]
 
-export const TalentedGuardians: PathOfProfitRecipe[] = [
-  {
-    "name": "Allied Guardian Of Hydra",
-    "cost": 6.41,
-    "revenue": 21.16335898239824,
-    "profit": 14.75335898239824,
-    "costItems": [
-      {
-        "name": "Lair of the Hydra Map",
-        "value": 6.41,
-        "links": 0,
-        "mapTier": 16,
-        "detailsId": "lair-of-the-hydra-map-t16-gen-13",
-        "variant": ", Gen-13",
-        "count": 1,
-        "total": 6.41
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "Fragment of the Hydra",
-        "value": 6.9646461111111115,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-hydra",
-        "count": 101,
-        "total": 703.4292572222223
-      },
-      {
-        "name": "Snakepit",
-        "value": 1,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "snakepit-sapphire-ring",
-        "count": 1,
-        "total": 1
-      },
-      {
-        "name": "Slivertongue",
-        "value": 1,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "slivertongue-harbinger-bow",
-        "count": 3,
-        "total": 3
-      },
-      {
-        "name": "Fragment of the Minotaur",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-minotaur",
-        "count": 16.83,
-        "total": 117.80999999999999
-      },
-      {
-        "name": "Fragment of the Chimera",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-chimera",
-        "count": 16.83,
-        "total": 117.80999999999999
-      },
-      {
-        "name": "Fragment of the Phoenix",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-phoenix",
-        "count": 16.83,
-        "total": 117.80999999999999
-      },
-      {
-        "name": "Perfection",
-        "value": 2,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "perfection",
-        "count": 1,
-        "total": 2
-      },
-      {
-        "name": "Maven's Invitation: The Forgotten",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-forgotten",
-        "count": 1.01,
-        "total": 8.08
-      },
-      {
-        "name": "Maven's Invitation: The Hidden",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-hidden",
-        "count": 1.01,
-        "total": 8.08
-      },
-      {
-        "name": "Maven's Invitation: The Twisted",
-        "value": 40,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-twisted",
-        "count": 1.01,
-        "total": 40.4
-      },
-      {
-        "name": "Maven's Invitation: The Formed",
-        "value": 48,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-formed",
-        "count": 21.21,
-        "total": 1018.08
-      }
-    ],
-    "roi": 230.1616065896761,
-    "runs": 101
-  },
-  {
-    "name": "Allied Guardian Of Minotaur",
-    "cost": 3,
-    "revenue": 22.276057267604617,
-    "profit": 19.276057267604617,
-    "costItems": [
-      {
-        "name": "Maze of the Minotaur Map",
-        "value": 3,
-        "links": 0,
-        "mapTier": 16,
-        "detailsId": "maze-of-the-minotaur-map-t16-gen-13",
-        "variant": ", Gen-13",
-        "count": 1,
-        "total": 3
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "The Brass Dome",
-        "value": 20,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "the-brass-dome-gladiator-plate",
-        "count": 4,
-        "total": 80
-      },
-      {
-        "name": "Brain Rattler",
-        "value": 1,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "brain-rattler-meatgrinder",
-        "count": 4,
-        "total": 4
-      },
-      {
-        "name": "Fragment of the Minotaur",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-minotaur",
-        "count": 77,
-        "total": 539
-      },
-      {
-        "name": "Fragment of the Hydra",
-        "value": 6.9646461111111115,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-hydra",
-        "count": 12.83,
-        "total": 89.35640960555556
-      },
-      {
-        "name": "Fragment of the Chimera",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-chimera",
-        "count": 12.83,
-        "total": 89.81
-      },
-      {
-        "name": "Fragment of the Phoenix",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-phoenix",
-        "count": 12.83,
-        "total": 89.81
-      },
-      {
-        "name": "Perfection",
-        "value": 2,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "perfection",
-        "count": 2,
-        "total": 4
-      },
-      {
-        "name": "Maven's Invitation: The Forgotten",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-forgotten",
-        "count": 0.77,
-        "total": 6.16
-      },
-      {
-        "name": "Maven's Invitation: The Hidden",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-hidden",
-        "count": 0.77,
-        "total": 6.16
-      },
-      {
-        "name": "Maven's Invitation: The Twisted",
-        "value": 40,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-twisted",
-        "count": 0.77,
-        "total": 30.8
-      },
-      {
-        "name": "Maven's Invitation: The Formed",
-        "value": 48,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-formed",
-        "count": 16.17,
-        "total": 776.1600000000001
-      }
-    ],
-    "roi": 642.5352422534872,
-    "runs": 77
-  },
-  {
-    "name": "Allied Guardian Of Chimera",
-    "cost": 7.17,
-    "revenue": 21.4806135775,
-    "profit": 14.310613577500002,
-    "costItems": [
-      {
-        "name": "Pit of the Chimera Map",
-        "value": 7.17,
-        "links": 0,
-        "mapTier": 16,
-        "detailsId": "pit-of-the-chimera-map-t16-gen-13",
-        "variant": ", Gen-13",
-        "count": 1,
-        "total": 7.17
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "The Scourge",
-        "value": 1,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "the-scourge-terror-claw",
-        "count": 3,
-        "total": 3
-      },
-      {
-        "name": "Obscurantis",
-        "value": 2,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "obscurantis-lion-pelt",
-        "count": 1,
-        "total": 2
-      },
-      {
-        "name": "Fragment of the Chimera",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-chimera",
-        "count": 20,
-        "total": 140
-      },
-      {
-        "name": "Fragment of the Minotaur",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-minotaur",
-        "count": 3.33,
-        "total": 23.310000000000002
-      },
-      {
-        "name": "Fragment of the Hydra",
-        "value": 6.9646461111111115,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-hydra",
-        "count": 3.33,
-        "total": 23.19227155
-      },
-      {
-        "name": "Fragment of the Phoenix",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-phoenix",
-        "count": 3.33,
-        "total": 23.310000000000002
-      },
-      {
-        "name": "Perfection",
-        "value": 2,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "perfection",
-        "count": 1,
-        "total": 2
-      },
-      {
-        "name": "Maven's Invitation: The Forgotten",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-forgotten",
-        "count": 0.2,
-        "total": 1.6
-      },
-      {
-        "name": "Maven's Invitation: The Hidden",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-hidden",
-        "count": 0.2,
-        "total": 1.6
-      },
-      {
-        "name": "Maven's Invitation: The Twisted",
-        "value": 40,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-twisted",
-        "count": 0.2,
-        "total": 8
-      },
-      {
-        "name": "Maven's Invitation: The Formed",
-        "value": 48,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-formed",
-        "count": 4.2,
-        "total": 201.60000000000002
-      }
-    ],
-    "roi": 199.59014752440726,
-    "runs": 20
-  },
-  {
-    "name": "Allied Guardian Of Phoenix",
-    "cost": 4,
-    "revenue": 21.325743433707263,
-    "profit": 17.325743433707263,
-    "costItems": [
-      {
-        "name": "Forge of the Phoenix Map",
-        "value": 4,
-        "links": 0,
-        "mapTier": 16,
-        "detailsId": "forge-of-the-phoenix-map-t16-gen-13",
-        "variant": ", Gen-13",
-        "count": 1,
-        "total": 4
-      }
-    ],
-    "revenueItems": [
-      {
-        "name": "Fragment of the Phoenix",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-phoenix",
-        "count": 104,
-        "total": 728
-      },
-      {
-        "name": "Fragment of the Minotaur",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-minotaur",
-        "count": 17.33,
-        "total": 121.30999999999999
-      },
-      {
-        "name": "Fragment of the Hydra",
-        "value": 6.9646461111111115,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-hydra",
-        "count": 17.33,
-        "total": 120.69731710555556
-      },
-      {
-        "name": "Fragment of the Chimera",
-        "value": 7,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "fragment-of-the-chimera",
-        "count": 17.33,
-        "total": 121.30999999999999
-      },
-      {
-        "name": "Razor of the Seventh Sun",
-        "value": 1,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "razor-of-the-seventh-sun-midnight-blade",
-        "count": 4,
-        "total": 4
-      },
-      {
-        "name": "Eye of Innocence",
-        "value": 4,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "eye-of-innocence-citrine-amulet",
-        "count": 3,
-        "total": 12
-      },
-      {
-        "name": "Perfection",
-        "value": 2,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "perfection",
-        "count": 2,
-        "total": 4
-      },
-      {
-        "name": "Maven's Invitation: The Forgotten",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-forgotten",
-        "count": 1.04,
-        "total": 8.32
-      },
-      {
-        "name": "Maven's Invitation: The Hidden",
-        "value": 8,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-hidden",
-        "count": 1.04,
-        "total": 8.32
-      },
-      {
-        "name": "Maven's Invitation: The Twisted",
-        "value": 40,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-twisted",
-        "count": 1.04,
-        "total": 41.6
-      },
-      {
-        "name": "Maven's Invitation: The Formed",
-        "value": 48,
-        "links": 0,
-        "mapTier": 0,
-        "detailsId": "mavens-invitation:-the-formed",
-        "count": 21.84,
-        "total": 1048.32
-      }
-    ],
-    "roi": 433.1435858426816,
-    "runs": 104
-  }
-]
+// export const TalentedGuardians: PathOfProfitRecipe[] = [
+//   {
+//     "name": "Allied Guardian Of Hydra",
+//     "cost": 6.41,
+//     "revenue": 21.16335898239824,
+//     "profit": 14.75335898239824,
+//     "costItems": [
+//       {
+//         "name": "Lair of the Hydra Map",
+//         "value": 6.41,
+//         "links": 0,
+//         "mapTier": 16,
+//         "detailsId": "lair-of-the-hydra-map-t16-gen-13",
+//         "variant": ", Gen-13",
+//         "count": 1,
+//         "total": 6.41
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "Fragment of the Hydra",
+//         "value": 6.9646461111111115,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-hydra",
+//         "count": 101,
+//         "total": 703.4292572222223
+//       },
+//       {
+//         "name": "Snakepit",
+//         "value": 1,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "snakepit-sapphire-ring",
+//         "count": 1,
+//         "total": 1
+//       },
+//       {
+//         "name": "Slivertongue",
+//         "value": 1,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "slivertongue-harbinger-bow",
+//         "count": 3,
+//         "total": 3
+//       },
+//       {
+//         "name": "Fragment of the Minotaur",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-minotaur",
+//         "count": 16.83,
+//         "total": 117.80999999999999
+//       },
+//       {
+//         "name": "Fragment of the Chimera",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-chimera",
+//         "count": 16.83,
+//         "total": 117.80999999999999
+//       },
+//       {
+//         "name": "Fragment of the Phoenix",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-phoenix",
+//         "count": 16.83,
+//         "total": 117.80999999999999
+//       },
+//       {
+//         "name": "Perfection",
+//         "value": 2,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "perfection",
+//         "count": 1,
+//         "total": 2
+//       },
+//       {
+//         "name": "Maven's Invitation: The Forgotten",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-forgotten",
+//         "count": 1.01,
+//         "total": 8.08
+//       },
+//       {
+//         "name": "Maven's Invitation: The Hidden",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-hidden",
+//         "count": 1.01,
+//         "total": 8.08
+//       },
+//       {
+//         "name": "Maven's Invitation: The Twisted",
+//         "value": 40,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-twisted",
+//         "count": 1.01,
+//         "total": 40.4
+//       },
+//       {
+//         "name": "Maven's Invitation: The Formed",
+//         "value": 48,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-formed",
+//         "count": 21.21,
+//         "total": 1018.08
+//       }
+//     ],
+//     "roi": 230.1616065896761,
+//     "runs": 101
+//   },
+//   {
+//     "name": "Allied Guardian Of Minotaur",
+//     "cost": 3,
+//     "revenue": 22.276057267604617,
+//     "profit": 19.276057267604617,
+//     "costItems": [
+//       {
+//         "name": "Maze of the Minotaur Map",
+//         "value": 3,
+//         "links": 0,
+//         "mapTier": 16,
+//         "detailsId": "maze-of-the-minotaur-map-t16-gen-13",
+//         "variant": ", Gen-13",
+//         "count": 1,
+//         "total": 3
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "The Brass Dome",
+//         "value": 20,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "the-brass-dome-gladiator-plate",
+//         "count": 4,
+//         "total": 80
+//       },
+//       {
+//         "name": "Brain Rattler",
+//         "value": 1,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "brain-rattler-meatgrinder",
+//         "count": 4,
+//         "total": 4
+//       },
+//       {
+//         "name": "Fragment of the Minotaur",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-minotaur",
+//         "count": 77,
+//         "total": 539
+//       },
+//       {
+//         "name": "Fragment of the Hydra",
+//         "value": 6.9646461111111115,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-hydra",
+//         "count": 12.83,
+//         "total": 89.35640960555556
+//       },
+//       {
+//         "name": "Fragment of the Chimera",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-chimera",
+//         "count": 12.83,
+//         "total": 89.81
+//       },
+//       {
+//         "name": "Fragment of the Phoenix",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-phoenix",
+//         "count": 12.83,
+//         "total": 89.81
+//       },
+//       {
+//         "name": "Perfection",
+//         "value": 2,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "perfection",
+//         "count": 2,
+//         "total": 4
+//       },
+//       {
+//         "name": "Maven's Invitation: The Forgotten",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-forgotten",
+//         "count": 0.77,
+//         "total": 6.16
+//       },
+//       {
+//         "name": "Maven's Invitation: The Hidden",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-hidden",
+//         "count": 0.77,
+//         "total": 6.16
+//       },
+//       {
+//         "name": "Maven's Invitation: The Twisted",
+//         "value": 40,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-twisted",
+//         "count": 0.77,
+//         "total": 30.8
+//       },
+//       {
+//         "name": "Maven's Invitation: The Formed",
+//         "value": 48,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-formed",
+//         "count": 16.17,
+//         "total": 776.1600000000001
+//       }
+//     ],
+//     "roi": 642.5352422534872,
+//     "runs": 77
+//   },
+//   {
+//     "name": "Allied Guardian Of Chimera",
+//     "cost": 7.17,
+//     "revenue": 21.4806135775,
+//     "profit": 14.310613577500002,
+//     "costItems": [
+//       {
+//         "name": "Pit of the Chimera Map",
+//         "value": 7.17,
+//         "links": 0,
+//         "mapTier": 16,
+//         "detailsId": "pit-of-the-chimera-map-t16-gen-13",
+//         "variant": ", Gen-13",
+//         "count": 1,
+//         "total": 7.17
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "The Scourge",
+//         "value": 1,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "the-scourge-terror-claw",
+//         "count": 3,
+//         "total": 3
+//       },
+//       {
+//         "name": "Obscurantis",
+//         "value": 2,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "obscurantis-lion-pelt",
+//         "count": 1,
+//         "total": 2
+//       },
+//       {
+//         "name": "Fragment of the Chimera",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-chimera",
+//         "count": 20,
+//         "total": 140
+//       },
+//       {
+//         "name": "Fragment of the Minotaur",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-minotaur",
+//         "count": 3.33,
+//         "total": 23.310000000000002
+//       },
+//       {
+//         "name": "Fragment of the Hydra",
+//         "value": 6.9646461111111115,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-hydra",
+//         "count": 3.33,
+//         "total": 23.19227155
+//       },
+//       {
+//         "name": "Fragment of the Phoenix",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-phoenix",
+//         "count": 3.33,
+//         "total": 23.310000000000002
+//       },
+//       {
+//         "name": "Perfection",
+//         "value": 2,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "perfection",
+//         "count": 1,
+//         "total": 2
+//       },
+//       {
+//         "name": "Maven's Invitation: The Forgotten",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-forgotten",
+//         "count": 0.2,
+//         "total": 1.6
+//       },
+//       {
+//         "name": "Maven's Invitation: The Hidden",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-hidden",
+//         "count": 0.2,
+//         "total": 1.6
+//       },
+//       {
+//         "name": "Maven's Invitation: The Twisted",
+//         "value": 40,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-twisted",
+//         "count": 0.2,
+//         "total": 8
+//       },
+//       {
+//         "name": "Maven's Invitation: The Formed",
+//         "value": 48,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-formed",
+//         "count": 4.2,
+//         "total": 201.60000000000002
+//       }
+//     ],
+//     "roi": 199.59014752440726,
+//     "runs": 20
+//   },
+//   {
+//     "name": "Allied Guardian Of Phoenix",
+//     "cost": 4,
+//     "revenue": 21.325743433707263,
+//     "profit": 17.325743433707263,
+//     "costItems": [
+//       {
+//         "name": "Forge of the Phoenix Map",
+//         "value": 4,
+//         "links": 0,
+//         "mapTier": 16,
+//         "detailsId": "forge-of-the-phoenix-map-t16-gen-13",
+//         "variant": ", Gen-13",
+//         "count": 1,
+//         "total": 4
+//       }
+//     ],
+//     "revenueItems": [
+//       {
+//         "name": "Fragment of the Phoenix",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-phoenix",
+//         "count": 104,
+//         "total": 728
+//       },
+//       {
+//         "name": "Fragment of the Minotaur",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-minotaur",
+//         "count": 17.33,
+//         "total": 121.30999999999999
+//       },
+//       {
+//         "name": "Fragment of the Hydra",
+//         "value": 6.9646461111111115,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-hydra",
+//         "count": 17.33,
+//         "total": 120.69731710555556
+//       },
+//       {
+//         "name": "Fragment of the Chimera",
+//         "value": 7,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "fragment-of-the-chimera",
+//         "count": 17.33,
+//         "total": 121.30999999999999
+//       },
+//       {
+//         "name": "Razor of the Seventh Sun",
+//         "value": 1,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "razor-of-the-seventh-sun-midnight-blade",
+//         "count": 4,
+//         "total": 4
+//       },
+//       {
+//         "name": "Eye of Innocence",
+//         "value": 4,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "eye-of-innocence-citrine-amulet",
+//         "count": 3,
+//         "total": 12
+//       },
+//       {
+//         "name": "Perfection",
+//         "value": 2,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "perfection",
+//         "count": 2,
+//         "total": 4
+//       },
+//       {
+//         "name": "Maven's Invitation: The Forgotten",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-forgotten",
+//         "count": 1.04,
+//         "total": 8.32
+//       },
+//       {
+//         "name": "Maven's Invitation: The Hidden",
+//         "value": 8,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-hidden",
+//         "count": 1.04,
+//         "total": 8.32
+//       },
+//       {
+//         "name": "Maven's Invitation: The Twisted",
+//         "value": 40,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-twisted",
+//         "count": 1.04,
+//         "total": 41.6
+//       },
+//       {
+//         "name": "Maven's Invitation: The Formed",
+//         "value": 48,
+//         "links": 0,
+//         "mapTier": 0,
+//         "detailsId": "mavens-invitation:-the-formed",
+//         "count": 21.84,
+//         "total": 1048.32
+//       }
+//     ],
+//     "roi": 433.1435858426816,
+//     "runs": 104
+//   }
+// ]

@@ -23,7 +23,7 @@ export default function CategoryLayout({
           allCategory.map(cat=><Link href={`/${params.league}/${cat}`} key={cat}>{cat}</Link>)
         }
       </nav>
-      <main className='w-full'>
+      <main className='grow'>
         {children}
       </main>
     </div>

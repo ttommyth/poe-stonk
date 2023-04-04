@@ -19,6 +19,7 @@ export interface Language {
 
 
 export interface CurrencyLine {
+  lineType:"currency";
   currencyTypeName:              string;
   pay?:                          Pay;
   receive:                       Pay;
@@ -54,6 +55,7 @@ export interface ItemOverview {
 }
 
 export interface ItemLine {
+  lineType:"item";
   id:                     number;
   name:                   string;
   icon:                   string;
@@ -143,14 +145,18 @@ export const fetchNinjaCurrency= async(league: string, type: typeof CurrencyType
   const url = new URL("/api/data/currencyoverview", process.env.NEXT_PUBLIC_NINJA_URL??"https://poe.ninja");
   url.searchParams.set("league", league);
   url.searchParams.set("type", type);
-  return await fetch(url, {next:{revalidate: 60*5}}).then(it=>it.json()) as CurrencyOverview;
+  return await fetch(url, {next:{revalidate: 60*5}}).then(async it=>await it.json() as CurrencyOverview).then(it=>{
+    return it;
+  });
 }
 export const fetchNinjaItem= async(league: string, type: typeof ItemTypeList[number]): Promise<ItemOverview>=>{
   console.debug("invoked fetchNinjaItem", league, type);
   const url = new URL("/api/data/itemoverview", process.env.NEXT_PUBLIC_NINJA_URL??"https://poe.ninja");
   url.searchParams.set("league", league);
   url.searchParams.set("type", type);
-  return await fetch(url, {next:{revalidate: 60*5}}).then(it=>it.json()) as ItemOverview ;
+  return await fetch(url, {next:{revalidate: 60*5}}).then(async it=>await it.json() as ItemOverview).then(it=>{
+    return it;
+  });
 }
 export const fetchNinjaIndex= async(): Promise<NinjaIndexState>=>{
   console.debug("invoked fetchNinjaIndex");

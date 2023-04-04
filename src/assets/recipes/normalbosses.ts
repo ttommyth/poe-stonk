@@ -11,7 +11,8 @@ export const NormalBosses = [
         "detailsId": "sacrifice-at-dusk",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Sacrifice at Dawn",
@@ -20,7 +21,8 @@ export const NormalBosses = [
         "detailsId": "sacrifice-at-dawn",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Sacrifice at Noon",
@@ -29,7 +31,8 @@ export const NormalBosses = [
         "detailsId": "sacrifice-at-noon",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Sacrifice at Midnight",
@@ -38,7 +41,8 @@ export const NormalBosses = [
         "detailsId": "sacrifice-at-midnight",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -49,7 +53,8 @@ export const NormalBosses = [
         "detailsId": "atziris-promise",
         "count": 66,
         "total": 100,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       },
       {
         "name": "Doryani's Catalyst",
@@ -58,7 +63,8 @@ export const NormalBosses = [
         "detailsId": "doryanis-catalyst-vaal-sceptre",
         "count": 8,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Atziri's Step",
@@ -67,7 +73,8 @@ export const NormalBosses = [
         "detailsId": "atziris-step-slink-boots",
         "count": 12,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Doryani's Invitation",
@@ -77,7 +84,8 @@ export const NormalBosses = [
         "variant": "Physical",
         "count": 14,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Mortal Hope",
@@ -86,7 +94,8 @@ export const NormalBosses = [
         "detailsId": "mortal-hope",
         "count": 4,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Mortal Grief",
@@ -95,7 +104,8 @@ export const NormalBosses = [
         "detailsId": "mortal-grief",
         "count": 14,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Mortal Rage",
@@ -104,7 +114,8 @@ export const NormalBosses = [
         "detailsId": "mortal-rage",
         "count": 9,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Mortal Ignorance",
@@ -113,7 +124,8 @@ export const NormalBosses = [
         "detailsId": "mortal-ignorance",
         "count": 8,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ]
   },
@@ -127,7 +139,8 @@ export const NormalBosses = [
         "detailsId": "mortal-hope",
         "count": 1,
         "total": 402,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Mortal Grief",
@@ -136,7 +149,8 @@ export const NormalBosses = [
         "detailsId": "mortal-grief",
         "count": 1,
         "total": 402,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Mortal Rage",
@@ -145,7 +159,8 @@ export const NormalBosses = [
         "detailsId": "mortal-rage",
         "count": 1,
         "total": 402,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Mortal Ignorance",
@@ -154,7 +169,8 @@ export const NormalBosses = [
         "detailsId": "mortal-ignorance",
         "count": 1,
         "total": 402,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -165,7 +181,8 @@ export const NormalBosses = [
         "detailsId": "atziris-acuity-vaal-gauntlets",
         "count": 14,
         "total": 402,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Atziri's Disfavour",
@@ -174,7 +191,8 @@ export const NormalBosses = [
         "detailsId": "atziris-disfavour-vaal-axe",
         "count": 49,
         "total": 402,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "The Vertex",
@@ -183,7 +201,8 @@ export const NormalBosses = [
         "detailsId": "the-vertex-vaal-mask",
         "count": 187,
         "total": 402,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Atziri's Splendour",
@@ -193,7 +212,8 @@ export const NormalBosses = [
         "variant": "ES",
         "count": 152,
         "total": 402,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -206,7 +226,8 @@ export const NormalBosses = [
         "mapTier": 12,
         "detailsId": "cortex-t12",
         "count": 1,
-        "total": 144
+        "total": 144,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
@@ -217,7 +238,8 @@ export const NormalBosses = [
         "detailsId": "nebulis-void-sceptre",
         "count": 50,
         "total": 144,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Offering to the Serpent",
@@ -226,7 +248,8 @@ export const NormalBosses = [
         "detailsId": "offering-to-the-serpent-legion-gloves",
         "count": 55,
         "total": 144,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Bottled Faith",
@@ -235,7 +258,8 @@ export const NormalBosses = [
         "detailsId": "bottled-faith",
         "count": 27,
         "total": 144,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       },
       {
         "name": "Garb of the Ephemeral",
@@ -244,7 +268,8 @@ export const NormalBosses = [
         "detailsId": "garb-of-the-ephemeral-savants-robe",
         "count": 12,
         "total": 144,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -257,7 +282,8 @@ export const NormalBosses = [
         "mapTier": 16,
         "detailsId": "twisted-distant-memory-t16",
         "count": 1,
-        "total": 100
+        "total": 100,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
@@ -268,7 +294,8 @@ export const NormalBosses = [
         "detailsId": "circle-of-fear-sapphire-ring",
         "count": 12,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Circle of Guilt",
@@ -277,7 +304,8 @@ export const NormalBosses = [
         "detailsId": "circle-of-guilt-iron-ring",
         "count": 5,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Circle of Anguish",
@@ -286,7 +314,8 @@ export const NormalBosses = [
         "detailsId": "circle-of-anguish-ruby-ring",
         "count": 16,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Circle of Nostalgia",
@@ -295,7 +324,8 @@ export const NormalBosses = [
         "detailsId": "circle-of-nostalgia-amethyst-ring",
         "count": 14,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Circle of Regret",
@@ -304,7 +334,8 @@ export const NormalBosses = [
         "detailsId": "circle-of-regret-topaz-ring",
         "count": 13,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Perepiteia",
@@ -313,7 +344,8 @@ export const NormalBosses = [
         "detailsId": "perepiteia-ezomyte-spiked-shield",
         "count": 12,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Mask of the Tribunal",
@@ -322,7 +354,8 @@ export const NormalBosses = [
         "detailsId": "mask-of-the-tribunal-magistrate-crown",
         "count": 13,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Storm's Gift",
@@ -331,7 +364,8 @@ export const NormalBosses = [
         "detailsId": "storms-gift-assassins-mitts",
         "count": 17,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -345,7 +379,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-enslavement",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Eradication",
@@ -354,7 +389,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-eradication",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Purification",
@@ -363,7 +399,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-purification",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Constriction",
@@ -372,7 +409,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-constriction",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -384,7 +422,8 @@ export const NormalBosses = [
         "variant": "Chaos",
         "count": 2,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Impresence, Physical",
@@ -394,7 +433,8 @@ export const NormalBosses = [
         "variant": "Physical",
         "count": 2,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Impresence, Fire",
@@ -404,7 +444,8 @@ export const NormalBosses = [
         "variant": "Fire",
         "count": 3,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Impresence, Lightning",
@@ -414,7 +455,8 @@ export const NormalBosses = [
         "variant": "Lightning",
         "count": 5,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Impresence, Cold",
@@ -424,7 +466,8 @@ export const NormalBosses = [
         "variant": "Cold",
         "count": 5,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Cyclopean Coil",
@@ -433,7 +476,8 @@ export const NormalBosses = [
         "detailsId": "cyclopean-coil-leather-belt",
         "count": 23,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Nebuloch",
@@ -442,7 +486,8 @@ export const NormalBosses = [
         "detailsId": "nebuloch-nightmare-mace",
         "count": 10,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Blasphemer's Grasp",
@@ -451,7 +496,8 @@ export const NormalBosses = [
         "detailsId": "blasphemers-grasp-assassins-mitts",
         "count": 32,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Watcher's Eye",
@@ -460,7 +506,8 @@ export const NormalBosses = [
         "detailsId": "watchers-eye-prismatic-jewel",
         "count": 28,
         "total": 100,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Hopeshredder",
@@ -469,7 +516,8 @@ export const NormalBosses = [
         "detailsId": "hopeshredder-ranger-bow",
         "count": 9,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Shimmeron",
@@ -478,7 +526,8 @@ export const NormalBosses = [
         "detailsId": "shimmeron-tornado-wand",
         "count": 10,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Fragment of Terror",
@@ -487,7 +536,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-terror",
         "count": 50,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Emptiness",
@@ -496,7 +546,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-emptiness",
         "count": 50,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ]
   },
@@ -510,7 +561,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-shape",
         "count": 1,
         "total": 112,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Knowledge",
@@ -519,7 +571,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-knowledge",
         "count": 1,
         "total": 112,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Emptiness",
@@ -528,7 +581,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-emptiness",
         "count": 1,
         "total": 112,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Terror",
@@ -537,7 +591,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-terror",
         "count": 1,
         "total": 112,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -548,7 +603,8 @@ export const NormalBosses = [
         "detailsId": "watchers-eye-prismatic-jewel",
         "count": 26,
         "total": 112,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Disintegrator",
@@ -557,7 +613,8 @@ export const NormalBosses = [
         "detailsId": "disintegrator-maelstrom-staff",
         "count": 7,
         "total": 112,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Voidfletcher",
@@ -565,7 +622,8 @@ export const NormalBosses = [
         "mapTier": 0,
         "detailsId": "voidfletcher-penetrating-arrow-quiver",
         "count": 16,
-        "total": 112
+        "total": 112,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Mark of the Elder",
@@ -574,7 +632,8 @@ export const NormalBosses = [
         "detailsId": "mark-of-the-elder-steel-ring",
         "count": 30,
         "total": 112,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Mark of the Shaper",
@@ -583,7 +642,8 @@ export const NormalBosses = [
         "detailsId": "mark-of-the-shaper-opal-ring",
         "count": 34,
         "total": 112,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Indigon",
@@ -592,7 +652,8 @@ export const NormalBosses = [
         "detailsId": "indigon-hubris-circlet",
         "count": 13,
         "total": 112,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Voidforge",
@@ -601,7 +662,8 @@ export const NormalBosses = [
         "detailsId": "voidforge-infernal-sword",
         "count": 9,
         "total": 112,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Maven's Invitation: The Feared",
@@ -610,7 +672,8 @@ export const NormalBosses = [
         "detailsId": "mavens-invitation:-the-feared",
         "count": 14,
         "total": 112,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "The Gulf",
@@ -619,7 +682,8 @@ export const NormalBosses = [
         "detailsId": "the-gulf",
         "count": 6,
         "total": 112,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Void of the Elements",
@@ -628,7 +692,8 @@ export const NormalBosses = [
         "detailsId": "void-of-the-elements",
         "count": 1,
         "total": 112,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "The Eternity Shroud",
@@ -637,7 +702,8 @@ export const NormalBosses = [
         "detailsId": "the-eternity-shroud-blood-raiment",
         "count": 3,
         "total": 112,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -651,7 +717,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-the-chimera",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of the Hydra",
@@ -660,7 +727,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-the-hydra",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of the Phoenix",
@@ -669,7 +737,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-the-phoenix",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of the Minotaur",
@@ -678,7 +747,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-the-minotaur",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -689,7 +759,8 @@ export const NormalBosses = [
         "detailsId": "shapers-touch-crusader-gloves",
         "count": 43,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Dying Sun",
@@ -698,7 +769,8 @@ export const NormalBosses = [
         "detailsId": "dying-sun",
         "count": 20,
         "total": 100,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       },
       {
         "name": "Starforge",
@@ -707,7 +779,8 @@ export const NormalBosses = [
         "detailsId": "starforge-infernal-sword",
         "count": 3,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Voidwalker",
@@ -716,7 +789,8 @@ export const NormalBosses = [
         "detailsId": "voidwalker-murder-boots",
         "count": 33,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Solstice Vigil",
@@ -725,7 +799,8 @@ export const NormalBosses = [
         "detailsId": "solstice-vigil-onyx-amulet",
         "count": 1,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Fragment of Shape",
@@ -734,7 +809,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-shape",
         "count": 50,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Knowledge",
@@ -743,7 +819,8 @@ export const NormalBosses = [
         "detailsId": "fragment-of-knowledge",
         "count": 50,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ]
   },
@@ -757,7 +834,8 @@ export const NormalBosses = [
         "detailsId": "the-mavens-writ",
         "count": 1,
         "total": 134,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -768,7 +846,8 @@ export const NormalBosses = [
         "detailsId": "elevated-sextant",
         "count": 57,
         "total": 134,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Maven's Orb",
@@ -776,7 +855,8 @@ export const NormalBosses = [
         "mapTier": 0,
         "detailsId": "mavens-orb",
         "count": 30,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Restless Cycles",
@@ -785,7 +865,8 @@ export const NormalBosses = [
         "detailsId": "restless-cycles-platinum-valdos-rest-watchstone-15",
         "variant": "15",
         "count": 5,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "The Walls",
@@ -794,7 +875,8 @@ export const NormalBosses = [
         "detailsId": "the-walls-platinum-haewark-hamlet-watchstone-15",
         "variant": "15",
         "count": 1,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "The Closest Peak",
@@ -803,7 +885,8 @@ export const NormalBosses = [
         "detailsId": "the-closest-peak-platinum-lex-proxima-watchstone-15",
         "variant": "15",
         "count": 5,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "The Vast Horizon",
@@ -812,7 +895,8 @@ export const NormalBosses = [
         "detailsId": "the-vast-horizon-platinum-new-vastir-watchstone-15",
         "variant": "15",
         "count": 8,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "The Claim",
@@ -821,7 +905,8 @@ export const NormalBosses = [
         "detailsId": "the-claim-platinum-tirns-end-watchstone-15",
         "variant": "15",
         "count": 8,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Atop the Atlas",
@@ -830,7 +915,8 @@ export const NormalBosses = [
         "detailsId": "atop-the-atlas-platinum-lex-ejoris-watchstone-15",
         "variant": "15",
         "count": 3,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "The False Hope",
@@ -839,7 +925,8 @@ export const NormalBosses = [
         "detailsId": "the-false-hope-platinum-lira-arthain-watchstone-15",
         "variant": "15",
         "count": 5,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "The Builder",
@@ -848,7 +935,8 @@ export const NormalBosses = [
         "detailsId": "the-builder-platinum-glennach-cairns-watchstone-15",
         "variant": "15",
         "count": 5,
-        "total": 134
+        "total": 134,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Doppelgänger Guise",
@@ -857,7 +945,8 @@ export const NormalBosses = [
         "detailsId": "doppelgänger-guise-sadist-garb",
         "count": 5,
         "total": 134,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Arn's Anguish",
@@ -866,7 +955,8 @@ export const NormalBosses = [
         "detailsId": "arns-anguish-cloth-belt",
         "count": 12,
         "total": 134,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Olesya's Delight",
@@ -875,7 +965,8 @@ export const NormalBosses = [
         "detailsId": "olesyas-delight-cloth-belt",
         "count": 13,
         "total": 134,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Legacy of Fury",
@@ -884,7 +975,8 @@ export const NormalBosses = [
         "detailsId": "legacy-of-fury-wyrmscale-boots",
         "count": 50,
         "total": 134,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Viridi's Veil",
@@ -893,7 +985,8 @@ export const NormalBosses = [
         "detailsId": "viridis-veil-praetor-crown",
         "count": 29,
         "total": 134,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Graven's Secret",
@@ -902,7 +995,8 @@ export const NormalBosses = [
         "detailsId": "gravens-secret-cloth-belt",
         "count": 25,
         "total": 134,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -912,7 +1006,8 @@ export const NormalBosses = [
       {
         "name": "",
         "count": 1,
-        "total": 31
+        "total": 31,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
@@ -923,7 +1018,8 @@ export const NormalBosses = [
         "detailsId": "the-queens-hunger-vaal-regalia",
         "count": 4,
         "total": 31,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Cinderswallow Urn",
@@ -932,7 +1028,8 @@ export const NormalBosses = [
         "detailsId": "cinderswallow-urn",
         "count": 10,
         "total": 31,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       },
       {
         "name": "The Devouring Diadem",
@@ -941,7 +1038,8 @@ export const NormalBosses = [
         "detailsId": "the-devouring-diadem-necromancer-circlet",
         "count": 13,
         "total": 31,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Bitterbind Point",
@@ -950,7 +1048,8 @@ export const NormalBosses = [
         "detailsId": "bitterbind-point-titanium-spirit-shield",
         "count": 4,
         "total": 31,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   }

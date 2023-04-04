@@ -11,7 +11,8 @@ export const BlessingFlips = [
         "detailsId": "xophs-inception-bone-bow",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Blessing of Xoph",
@@ -20,7 +21,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-xoph",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -31,7 +33,8 @@ export const BlessingFlips = [
         "detailsId": "xophs-nurture-citadel-bow",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -45,7 +48,8 @@ export const BlessingFlips = [
         "detailsId": "the-formless-flame-siege-helmet",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Blessing of Xoph",
@@ -54,7 +58,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-xoph",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -65,7 +70,8 @@ export const BlessingFlips = [
         "detailsId": "the-formless-inferno-royal-burgonet",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -79,7 +85,8 @@ export const BlessingFlips = [
         "detailsId": "xophs-heart-amber-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Blessing of Xoph",
@@ -88,7 +95,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-xoph",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -99,7 +107,8 @@ export const BlessingFlips = [
         "detailsId": "xophs-blood-amber-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -113,7 +122,8 @@ export const BlessingFlips = [
         "detailsId": "tulborn-spiraled-wand",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Blessing of Tul",
@@ -122,7 +132,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-tul",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -133,7 +144,8 @@ export const BlessingFlips = [
         "detailsId": "tulfall-tornado-wand",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -147,7 +159,8 @@ export const BlessingFlips = [
         "detailsId": "the-snowblind-grace-coronal-leather",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Blessing of Tul",
@@ -156,7 +169,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-tul",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -167,7 +181,8 @@ export const BlessingFlips = [
         "detailsId": "the-perfect-form-zodiac-leather",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -181,7 +196,8 @@ export const BlessingFlips = [
         "detailsId": "the-halcyon-jade-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Blessing of Tul",
@@ -190,7 +206,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-tul",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -201,7 +218,8 @@ export const BlessingFlips = [
         "detailsId": "the-pandemonius-jade-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -215,7 +233,8 @@ export const BlessingFlips = [
         "detailsId": "hand-of-thought-and-motion-blinder",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Blessing of Esh",
@@ -224,7 +243,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-esh",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -235,7 +255,8 @@ export const BlessingFlips = [
         "detailsId": "hand-of-wisdom-and-action-imperial-claw",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -249,7 +270,8 @@ export const BlessingFlips = [
         "detailsId": "eshs-mirror-thorium-spirit-shield",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Blessing of Esh",
@@ -258,7 +280,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-esh",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -269,7 +292,8 @@ export const BlessingFlips = [
         "detailsId": "eshs-visage-vaal-spirit-shield",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -283,7 +307,8 @@ export const BlessingFlips = [
         "detailsId": "voice-of-the-storm-lapis-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Blessing of Esh",
@@ -292,7 +317,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-esh",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -303,7 +329,8 @@ export const BlessingFlips = [
         "detailsId": "choir-of-the-storm-lapis-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -317,7 +344,8 @@ export const BlessingFlips = [
         "detailsId": "uul-netols-kiss-labrys",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Blessing of Uul-Netol",
@@ -326,7 +354,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-uul-netol",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -337,7 +366,8 @@ export const BlessingFlips = [
         "detailsId": "uul-netols-embrace-vaal-axe",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -351,7 +381,8 @@ export const BlessingFlips = [
         "detailsId": "the-infinite-pursuit-goliath-greaves",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Blessing of Uul-Netol",
@@ -360,7 +391,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-uul-netol",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -371,7 +403,8 @@ export const BlessingFlips = [
         "detailsId": "the-red-trail-titan-greaves",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -385,7 +418,8 @@ export const BlessingFlips = [
         "detailsId": "the-anticipation-ezomyte-tower-shield",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Blessing of Uul-Netol",
@@ -394,7 +428,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-uul-netol",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -405,7 +440,8 @@ export const BlessingFlips = [
         "detailsId": "the-surrender-ezomyte-tower-shield",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -419,7 +455,8 @@ export const BlessingFlips = [
         "detailsId": "severed-in-sleep-cutlass",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Blessing of Chayula",
@@ -428,7 +465,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-chayula",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -439,7 +477,8 @@ export const BlessingFlips = [
         "detailsId": "united-in-dream-cutlass",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -449,7 +488,8 @@ export const BlessingFlips = [
       {
         "name": "Skin of the Loyal",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Blessing of Chayula",
@@ -458,14 +498,16 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-chayula",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
       {
         "name": "Skin of the Lords",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ]
   },
@@ -479,7 +521,8 @@ export const BlessingFlips = [
         "detailsId": "eye-of-chayula-onyx-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Blessing of Chayula",
@@ -488,7 +531,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-chayula",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -499,7 +543,8 @@ export const BlessingFlips = [
         "detailsId": "presence-of-chayula-onyx-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -513,7 +558,8 @@ export const BlessingFlips = [
         "detailsId": "the-red-dream-crimson-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Blessing of Chayula",
@@ -522,7 +568,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-chayula",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -533,7 +580,8 @@ export const BlessingFlips = [
         "detailsId": "the-red-nightmare-crimson-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       }
     ]
   },
@@ -547,7 +595,8 @@ export const BlessingFlips = [
         "detailsId": "the-green-dream-viridian-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Blessing of Chayula",
@@ -556,7 +605,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-chayula",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -567,7 +617,8 @@ export const BlessingFlips = [
         "detailsId": "the-green-nightmare-viridian-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       }
     ]
   },
@@ -581,7 +632,8 @@ export const BlessingFlips = [
         "detailsId": "the-blue-dream-cobalt-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Blessing of Chayula",
@@ -590,7 +642,8 @@ export const BlessingFlips = [
         "detailsId": "blessing-of-chayula",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ],
     "revenueItems": [
@@ -601,7 +654,8 @@ export const BlessingFlips = [
         "detailsId": "the-blue-nightmare-cobalt-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       }
     ]
   }

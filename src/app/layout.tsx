@@ -12,10 +12,10 @@ export default async function RootLayout({
 }) {
   const ninjaIndexState = await fetchNinjaIndex();
   return (
-    <html lang="en" className={clsx(notoSans.className, "prose dark:prose-invert max-w-none")}>
-      <body className='flex flex-col min-h-screen dark:bg-slate-800 max-w-screen'>
+    <html lang="en" className={clsx(notoSans.className, "prose-invert max-w-none")}>
+      <body className='flex flex-col min-h-screen bg-base-300 max-w-screen'>
         <PageHeader ninjaIndexState={ninjaIndexState} />
-        <main className='container mx-auto grow overflow-x-auto'>
+        <main className='container mx-auto grow w-full '>
           {children}
         </main>
       </body>

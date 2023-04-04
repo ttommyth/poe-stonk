@@ -11,7 +11,8 @@ export const Legion = [
         "detailsId": "timeless-eternal-emblem",
         "count": 1,
         "total": 92,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Vaal Emblem",
@@ -20,7 +21,8 @@ export const Legion = [
         "detailsId": "timeless-vaal-emblem",
         "count": 1,
         "total": 92,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Karui Emblem",
@@ -29,7 +31,8 @@ export const Legion = [
         "detailsId": "timeless-karui-emblem",
         "count": 1,
         "total": 92,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Templar Emblem",
@@ -38,7 +41,8 @@ export const Legion = [
         "detailsId": "timeless-templar-emblem",
         "count": 1,
         "total": 92,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Maraketh Emblem",
@@ -47,7 +51,8 @@ export const Legion = [
         "detailsId": "timeless-maraketh-emblem",
         "count": 1,
         "total": 92,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -58,7 +63,8 @@ export const Legion = [
         "detailsId": "militant-faith-timeless-jewel",
         "count": 63,
         "total": 92,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Glorious Vanity",
@@ -67,7 +73,8 @@ export const Legion = [
         "detailsId": "glorious-vanity-timeless-jewel",
         "count": 64,
         "total": 92,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Lethal Pride",
@@ -76,7 +83,8 @@ export const Legion = [
         "detailsId": "lethal-pride-timeless-jewel",
         "count": 65,
         "total": 92,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Brutal Restraint",
@@ -85,7 +93,8 @@ export const Legion = [
         "detailsId": "brutal-restraint-timeless-jewel",
         "count": 64,
         "total": 92,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Elegant Hubris",
@@ -94,7 +103,8 @@ export const Legion = [
         "detailsId": "elegant-hubris-timeless-jewel",
         "count": 62,
         "total": 92,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Geomancer's Incubator",
@@ -103,7 +113,8 @@ export const Legion = [
         "detailsId": "geomancers-incubator",
         "count": 33,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Thaumaturge's Incubator",
@@ -112,7 +123,8 @@ export const Legion = [
         "detailsId": "thaumaturges-incubator",
         "count": 37,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Fragmented Incubator",
@@ -121,7 +133,8 @@ export const Legion = [
         "detailsId": "fragmented-incubator",
         "count": 195,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Time-Lost Incubator",
@@ -129,7 +142,8 @@ export const Legion = [
         "mapTier": 0,
         "detailsId": "time-lost-incubator",
         "count": 31,
-        "total": 92
+        "total": 92,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Fossilised Incubator",
@@ -138,7 +152,8 @@ export const Legion = [
         "detailsId": "fossilised-incubator",
         "count": 168,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Ornate Incubator",
@@ -147,7 +162,8 @@ export const Legion = [
         "detailsId": "ornate-incubator",
         "count": 164,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Skittering Incubator",
@@ -156,7 +172,8 @@ export const Legion = [
         "detailsId": "skittering-incubator",
         "count": 182,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Diviner's Incubator",
@@ -165,7 +182,8 @@ export const Legion = [
         "detailsId": "diviners-incubator",
         "count": 192,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Foreboding Incubator",
@@ -174,7 +192,8 @@ export const Legion = [
         "detailsId": "foreboding-incubator",
         "count": 122,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Otherworldly Incubator",
@@ -183,7 +202,8 @@ export const Legion = [
         "detailsId": "otherworldly-incubator",
         "count": 68,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Obscured Incubator",
@@ -192,7 +212,8 @@ export const Legion = [
         "detailsId": "obscured-incubator",
         "count": 134,
         "total": 92,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ]
   }

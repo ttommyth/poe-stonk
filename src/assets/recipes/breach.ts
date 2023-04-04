@@ -11,7 +11,8 @@ export const Breach = [
         "detailsId": "tuls-breachstone",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -22,7 +23,8 @@ export const Breach = [
         "detailsId": "blessing-of-tul",
         "count": 51,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Tulborn",
@@ -31,7 +33,8 @@ export const Breach = [
         "detailsId": "tulborn-spiraled-wand",
         "count": 33,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "The Halcyon",
@@ -40,7 +43,8 @@ export const Breach = [
         "detailsId": "the-halcyon-jade-amulet",
         "count": 3,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "The Snowblind Grace",
@@ -49,7 +53,8 @@ export const Breach = [
         "detailsId": "the-snowblind-grace-coronal-leather",
         "count": 17,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "The Escape",
@@ -58,7 +63,8 @@ export const Breach = [
         "detailsId": "the-escape",
         "count": 3,
         "total": 100,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Maven's Invitation: The Hidden",
@@ -67,7 +73,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 21,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Twisted",
@@ -76,7 +83,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-twisted",
         "count": 2,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Formed",
@@ -85,7 +93,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 1,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ]
   },
@@ -99,7 +108,8 @@ export const Breach = [
         "detailsId": "eshs-breachstone",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -110,7 +120,8 @@ export const Breach = [
         "detailsId": "blessing-of-esh",
         "count": 55,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Hand of Thought and Motion",
@@ -119,7 +130,8 @@ export const Breach = [
         "detailsId": "hand-of-thought-and-motion-blinder",
         "count": 29,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Esh's Mirror",
@@ -128,7 +140,8 @@ export const Breach = [
         "detailsId": "eshs-mirror-thorium-spirit-shield",
         "count": 14,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Voice of the Storm",
@@ -137,7 +150,8 @@ export const Breach = [
         "detailsId": "voice-of-the-storm-lapis-amulet",
         "count": 9,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "The Escape",
@@ -146,7 +160,8 @@ export const Breach = [
         "detailsId": "the-escape",
         "count": 3,
         "total": 100,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Maven's Invitation: The Hidden",
@@ -155,7 +170,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 21,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Twisted",
@@ -164,7 +180,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-twisted",
         "count": 2,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Formed",
@@ -173,7 +190,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 1,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ]
   },
@@ -187,7 +205,8 @@ export const Breach = [
         "detailsId": "xophs-breachstone",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -198,7 +217,8 @@ export const Breach = [
         "detailsId": "blessing-of-xoph",
         "count": 49,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Xoph's Inception",
@@ -207,7 +227,8 @@ export const Breach = [
         "detailsId": "xophs-inception-bone-bow",
         "count": 33,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "The Formless Flame",
@@ -216,7 +237,8 @@ export const Breach = [
         "detailsId": "the-formless-flame-siege-helmet",
         "count": 11,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Xoph's Heart",
@@ -225,7 +247,8 @@ export const Breach = [
         "detailsId": "xophs-heart-amber-amulet",
         "count": 3,
         "total": 100,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "The Escape",
@@ -234,7 +257,8 @@ export const Breach = [
         "detailsId": "the-escape",
         "count": 6,
         "total": 100,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Maven's Invitation: The Hidden",
@@ -243,7 +267,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 21,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Twisted",
@@ -252,7 +277,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-twisted",
         "count": 2,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Formed",
@@ -261,7 +287,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 1,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ]
   },
@@ -275,7 +302,8 @@ export const Breach = [
         "detailsId": "uul-netols-breachstone",
         "count": 1,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -286,7 +314,8 @@ export const Breach = [
         "detailsId": "blessing-of-uul-netol",
         "count": 45,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Uul-Netol's Kiss",
@@ -295,7 +324,8 @@ export const Breach = [
         "detailsId": "uul-netols-kiss-labrys",
         "count": 10,
         "total": 100,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "The Infinite Pursuit",
@@ -304,7 +334,8 @@ export const Breach = [
         "detailsId": "the-infinite-pursuit-goliath-greaves",
         "count": 41,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "The Anticipation",
@@ -313,7 +344,8 @@ export const Breach = [
         "detailsId": "the-anticipation-ezomyte-tower-shield",
         "count": 7,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "The Escape",
@@ -322,7 +354,8 @@ export const Breach = [
         "detailsId": "the-escape",
         "count": 3,
         "total": 100,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Maven's Invitation: The Hidden",
@@ -331,7 +364,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 21,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Twisted",
@@ -340,7 +374,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-twisted",
         "count": 2,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Formed",
@@ -349,7 +384,8 @@ export const Breach = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 1,
         "total": 100,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ]
   },
@@ -363,7 +399,8 @@ export const Breach = [
         "detailsId": "chayulas-breachstone",
         "count": 1,
         "total": 342,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ],
     "revenueItems": [
@@ -374,7 +411,8 @@ export const Breach = [
         "detailsId": "blessing-of-chayula",
         "count": 171,
         "total": 342,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Skin of the Loyal",
@@ -383,7 +421,8 @@ export const Breach = [
         "detailsId": "skin-of-the-loyal-simple-robe-6l",
         "count": 154,
         "total": 342,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Severed in Sleep",
@@ -392,7 +431,8 @@ export const Breach = [
         "detailsId": "severed-in-sleep-cutlass",
         "count": 86,
         "total": 342,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "The Red Dream",
@@ -401,7 +441,8 @@ export const Breach = [
         "detailsId": "the-red-dream-crimson-jewel",
         "count": 22,
         "total": 342,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "The Green Dream",
@@ -410,7 +451,8 @@ export const Breach = [
         "detailsId": "the-green-dream-viridian-jewel",
         "count": 16,
         "total": 342,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "The Blue Dream",
@@ -419,7 +461,8 @@ export const Breach = [
         "detailsId": "the-blue-dream-cobalt-jewel",
         "count": 26,
         "total": 342,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "The Escape",
@@ -428,7 +471,8 @@ export const Breach = [
         "detailsId": "the-escape",
         "count": 9,
         "total": 342,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ]
   }

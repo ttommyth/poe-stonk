@@ -11,7 +11,8 @@ export const DivinationFlips = [
         "detailsId": "the-doctor",
         "count": 8,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -22,7 +23,8 @@ export const DivinationFlips = [
         "detailsId": "headhunter-leather-belt",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -36,7 +38,8 @@ export const DivinationFlips = [
         "detailsId": "the-fiend",
         "count": 11,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -47,7 +50,8 @@ export const DivinationFlips = [
         "detailsId": "headhunter-leather-belt",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -61,14 +65,16 @@ export const DivinationFlips = [
         "detailsId": "beauty-through-death",
         "count": 5,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
       {
         "name": "The Queen's Sacrifice",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ]
   },
@@ -82,7 +88,8 @@ export const DivinationFlips = [
         "detailsId": "succor-of-the-sinless",
         "count": 6,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -93,7 +100,8 @@ export const DivinationFlips = [
         "detailsId": "bottled-faith",
         "count": 1,
         "total": 1,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       }
     ]
   },
@@ -107,7 +115,8 @@ export const DivinationFlips = [
         "detailsId": "the-immortal",
         "count": 10,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -118,7 +127,8 @@ export const DivinationFlips = [
         "detailsId": "house-of-mirrors",
         "count": 1,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ]
   },
@@ -132,7 +142,8 @@ export const DivinationFlips = [
         "detailsId": "the-craving",
         "count": 4,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -143,7 +154,8 @@ export const DivinationFlips = [
         "detailsId": "unending-hunger-cobalt-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       }
     ]
   },
@@ -153,14 +165,16 @@ export const DivinationFlips = [
       {
         "name": "The Iron Bard",
         "count": 9,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
       {
         "name": "Trash to Treasure",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ]
   },
@@ -174,14 +188,16 @@ export const DivinationFlips = [
         "detailsId": "immortal-resolve",
         "count": 6,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
       {
         "name": "Fated Connections",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ]
   },
@@ -195,7 +211,8 @@ export const DivinationFlips = [
         "detailsId": "pride-of-the-first-ones",
         "count": 7,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -206,7 +223,8 @@ export const DivinationFlips = [
         "detailsId": "farruls-fur-triumphant-lamellar",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -220,7 +238,8 @@ export const DivinationFlips = [
         "detailsId": "seven-years-bad-luck",
         "count": 13,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -231,7 +250,8 @@ export const DivinationFlips = [
         "detailsId": "mirror-shard",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -245,7 +265,8 @@ export const DivinationFlips = [
         "detailsId": "the-world-eater",
         "count": 16,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -256,7 +277,8 @@ export const DivinationFlips = [
         "detailsId": "starforge-infernal-sword",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -270,7 +292,8 @@ export const DivinationFlips = [
         "detailsId": "the-brittle-emperor",
         "count": 8,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -281,7 +304,8 @@ export const DivinationFlips = [
         "detailsId": "volls-devotion-agate-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -295,7 +319,8 @@ export const DivinationFlips = [
         "detailsId": "the-life-thief",
         "count": 6,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -306,7 +331,8 @@ export const DivinationFlips = [
         "detailsId": "zerphis-heart-paua-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -320,7 +346,8 @@ export const DivinationFlips = [
         "detailsId": "the-nurse",
         "count": 8,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -331,7 +358,8 @@ export const DivinationFlips = [
         "detailsId": "the-doctor",
         "count": 1,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ]
   },
@@ -345,7 +373,8 @@ export const DivinationFlips = [
         "detailsId": "the-queen",
         "count": 16,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -356,7 +385,8 @@ export const DivinationFlips = [
         "detailsId": "atziris-acuity-vaal-gauntlets",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -370,7 +400,8 @@ export const DivinationFlips = [
         "detailsId": "the-spark-and-the-flame",
         "count": 2,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -381,7 +412,8 @@ export const DivinationFlips = [
         "detailsId": "bereks-respite-two-stone-ring",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -395,7 +427,8 @@ export const DivinationFlips = [
         "detailsId": "the-damned",
         "count": 6,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -406,7 +439,8 @@ export const DivinationFlips = [
         "detailsId": "soul-ripper",
         "count": 1,
         "total": 1,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       }
     ]
   },
@@ -420,7 +454,8 @@ export const DivinationFlips = [
         "detailsId": "the-escape",
         "count": 5,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -431,7 +466,8 @@ export const DivinationFlips = [
         "detailsId": "seven-league-step-rawhide-boots",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -445,7 +481,8 @@ export const DivinationFlips = [
         "detailsId": "the-wolven-kings-bite",
         "count": 8,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -456,7 +493,8 @@ export const DivinationFlips = [
         "detailsId": "rigwalds-quills-two-point-arrow-quiver",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -470,7 +508,8 @@ export const DivinationFlips = [
         "detailsId": "hunters-reward",
         "count": 3,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -481,7 +520,8 @@ export const DivinationFlips = [
         "detailsId": "the-taming-prismatic-ring",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -495,7 +535,8 @@ export const DivinationFlips = [
         "detailsId": "the-last-one-standing",
         "count": 10,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -506,7 +547,8 @@ export const DivinationFlips = [
         "detailsId": "atziris-disfavour-vaal-axe",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -520,7 +562,8 @@ export const DivinationFlips = [
         "detailsId": "burning-blood",
         "count": 6,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -531,7 +574,8 @@ export const DivinationFlips = [
         "detailsId": "xophs-blood-amber-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -545,7 +589,8 @@ export const DivinationFlips = [
         "detailsId": "the-polymath",
         "count": 3,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -556,7 +601,8 @@ export const DivinationFlips = [
         "detailsId": "astramentis-onyx-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -570,7 +616,8 @@ export const DivinationFlips = [
         "detailsId": "the-soul",
         "count": 9,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -581,7 +628,8 @@ export const DivinationFlips = [
         "detailsId": "soul-taker-siege-axe",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -595,14 +643,16 @@ export const DivinationFlips = [
         "detailsId": "the-mad-king",
         "count": 7,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
       {
         "name": "The King's Path",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ]
   },
@@ -616,7 +666,8 @@ export const DivinationFlips = [
         "detailsId": "the-hunger",
         "count": 9,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -627,7 +678,8 @@ export const DivinationFlips = [
         "detailsId": "taste-of-hate",
         "count": 1,
         "total": 1,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       }
     ]
   },
@@ -641,7 +693,8 @@ export const DivinationFlips = [
         "detailsId": "the-kings-heart",
         "count": 8,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -652,7 +705,8 @@ export const DivinationFlips = [
         "detailsId": "kaoms-heart-glorious-plate",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -666,7 +720,8 @@ export const DivinationFlips = [
         "detailsId": "the-eye-of-terror",
         "count": 8,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -677,7 +732,8 @@ export const DivinationFlips = [
         "detailsId": "chayulas-pure-breachstone",
         "count": 1,
         "total": 1,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ]
   },
@@ -691,7 +747,8 @@ export const DivinationFlips = [
         "detailsId": "the-hoarder",
         "count": 12,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -702,7 +759,8 @@ export const DivinationFlips = [
         "detailsId": "exalted-orb",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -716,7 +774,8 @@ export const DivinationFlips = [
         "detailsId": "last-hope",
         "count": 3,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -727,7 +786,8 @@ export const DivinationFlips = [
         "detailsId": "mortal-hope",
         "count": 1,
         "total": 1,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ]
   },
@@ -741,7 +801,8 @@ export const DivinationFlips = [
         "detailsId": "the-journey",
         "count": 3,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -752,7 +813,8 @@ export const DivinationFlips = [
         "detailsId": "harbingers-orb",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -766,7 +828,8 @@ export const DivinationFlips = [
         "detailsId": "the-deep-ones",
         "count": 5,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -777,7 +840,8 @@ export const DivinationFlips = [
         "detailsId": "tidebreaker-imperial-maul",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -787,14 +851,16 @@ export const DivinationFlips = [
       {
         "name": "The Valley of Steel Boxes",
         "count": 9,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
       {
         "name": "Monstrous Treasure",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ]
   },
@@ -808,7 +874,8 @@ export const DivinationFlips = [
         "detailsId": "the-thaumaturgist",
         "count": 8,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -819,7 +886,8 @@ export const DivinationFlips = [
         "detailsId": "shavronnes-revelation-moonstone-ring",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -833,7 +901,8 @@ export const DivinationFlips = [
         "detailsId": "pride-before-the-fall",
         "count": 8,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -844,7 +913,8 @@ export const DivinationFlips = [
         "detailsId": "kaoms-heart-glorious-plate",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -858,7 +928,8 @@ export const DivinationFlips = [
         "detailsId": "demigods-wager",
         "count": 7,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -869,7 +940,8 @@ export const DivinationFlips = [
         "detailsId": "orb-of-annulment",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -883,7 +955,8 @@ export const DivinationFlips = [
         "detailsId": "the-wind",
         "count": 7,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -894,7 +967,8 @@ export const DivinationFlips = [
         "detailsId": "windripper-imperial-bow",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -908,7 +982,8 @@ export const DivinationFlips = [
         "detailsId": "the-seeker",
         "count": 9,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -919,7 +994,8 @@ export const DivinationFlips = [
         "detailsId": "orb-of-annulment",
         "count": 3,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -933,7 +1009,8 @@ export const DivinationFlips = [
         "detailsId": "the-union",
         "count": 7,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -944,7 +1021,8 @@ export const DivinationFlips = [
         "detailsId": "gemcutters-prism",
         "count": 10,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -958,7 +1036,8 @@ export const DivinationFlips = [
         "detailsId": "underground-forest",
         "count": 4,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -969,7 +1048,8 @@ export const DivinationFlips = [
         "detailsId": "awakened-sextant",
         "count": 10,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -983,7 +1063,8 @@ export const DivinationFlips = [
         "detailsId": "the-innocent",
         "count": 10,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -994,7 +1075,8 @@ export const DivinationFlips = [
         "detailsId": "orb-of-regret",
         "count": 40,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -1004,14 +1086,16 @@ export const DivinationFlips = [
       {
         "name": "The Mayor",
         "count": 5,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
       {
         "name": "The Perandus Manor",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ]
   },
@@ -1025,7 +1109,8 @@ export const DivinationFlips = [
         "detailsId": "the-saints-treasure",
         "count": 10,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -1036,7 +1121,8 @@ export const DivinationFlips = [
         "detailsId": "exalted-orb",
         "count": 2,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -1046,14 +1132,16 @@ export const DivinationFlips = [
       {
         "name": "Squandered Prosperity",
         "count": 5,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
       {
         "name": "The Perandus Manor",
         "count": 1,
-        "total": 1
+        "total": 1,
+        "ninjaTypeGroup": "item"
       }
     ]
   },
@@ -1067,7 +1155,8 @@ export const DivinationFlips = [
         "detailsId": "abandoned-wealth",
         "count": 5,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -1078,7 +1167,8 @@ export const DivinationFlips = [
         "detailsId": "exalted-orb",
         "count": 3,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -1092,7 +1182,8 @@ export const DivinationFlips = [
         "detailsId": "the-demon",
         "count": 10,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -1103,7 +1194,8 @@ export const DivinationFlips = [
         "detailsId": "headhunter-leather-belt",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -1117,7 +1209,8 @@ export const DivinationFlips = [
         "detailsId": "house-of-mirrors",
         "count": 9,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -1128,7 +1221,8 @@ export const DivinationFlips = [
         "detailsId": "mirror-of-kalandra",
         "count": 1,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -1142,7 +1236,8 @@ export const DivinationFlips = [
         "detailsId": "alluring-bounty",
         "count": 7,
         "total": 1,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       }
     ],
     "revenueItems": [
@@ -1153,7 +1248,8 @@ export const DivinationFlips = [
         "detailsId": "exalted-orb",
         "count": 10,
         "total": 1,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   }

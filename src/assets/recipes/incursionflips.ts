@@ -11,7 +11,8 @@ export const IncursionFlips = [
         "detailsId": "apeps-slumber-vaal-spirit-shield",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Vial of Awakening",
@@ -20,7 +21,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-awakening",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -31,7 +33,8 @@ export const IncursionFlips = [
         "detailsId": "apeps-supremacy-vaal-spirit-shield",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -45,7 +48,8 @@ export const IncursionFlips = [
         "detailsId": "cowards-chains-chain-belt",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Vial of Consequence",
@@ -54,7 +58,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-consequence",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -65,7 +70,8 @@ export const IncursionFlips = [
         "detailsId": "cowards-legacy-chain-belt",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   },
@@ -79,7 +85,8 @@ export const IncursionFlips = [
         "detailsId": "architects-hand-ambush-mitts",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Vial of Dominance",
@@ -88,7 +95,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-dominance",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -99,7 +107,8 @@ export const IncursionFlips = [
         "detailsId": "slavedrivers-hand-ambush-mitts",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -113,7 +122,8 @@ export const IncursionFlips = [
         "detailsId": "story-of-the-vaal-gemstone-sword",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Vial of Fate",
@@ -122,7 +132,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-fate",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -133,7 +144,8 @@ export const IncursionFlips = [
         "detailsId": "fate-of-the-vaal-gemstone-sword",
         "count": 1,
         "total": 1,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ]
   },
@@ -147,7 +159,8 @@ export const IncursionFlips = [
         "detailsId": "mask-of-the-spirit-drinker-magistrate-crown",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Vial of Summoning",
@@ -156,7 +169,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-summoning",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -167,7 +181,8 @@ export const IncursionFlips = [
         "detailsId": "mask-of-the-stitched-demon-magistrate-crown",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -181,7 +196,8 @@ export const IncursionFlips = [
         "detailsId": "dance-of-the-offered-carnal-boots",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Vial of the Ritual",
@@ -190,7 +206,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-the-ritual",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -201,7 +218,8 @@ export const IncursionFlips = [
         "detailsId": "omeyocan-carnal-boots",
         "count": 1,
         "total": 1,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ]
   },
@@ -215,7 +233,8 @@ export const IncursionFlips = [
         "detailsId": "tempered-flesh-crimson-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Vial of Transcendence",
@@ -224,7 +243,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-transcendence",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -235,7 +255,8 @@ export const IncursionFlips = [
         "detailsId": "transcendent-flesh-crimson-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       }
     ]
   },
@@ -249,7 +270,8 @@ export const IncursionFlips = [
         "detailsId": "tempered-spirit-viridian-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Vial of Transcendence",
@@ -258,7 +280,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-transcendence",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -269,7 +292,8 @@ export const IncursionFlips = [
         "detailsId": "transcendent-spirit-viridian-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       }
     ]
   },
@@ -283,7 +307,8 @@ export const IncursionFlips = [
         "detailsId": "tempered-mind-cobalt-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Vial of Transcendence",
@@ -292,7 +317,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-transcendence",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -303,7 +329,8 @@ export const IncursionFlips = [
         "detailsId": "transcendent-mind-cobalt-jewel",
         "count": 1,
         "total": 1,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       }
     ]
   },
@@ -317,7 +344,8 @@ export const IncursionFlips = [
         "detailsId": "soul-catcher",
         "count": 1,
         "total": 1,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       },
       {
         "name": "Vial of the Ghost",
@@ -326,7 +354,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-the-ghost",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -337,7 +366,8 @@ export const IncursionFlips = [
         "detailsId": "soul-ripper",
         "count": 1,
         "total": 1,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       }
     ]
   },
@@ -351,7 +381,8 @@ export const IncursionFlips = [
         "detailsId": "sacrificial-heart-paua-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Vial of Sacrifice",
@@ -360,7 +391,8 @@ export const IncursionFlips = [
         "detailsId": "vial-of-sacrifice",
         "count": 1,
         "total": 1,
-        "type": "Vial"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Vial"
       }
     ],
     "revenueItems": [
@@ -371,7 +403,8 @@ export const IncursionFlips = [
         "detailsId": "zerphis-heart-paua-amulet",
         "count": 1,
         "total": 1,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ]
   }

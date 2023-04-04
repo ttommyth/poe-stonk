@@ -11,7 +11,8 @@ export const Scrab = [
         "detailsId": "rusted-legion-scarab",
         "count": 1,
         "total": 100,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       }
     ],
     "revenueItems": [
@@ -22,7 +23,8 @@ export const Scrab = [
         "detailsId": "timeless-maraketh-emblem",
         "count": 0.93,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Templar Emblem",
@@ -31,7 +33,8 @@ export const Scrab = [
         "detailsId": "timeless-templar-emblem",
         "count": 1.29,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Vaal Emblem",
@@ -40,7 +43,8 @@ export const Scrab = [
         "detailsId": "timeless-vaal-emblem",
         "count": 2.82,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Karui Emblem",
@@ -49,7 +53,8 @@ export const Scrab = [
         "detailsId": "timeless-karui-emblem",
         "count": 3.58,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Eternal Emblem",
@@ -58,7 +63,8 @@ export const Scrab = [
         "detailsId": "timeless-eternal-emblem",
         "count": 4.07,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Geomancer's Incubator",
@@ -67,7 +73,8 @@ export const Scrab = [
         "detailsId": "geomancers-incubator",
         "count": 4,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Thaumaturge's Incubator",
@@ -76,7 +83,8 @@ export const Scrab = [
         "detailsId": "thaumaturges-incubator",
         "count": 1,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Time-Lost Incubator",
@@ -84,7 +92,8 @@ export const Scrab = [
         "mapTier": 0,
         "detailsId": "time-lost-incubator",
         "count": 3,
-        "total": 100
+        "total": 100,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Fossilised Incubator",
@@ -93,7 +102,8 @@ export const Scrab = [
         "detailsId": "fossilised-incubator",
         "count": 8,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Ornate Incubator",
@@ -102,7 +112,8 @@ export const Scrab = [
         "detailsId": "ornate-incubator",
         "count": 14,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Skittering Incubator",
@@ -111,7 +122,8 @@ export const Scrab = [
         "detailsId": "skittering-incubator",
         "count": 12,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Diviner's Incubator",
@@ -120,7 +132,8 @@ export const Scrab = [
         "detailsId": "diviners-incubator",
         "count": 7,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Foreboding Incubator",
@@ -129,7 +142,8 @@ export const Scrab = [
         "detailsId": "foreboding-incubator",
         "count": 3,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Mysterious Incubator",
@@ -138,7 +152,8 @@ export const Scrab = [
         "detailsId": "mysterious-incubator",
         "count": 11,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Obscured Incubator",
@@ -147,7 +162,8 @@ export const Scrab = [
         "detailsId": "obscured-incubator",
         "count": 6,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ]
   },
@@ -161,7 +177,8 @@ export const Scrab = [
         "detailsId": "gilded-legion-scarab",
         "count": 1,
         "total": 100,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       }
     ],
     "revenueItems": [
@@ -172,7 +189,8 @@ export const Scrab = [
         "detailsId": "timeless-maraketh-emblem",
         "count": 4.94,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Templar Emblem",
@@ -181,7 +199,8 @@ export const Scrab = [
         "detailsId": "timeless-templar-emblem",
         "count": 5.34,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Vaal Emblem",
@@ -190,7 +209,8 @@ export const Scrab = [
         "detailsId": "timeless-vaal-emblem",
         "count": 9.26,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Karui Emblem",
@@ -199,7 +219,8 @@ export const Scrab = [
         "detailsId": "timeless-karui-emblem",
         "count": 11.79,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Timeless Eternal Emblem",
@@ -208,7 +229,8 @@ export const Scrab = [
         "detailsId": "timeless-eternal-emblem",
         "count": 11.72,
         "total": 100,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Geomancer's Incubator",
@@ -217,7 +239,8 @@ export const Scrab = [
         "detailsId": "geomancers-incubator",
         "count": 3,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Thaumaturge's Incubator",
@@ -226,7 +249,8 @@ export const Scrab = [
         "detailsId": "thaumaturges-incubator",
         "count": 3,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Time-Lost Incubator",
@@ -234,7 +258,8 @@ export const Scrab = [
         "mapTier": 0,
         "detailsId": "time-lost-incubator",
         "count": 6,
-        "total": 100
+        "total": 100,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Fossilised Incubator",
@@ -243,7 +268,8 @@ export const Scrab = [
         "detailsId": "fossilised-incubator",
         "count": 19,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Ornate Incubator",
@@ -252,7 +278,8 @@ export const Scrab = [
         "detailsId": "ornate-incubator",
         "count": 11,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Skittering Incubator",
@@ -261,7 +288,8 @@ export const Scrab = [
         "detailsId": "skittering-incubator",
         "count": 17,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Diviner's Incubator",
@@ -270,7 +298,8 @@ export const Scrab = [
         "detailsId": "diviners-incubator",
         "count": 15,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Foreboding Incubator",
@@ -279,7 +308,8 @@ export const Scrab = [
         "detailsId": "foreboding-incubator",
         "count": 9,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Mysterious Incubator",
@@ -288,7 +318,8 @@ export const Scrab = [
         "detailsId": "mysterious-incubator",
         "count": 14,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       },
       {
         "name": "Obscured Incubator",
@@ -297,7 +328,8 @@ export const Scrab = [
         "detailsId": "obscured-incubator",
         "count": 9,
         "total": 100,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ]
   },
@@ -311,7 +343,8 @@ export const Scrab = [
         "detailsId": "gilded-bestiary-scarab",
         "count": 1,
         "total": 100,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       }
     ],
     "revenueItems": [
@@ -322,7 +355,8 @@ export const Scrab = [
         "detailsId": "farric-tiger-alpha",
         "count": 0,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Craicic Spider Crab",
@@ -331,7 +365,8 @@ export const Scrab = [
         "detailsId": "craicic-spider-crab",
         "count": 2,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Fenumal Hybrid Arachnid",
@@ -340,7 +375,8 @@ export const Scrab = [
         "detailsId": "fenumal-hybrid-arachnid",
         "count": 1,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Saqawine Rhex",
@@ -349,7 +385,8 @@ export const Scrab = [
         "detailsId": "saqawine-rhex",
         "count": 4,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Farric Frost Hellion Alpha",
@@ -358,7 +395,8 @@ export const Scrab = [
         "detailsId": "farric-frost-hellion-alpha",
         "count": 12,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Farric Lynx Alpha",
@@ -367,7 +405,8 @@ export const Scrab = [
         "detailsId": "farric-lynx-alpha",
         "count": 7,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Farric Wolf Alpha",
@@ -376,7 +415,8 @@ export const Scrab = [
         "detailsId": "farric-wolf-alpha",
         "count": 4,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Craicic Chimeral",
@@ -385,7 +425,8 @@ export const Scrab = [
         "detailsId": "craicic-chimeral",
         "count": 3,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Fenumal Plagued Arachnid",
@@ -394,7 +435,8 @@ export const Scrab = [
         "detailsId": "fenumal-plagued-arachnid",
         "count": 4,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Farric Ape",
@@ -403,7 +445,8 @@ export const Scrab = [
         "detailsId": "farric-ape",
         "count": 4,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       },
       {
         "name": "Saqawine Vulture",
@@ -412,7 +455,8 @@ export const Scrab = [
         "detailsId": "saqawine-vulture",
         "count": 2,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ]
   },
@@ -426,7 +470,8 @@ export const Scrab = [
         "detailsId": "rusted-metamorph-scarab",
         "count": 1,
         "total": 100,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       }
     ],
     "revenueItems": [
@@ -437,7 +482,8 @@ export const Scrab = [
         "detailsId": "fertile-catalyst",
         "count": 12,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Prismatic Catalyst",
@@ -446,7 +492,8 @@ export const Scrab = [
         "detailsId": "prismatic-catalyst",
         "count": 21,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Tempering Catalyst",
@@ -455,7 +502,8 @@ export const Scrab = [
         "detailsId": "tempering-catalyst",
         "count": 21,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Turbulent Catalyst",
@@ -464,7 +512,8 @@ export const Scrab = [
         "detailsId": "turbulent-catalyst",
         "count": 70,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Abrasive Catalyst",
@@ -473,7 +522,8 @@ export const Scrab = [
         "detailsId": "abrasive-catalyst",
         "count": 81,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Intrinsic Catalyst",
@@ -482,7 +532,8 @@ export const Scrab = [
         "detailsId": "intrinsic-catalyst",
         "count": 143,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Imbued Catalyst",
@@ -491,7 +542,8 @@ export const Scrab = [
         "detailsId": "imbued-catalyst",
         "count": 64,
         "total": 100,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   }

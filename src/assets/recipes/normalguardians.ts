@@ -11,7 +11,8 @@ export const NormalGuardians = [
         "detailsId": "lair-of-the-hydra-map-t16-gen-13",
         "variant": ", Gen-13",
         "count": 1,
-        "total": 101
+        "total": 101,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
@@ -22,7 +23,8 @@ export const NormalGuardians = [
         "detailsId": "fragment-of-the-hydra",
         "count": 101,
         "total": 101,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Snakepit",
@@ -31,7 +33,8 @@ export const NormalGuardians = [
         "detailsId": "snakepit-sapphire-ring",
         "count": 1,
         "total": 101,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Slivertongue",
@@ -40,7 +43,8 @@ export const NormalGuardians = [
         "detailsId": "slivertongue-harbinger-bow",
         "count": 3,
         "total": 101,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Perfection",
@@ -49,7 +53,8 @@ export const NormalGuardians = [
         "detailsId": "perfection",
         "count": 1,
         "total": 101,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Maven's Invitation: The Forgotten",
@@ -58,7 +63,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-forgotten",
         "count": 1.01,
         "total": 101,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Hidden",
@@ -67,7 +73,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 1.01,
         "total": 101,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Twisted",
@@ -76,7 +83,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-twisted",
         "count": 1.01,
         "total": 101,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Formed",
@@ -85,7 +93,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 21.21,
         "total": 101,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ]
   },
@@ -99,7 +108,8 @@ export const NormalGuardians = [
         "detailsId": "maze-of-the-minotaur-map-t16-gen-13",
         "variant": ", Gen-13",
         "count": 1,
-        "total": 77
+        "total": 77,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
@@ -110,7 +120,8 @@ export const NormalGuardians = [
         "detailsId": "the-brass-dome-gladiator-plate",
         "count": 4,
         "total": 77,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Brain Rattler",
@@ -119,7 +130,8 @@ export const NormalGuardians = [
         "detailsId": "brain-rattler-meatgrinder",
         "count": 4,
         "total": 77,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Fragment of the Minotaur",
@@ -128,7 +140,8 @@ export const NormalGuardians = [
         "detailsId": "fragment-of-the-minotaur",
         "count": 77,
         "total": 77,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Perfection",
@@ -137,7 +150,8 @@ export const NormalGuardians = [
         "detailsId": "perfection",
         "count": 2,
         "total": 77,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Maven's Invitation: The Forgotten",
@@ -146,7 +160,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-forgotten",
         "count": 0.77,
         "total": 77,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Hidden",
@@ -155,7 +170,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 0.77,
         "total": 77,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Twisted",
@@ -164,7 +180,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-twisted",
         "count": 0.77,
         "total": 77,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Formed",
@@ -173,7 +190,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 16.17,
         "total": 77,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ]
   },
@@ -187,7 +205,8 @@ export const NormalGuardians = [
         "detailsId": "pit-of-the-chimera-map-t16-gen-13",
         "variant": ", Gen-13",
         "count": 1,
-        "total": 20
+        "total": 20,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
@@ -198,7 +217,8 @@ export const NormalGuardians = [
         "detailsId": "the-scourge-terror-claw",
         "count": 3,
         "total": 20,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Obscurantis",
@@ -207,7 +227,8 @@ export const NormalGuardians = [
         "detailsId": "obscurantis-lion-pelt",
         "count": 1,
         "total": 20,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Fragment of the Chimera",
@@ -216,7 +237,8 @@ export const NormalGuardians = [
         "detailsId": "fragment-of-the-chimera",
         "count": 20,
         "total": 20,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Perfection",
@@ -225,7 +247,8 @@ export const NormalGuardians = [
         "detailsId": "perfection",
         "count": 1,
         "total": 20,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Maven's Invitation: The Forgotten",
@@ -234,7 +257,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-forgotten",
         "count": 0.2,
         "total": 20,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Hidden",
@@ -243,7 +267,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 0.2,
         "total": 20,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Twisted",
@@ -252,7 +277,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-twisted",
         "count": 0.2,
         "total": 20,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Formed",
@@ -261,7 +287,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 4.2,
         "total": 20,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ]
   },
@@ -275,7 +302,8 @@ export const NormalGuardians = [
         "detailsId": "forge-of-the-phoenix-map-t16-gen-13",
         "variant": ", Gen-13",
         "count": 1,
-        "total": 104
+        "total": 104,
+        "ninjaTypeGroup": "item"
       }
     ],
     "revenueItems": [
@@ -286,7 +314,8 @@ export const NormalGuardians = [
         "detailsId": "fragment-of-the-phoenix",
         "count": 104,
         "total": 104,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Razor of the Seventh Sun",
@@ -295,7 +324,8 @@ export const NormalGuardians = [
         "detailsId": "razor-of-the-seventh-sun-midnight-blade",
         "count": 4,
         "total": 104,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Eye of Innocence",
@@ -304,7 +334,8 @@ export const NormalGuardians = [
         "detailsId": "eye-of-innocence-citrine-amulet",
         "count": 3,
         "total": 104,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Perfection",
@@ -313,7 +344,8 @@ export const NormalGuardians = [
         "detailsId": "perfection",
         "count": 2,
         "total": 104,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Maven's Invitation: The Forgotten",
@@ -322,7 +354,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-forgotten",
         "count": 1.04,
         "total": 104,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Hidden",
@@ -331,7 +364,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 1.04,
         "total": 104,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Twisted",
@@ -340,7 +374,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-twisted",
         "count": 1.04,
         "total": 104,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       },
       {
         "name": "Maven's Invitation: The Formed",
@@ -349,7 +384,8 @@ export const NormalGuardians = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 21.84,
         "total": 104,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ]
   }

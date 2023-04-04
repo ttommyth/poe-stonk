@@ -11,7 +11,8 @@ export const Incubators = [
         "detailsId": "fossilised-incubator",
         "count": 1,
         "total": 99,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ],
     "revenueItems": [
@@ -22,7 +23,8 @@ export const Incubators = [
         "detailsId": "scorched-fossil",
         "count": 7,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Metallic Fossil",
@@ -31,7 +33,8 @@ export const Incubators = [
         "detailsId": "metallic-fossil",
         "count": 7,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Frigid Fossil",
@@ -40,7 +43,8 @@ export const Incubators = [
         "detailsId": "frigid-fossil",
         "count": 8,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Aberrant Fossil",
@@ -49,7 +53,8 @@ export const Incubators = [
         "detailsId": "aberrant-fossil",
         "count": 7,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Pristine Fossil",
@@ -58,7 +63,8 @@ export const Incubators = [
         "detailsId": "pristine-fossil",
         "count": 6,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Lucent Fossil",
@@ -67,7 +73,8 @@ export const Incubators = [
         "detailsId": "lucent-fossil",
         "count": 2,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Jagged Fossil",
@@ -76,12 +83,14 @@ export const Incubators = [
         "detailsId": "jagged-fossil",
         "count": 5,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Encrusted Fossil",
         "count": 2,
-        "total": 99
+        "total": 99,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Dense Fossil",
@@ -90,7 +99,8 @@ export const Incubators = [
         "detailsId": "dense-fossil",
         "count": 20,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Prismatic Fossil",
@@ -99,7 +109,8 @@ export const Incubators = [
         "detailsId": "prismatic-fossil",
         "count": 2,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Aetheric Fossil",
@@ -108,7 +119,8 @@ export const Incubators = [
         "detailsId": "aetheric-fossil",
         "count": 5,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Serrated Fossil",
@@ -117,7 +129,8 @@ export const Incubators = [
         "detailsId": "serrated-fossil",
         "count": 3,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Shuddering Fossil",
@@ -126,7 +139,8 @@ export const Incubators = [
         "detailsId": "shuddering-fossil",
         "count": 2,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Gilded Fossil",
@@ -135,7 +149,8 @@ export const Incubators = [
         "detailsId": "gilded-fossil",
         "count": 6,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Bound Fossil",
@@ -144,12 +159,14 @@ export const Incubators = [
         "detailsId": "bound-fossil",
         "count": 3,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Enchanted Fossil",
         "count": 2,
-        "total": 99
+        "total": 99,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Perfect Fossil",
@@ -158,7 +175,8 @@ export const Incubators = [
         "detailsId": "perfect-fossil",
         "count": 1,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Corroded Fossil",
@@ -167,7 +185,8 @@ export const Incubators = [
         "detailsId": "corroded-fossil",
         "count": 5,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       },
       {
         "name": "Sanctified Fossil",
@@ -176,7 +195,8 @@ export const Incubators = [
         "detailsId": "sanctified-fossil",
         "count": 6,
         "total": 99,
-        "type": "Fossil"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Fossil"
       }
     ]
   },
@@ -190,7 +210,8 @@ export const Incubators = [
         "detailsId": "ornate-incubator",
         "count": 1,
         "total": 177,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ],
     "revenueItems": [
@@ -201,7 +222,8 @@ export const Incubators = [
         "detailsId": "exalted-orb",
         "count": 2,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Divine Orb",
@@ -210,7 +232,8 @@ export const Incubators = [
         "detailsId": "divine-orb",
         "count": 5,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Orb of Annulment",
@@ -219,7 +242,8 @@ export const Incubators = [
         "detailsId": "orb-of-annulment",
         "count": 11,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Regal Orb",
@@ -228,7 +252,8 @@ export const Incubators = [
         "detailsId": "regal-orb",
         "count": 3,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Vaal Orb",
@@ -237,12 +262,14 @@ export const Incubators = [
         "detailsId": "vaal-orb",
         "count": 5,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Chaos Orb",
         "count": 8,
-        "total": 177
+        "total": 177,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Blessed Orb",
@@ -251,7 +278,8 @@ export const Incubators = [
         "detailsId": "blessed-orb",
         "count": 13,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Orb of Scouring",
@@ -260,7 +288,8 @@ export const Incubators = [
         "detailsId": "orb-of-scouring",
         "count": 16,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Jeweller's Orb",
@@ -269,7 +298,8 @@ export const Incubators = [
         "detailsId": "jewellers-orb",
         "count": 15,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Orb of Chance",
@@ -278,7 +308,8 @@ export const Incubators = [
         "detailsId": "orb-of-chance",
         "count": 14,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Orb of Regret",
@@ -287,7 +318,8 @@ export const Incubators = [
         "detailsId": "orb-of-regret",
         "count": 21,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Orb of Fusing",
@@ -296,7 +328,8 @@ export const Incubators = [
         "detailsId": "orb-of-fusing",
         "count": 22,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Chromatic Orb",
@@ -305,7 +338,8 @@ export const Incubators = [
         "detailsId": "chromatic-orb",
         "count": 21,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Orb of Alchemy",
@@ -314,7 +348,8 @@ export const Incubators = [
         "detailsId": "orb-of-alchemy",
         "count": 21,
         "total": 177,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -328,7 +363,8 @@ export const Incubators = [
         "detailsId": "diviners-incubator",
         "count": 1,
         "total": 66,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ],
     "revenueItems": [
@@ -339,7 +375,8 @@ export const Incubators = [
         "detailsId": "stacked-deck",
         "count": 204,
         "total": 66,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       }
     ]
   },
@@ -353,19 +390,22 @@ export const Incubators = [
         "detailsId": "fragmented-incubator",
         "count": 1,
         "total": 110,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ],
     "revenueItems": [
       {
         "name": "Inya's Key",
         "count": 3,
-        "total": 110
+        "total": 110,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Eber's Key",
         "count": 1,
-        "total": 110
+        "total": 110,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Sacrifice at Dusk",
@@ -374,7 +414,8 @@ export const Incubators = [
         "detailsId": "sacrifice-at-dusk",
         "count": 40,
         "total": 110,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Sacrifice at Dawn",
@@ -383,7 +424,8 @@ export const Incubators = [
         "detailsId": "sacrifice-at-dawn",
         "count": 34,
         "total": 110,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Sacrifice at Noon",
@@ -392,7 +434,8 @@ export const Incubators = [
         "detailsId": "sacrifice-at-noon",
         "count": 23,
         "total": 110,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Sacrifice at Midnight",
@@ -401,7 +444,8 @@ export const Incubators = [
         "detailsId": "sacrifice-at-midnight",
         "count": 7,
         "total": 110,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Mortal Ignorance",
@@ -410,7 +454,8 @@ export const Incubators = [
         "detailsId": "mortal-ignorance",
         "count": 1,
         "total": 110,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of the Chimera",
@@ -419,7 +464,8 @@ export const Incubators = [
         "detailsId": "fragment-of-the-chimera",
         "count": 1,
         "total": 110,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       }
     ]
   },
@@ -433,7 +479,8 @@ export const Incubators = [
         "detailsId": "infused-incubator",
         "count": 1,
         "total": 55,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ],
     "revenueItems": [
@@ -444,7 +491,8 @@ export const Incubators = [
         "detailsId": "remnant-of-corruption",
         "count": 14,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Essence of Horror",
@@ -453,7 +501,8 @@ export const Incubators = [
         "detailsId": "essence-of-horror",
         "count": 2,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Essence of Hysteria",
@@ -462,7 +511,8 @@ export const Incubators = [
         "detailsId": "essence-of-hysteria",
         "count": 2,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Essence of Insanity",
@@ -471,7 +521,8 @@ export const Incubators = [
         "detailsId": "essence-of-insanity",
         "count": 1,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Essence of Delirium",
@@ -480,7 +531,8 @@ export const Incubators = [
         "detailsId": "essence-of-delirium",
         "count": 1,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Zeal",
@@ -489,7 +541,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-zeal",
         "count": 0,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Spite",
@@ -498,7 +551,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-spite",
         "count": 1,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Woe",
@@ -507,7 +561,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-woe",
         "count": 2,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Contempt",
@@ -516,7 +571,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-contempt",
         "count": 0,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Envy",
@@ -525,7 +581,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-envy",
         "count": 0,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Greed",
@@ -534,7 +591,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-greed",
         "count": 0,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Loathing",
@@ -543,7 +601,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-loathing",
         "count": 2,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Rage",
@@ -552,7 +611,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-rage",
         "count": 1,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Scorn",
@@ -561,7 +621,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-scorn",
         "count": 4,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Sorrow",
@@ -570,7 +631,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-sorrow",
         "count": 4,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Misery",
@@ -579,7 +641,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-misery",
         "count": 1,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Wrath",
@@ -588,7 +651,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-wrath",
         "count": 2,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Fear",
@@ -597,7 +661,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-fear",
         "count": 1,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Anger",
@@ -606,7 +671,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-anger",
         "count": 3,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Dread",
@@ -615,7 +681,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-dread",
         "count": 3,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Hatred",
@@ -624,7 +691,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-hatred",
         "count": 3,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Suffering",
@@ -633,7 +701,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-suffering",
         "count": 2,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Torment",
@@ -642,7 +711,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-torment",
         "count": 2,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Anguish",
@@ -651,7 +721,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-anguish",
         "count": 3,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       },
       {
         "name": "Shrieking Essence of Doubt",
@@ -660,7 +731,8 @@ export const Incubators = [
         "detailsId": "shrieking-essence-of-doubt",
         "count": 1,
         "total": 55,
-        "type": "Essence"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Essence"
       }
     ]
   },
@@ -674,7 +746,8 @@ export const Incubators = [
         "detailsId": "foreboding-incubator",
         "count": 1,
         "total": 107,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ],
     "revenueItems": [
@@ -685,7 +758,8 @@ export const Incubators = [
         "detailsId": "ancient-orb",
         "count": 21.1,
         "total": 107,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Exalted Orb",
@@ -694,7 +768,8 @@ export const Incubators = [
         "detailsId": "exalted-orb",
         "count": 3.5,
         "total": 107,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Harbinger's Orb",
@@ -703,7 +778,8 @@ export const Incubators = [
         "detailsId": "harbingers-orb",
         "count": 22.4,
         "total": 107,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Orb of Annulment",
@@ -712,7 +788,8 @@ export const Incubators = [
         "detailsId": "orb-of-annulment",
         "count": 3.7,
         "total": 107,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "The Beachhead",
@@ -721,7 +798,8 @@ export const Incubators = [
         "detailsId": "the-beachhead-t15",
         "count": 2,
         "total": 107,
-        "type": "UniqueMap"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueMap"
       }
     ]
   },
@@ -735,7 +813,8 @@ export const Incubators = [
         "detailsId": "skittering-incubator",
         "count": 1,
         "total": 99,
-        "type": "Incubator"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Incubator"
       }
     ],
     "revenueItems": [
@@ -746,7 +825,8 @@ export const Incubators = [
         "detailsId": "rusted-sulphite-scarab",
         "count": 3,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Legion Scarab",
@@ -755,7 +835,8 @@ export const Incubators = [
         "detailsId": "rusted-legion-scarab",
         "count": 5,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Ambush Scarab",
@@ -764,7 +845,8 @@ export const Incubators = [
         "detailsId": "rusted-ambush-scarab",
         "count": 9,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Bestiary Scarab",
@@ -773,7 +855,8 @@ export const Incubators = [
         "detailsId": "rusted-bestiary-scarab",
         "count": 2,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Breach Scarab",
@@ -782,7 +865,8 @@ export const Incubators = [
         "detailsId": "rusted-breach-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Elder Scarab",
@@ -791,7 +875,8 @@ export const Incubators = [
         "detailsId": "rusted-elder-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Harbinger Scarab",
@@ -800,7 +885,8 @@ export const Incubators = [
         "detailsId": "rusted-harbinger-scarab",
         "count": 4,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Metamorph Scarab",
@@ -809,7 +895,8 @@ export const Incubators = [
         "detailsId": "rusted-metamorph-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Divination Scarab",
@@ -818,7 +905,8 @@ export const Incubators = [
         "detailsId": "rusted-divination-scarab",
         "count": 7,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Cartography Scarab",
@@ -827,12 +915,14 @@ export const Incubators = [
         "detailsId": "rusted-cartography-scarab",
         "count": 10,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Perandus Scarab",
         "count": 6,
-        "total": 99
+        "total": 99,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Rusted Reliquary Scarab",
@@ -841,7 +931,8 @@ export const Incubators = [
         "detailsId": "rusted-reliquary-scarab",
         "count": 5,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Shaper Scarab",
@@ -850,7 +941,8 @@ export const Incubators = [
         "detailsId": "rusted-shaper-scarab",
         "count": 3,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Rusted Torment Scarab",
@@ -859,7 +951,8 @@ export const Incubators = [
         "detailsId": "rusted-torment-scarab",
         "count": 3,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Sulphite Scarab",
@@ -868,7 +961,8 @@ export const Incubators = [
         "detailsId": "polished-sulphite-scarab",
         "count": 0,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Legion Scarab",
@@ -877,7 +971,8 @@ export const Incubators = [
         "detailsId": "polished-legion-scarab",
         "count": 2,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Ambush Scarab",
@@ -886,7 +981,8 @@ export const Incubators = [
         "detailsId": "polished-ambush-scarab",
         "count": 2,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Bestiary Scarab",
@@ -895,7 +991,8 @@ export const Incubators = [
         "detailsId": "polished-bestiary-scarab",
         "count": 2,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Breach Scarab",
@@ -904,7 +1001,8 @@ export const Incubators = [
         "detailsId": "polished-breach-scarab",
         "count": 0,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Elder Scarab",
@@ -913,7 +1011,8 @@ export const Incubators = [
         "detailsId": "polished-elder-scarab",
         "count": 4,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Harbinger Scarab",
@@ -922,7 +1021,8 @@ export const Incubators = [
         "detailsId": "polished-harbinger-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Metamorph Scarab",
@@ -931,7 +1031,8 @@ export const Incubators = [
         "detailsId": "polished-metamorph-scarab",
         "count": 6,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Divination Scarab",
@@ -940,7 +1041,8 @@ export const Incubators = [
         "detailsId": "polished-divination-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Cartography Scarab",
@@ -949,12 +1051,14 @@ export const Incubators = [
         "detailsId": "polished-cartography-scarab",
         "count": 2,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Perandus Scarab",
         "count": 2,
-        "total": 99
+        "total": 99,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Polished Reliquary Scarab",
@@ -963,7 +1067,8 @@ export const Incubators = [
         "detailsId": "polished-reliquary-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Shaper Scarab",
@@ -972,7 +1077,8 @@ export const Incubators = [
         "detailsId": "polished-shaper-scarab",
         "count": 3,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Torment Scarab",
@@ -981,7 +1087,8 @@ export const Incubators = [
         "detailsId": "polished-torment-scarab",
         "count": 0,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Sulphite Scarab",
@@ -990,7 +1097,8 @@ export const Incubators = [
         "detailsId": "gilded-sulphite-scarab",
         "count": 0,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Legion Scarab",
@@ -999,7 +1107,8 @@ export const Incubators = [
         "detailsId": "gilded-legion-scarab",
         "count": 0,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Ambush Scarab",
@@ -1008,7 +1117,8 @@ export const Incubators = [
         "detailsId": "gilded-ambush-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Bestiary Scarab",
@@ -1017,7 +1127,8 @@ export const Incubators = [
         "detailsId": "gilded-bestiary-scarab",
         "count": 2,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Breach Scarab",
@@ -1026,7 +1137,8 @@ export const Incubators = [
         "detailsId": "gilded-breach-scarab",
         "count": 2,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Elder Scarab",
@@ -1035,7 +1147,8 @@ export const Incubators = [
         "detailsId": "gilded-elder-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Harbinger Scarab",
@@ -1044,7 +1157,8 @@ export const Incubators = [
         "detailsId": "gilded-harbinger-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Metamorph Scarab",
@@ -1053,7 +1167,8 @@ export const Incubators = [
         "detailsId": "gilded-metamorph-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Divination Scarab",
@@ -1062,7 +1177,8 @@ export const Incubators = [
         "detailsId": "gilded-divination-scarab",
         "count": 0,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Cartography Scarab",
@@ -1071,12 +1187,14 @@ export const Incubators = [
         "detailsId": "gilded-cartography-scarab",
         "count": 0,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Perandus Scarab",
         "count": 1,
-        "total": 99
+        "total": 99,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Gilded Reliquary Scarab",
@@ -1085,7 +1203,8 @@ export const Incubators = [
         "detailsId": "gilded-reliquary-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Shaper Scarab",
@@ -1094,7 +1213,8 @@ export const Incubators = [
         "detailsId": "gilded-shaper-scarab",
         "count": 0,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Torment Scarab",
@@ -1103,7 +1223,8 @@ export const Incubators = [
         "detailsId": "gilded-torment-scarab",
         "count": 1,
         "total": 99,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       }
     ]
   }

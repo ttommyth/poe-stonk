@@ -1,21 +1,34 @@
 import * as RecipeCategories from "@/assets/recipes"
 import { PathOfProfitRecipe, PathOfProfitRecipeItem } from "@/assets/recipes/prepare/old";
 import { AllNinjaType, CurrencyDetail, CurrencyLine, CurrencyOverview, CurrencyTypeList, ItemLine, ItemOverview, ItemTypeList, Sparkline, fetchNinjaCurrency, fetchNinjaIndex, fetchNinjaItem } from "./fetchNinja";
+import { sum } from "lodash-es";
 
 declare type RecipeCategories= typeof import("@/assets/recipes");
 
 export interface Recipe extends PathOfProfitRecipe{
   costItems: RecipeItem[];
   revenueItems: RecipeItem[];
+  costSum: number;
+  revenueSum: number;
+  profit: number;
 }
-export interface RecipeItem extends PathOfProfitRecipeItem{
-  type?:AllNinjaType;
-  ninjaItem?: CurrencyLine | ItemLine;
+export type RecipeItem = PathOfProfitRecipeItem & {
   payPrice?:ItemPrice;
   receivePrice?:ItemPrice;
-}
+  imageUrl?: string;
+} & (
+  {
+  ninjaTypeGroup: "currency",
+  ninjaType?:typeof CurrencyTypeList[number];
+  ninjaItem?: CurrencyLine;
+  } | {
+    ninjaTypeGroup: "item",
+    ninjaType?:typeof ItemTypeList[number];
+    ninjaItem?:  ItemLine;
+  }
+)
 export interface ItemPrice{
-  type:"item" | "currency";
+  type: "currency" | "item";
   sparkline: Sparkline;
   lowConfidenceSparkline: Sparkline;
   chaosValue:number;
@@ -33,8 +46,8 @@ export const fulfillRecipe= async (league: string, category:string)=>{
   
   const recipes = RecipeCategories[category as keyof RecipeCategories ] as Partial<Recipe>[]
   const invokedType = recipes.reduce((cur, recipe)=>{
-    recipe.costItems?.forEach(it=>cur.add(it.type as any));
-    recipe.revenueItems?.forEach(it=>cur.add(it.type as any));
+    recipe.costItems?.forEach(it=>{it.ninjaType && cur.add(it.ninjaType);});
+    recipe.revenueItems?.forEach(it=>it.ninjaType && cur.add(it.ninjaType));
     return cur;
   }, new Set<AllNinjaType>())
   const ninjaPrices: {[key in AllNinjaType]?: CurrencyOverview | ItemOverview} = {};
@@ -60,25 +73,27 @@ export const fulfillRecipe= async (league: string, category:string)=>{
     })
   );
   // console.log(indexedNinjaPrices)
+  
+  const enrichRecipeItem = (item: RecipeItem)=>{
+    if(item.ninjaType && item.detailsId){
+      item.ninjaItem = indexedNinjaPrices[item.ninjaType].get(item.detailsId);
+      item.payPrice = getItemPrice(item, "pay");
+      item.receivePrice = getItemPrice(item, "receive");
+      if(item.ninjaTypeGroup==="currency"){
+        item.imageUrl = currencyReferences[item.ninjaType]?.find(it=>it.tradeId===item.ninjaItem?.detailsId)?.icon;
+      }else{
+        item.imageUrl = item.ninjaItem?.icon;
+      }
+    }
+  }
   recipes.forEach(recipe=>{
 
-    recipe.costItems?.forEach(item=>{
-      if(item.type && item.detailsId){
+    recipe.costItems?.forEach(enrichRecipeItem)
+    recipe.revenueItems?.forEach(enrichRecipeItem)
+    recipe.costSum = sum(recipe.costItems?.map(it=>(it.payPrice?.chaosValue ?? 0 )* it.count));
+    recipe.revenueSum = sum(recipe.revenueItems?.map(it=>(it.receivePrice?.chaosValue ?? 0) * ((it.count / it.total )||0) ));
+    recipe.profit = recipe.revenueSum - recipe.costSum;
 
-        item.ninjaItem = indexedNinjaPrices[item.type].get(item.detailsId);
-        item.payPrice = getItemPrice(item.ninjaItem, "pay");
-        item.receivePrice = getItemPrice(item.ninjaItem, "receive");
-
-      }
-    })
-
-    recipe.revenueItems?.forEach(item=>{
-      if(item.type && item.detailsId){        
-        item.ninjaItem = indexedNinjaPrices[item.type].get(item.detailsId);
-        item.payPrice = getItemPrice(item.ninjaItem, "pay");
-        item.receivePrice = getItemPrice(item.ninjaItem, "receive");
-      }
-    })
   });
   
   return {
@@ -86,11 +101,11 @@ export const fulfillRecipe= async (league: string, category:string)=>{
     currencyReferences
   };
 }
-export const getItemPrice = (item: CurrencyLine | ItemLine | undefined, pov: "pay"|"receive"): ItemPrice | undefined=>{ 
-  if(!item)
+export const getItemPrice = (recipeItem: RecipeItem, pov: "pay"|"receive"): ItemPrice | undefined=>{ 
+  if(!recipeItem || !recipeItem.ninjaItem)
     return undefined;  
-  if((item as any).currencyTypeName){
-    item = item as CurrencyLine;
+  if(recipeItem.ninjaTypeGroup=="currency"){
+    const item =recipeItem.ninjaItem;
     if(pov==="pay"){
       return ({
         type:"currency",
@@ -108,7 +123,7 @@ export const getItemPrice = (item: CurrencyLine | ItemLine | undefined, pov: "pa
     }
 
   }else{
-    item = item as ItemLine;
+    const item =recipeItem.ninjaItem;
     return ({
       type:"item",
       sparkline: item.sparkline,

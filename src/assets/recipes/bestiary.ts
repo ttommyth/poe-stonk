@@ -11,7 +11,8 @@ export const Bestiary = [
         "detailsId": "farric-tiger-alpha",
         "count": 1,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ],
     "revenueItems": [
@@ -22,7 +23,8 @@ export const Bestiary = [
         "detailsId": "farruls-fur-triumphant-lamellar",
         "count": 12,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Farrul's Chase",
@@ -31,7 +33,8 @@ export const Bestiary = [
         "detailsId": "farruls-chase-slink-boots",
         "count": 27,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Farrul's Bite",
@@ -40,7 +43,8 @@ export const Bestiary = [
         "detailsId": "farruls-bite-harlequin-mask",
         "count": 38,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Farrul's Pounce",
@@ -49,7 +53,8 @@ export const Bestiary = [
         "detailsId": "farruls-pounce-hydrascale-gauntlets",
         "count": 23,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Farrul, First of the Plains",
@@ -58,7 +63,8 @@ export const Bestiary = [
         "detailsId": "farrul-first-of-the-plains",
         "count": 100,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ]
   },
@@ -72,7 +78,8 @@ export const Bestiary = [
         "detailsId": "craicic-spider-crab",
         "count": 1,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ],
     "revenueItems": [
@@ -83,7 +90,8 @@ export const Bestiary = [
         "detailsId": "craiceanns-carapace-golden-plate",
         "count": 24,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Craiceann's Chitin",
@@ -92,7 +100,8 @@ export const Bestiary = [
         "detailsId": "craiceanns-chitin-magistrate-crown",
         "count": 27,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Craiceann's Pincers",
@@ -101,7 +110,8 @@ export const Bestiary = [
         "detailsId": "craiceanns-pincers-titan-gauntlets",
         "count": 29,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Craiceann's Tracks",
@@ -110,7 +120,8 @@ export const Bestiary = [
         "detailsId": "craiceanns-tracks-goliath-greaves",
         "count": 20,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Craiceann, First of the Deep",
@@ -119,7 +130,8 @@ export const Bestiary = [
         "detailsId": "craiceann-first-of-the-deep",
         "count": 100,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ]
   },
@@ -133,7 +145,8 @@ export const Bestiary = [
         "detailsId": "saqawine-rhex",
         "count": 1,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ],
     "revenueItems": [
@@ -144,7 +157,8 @@ export const Bestiary = [
         "detailsId": "saqawals-winds-soldier-gloves",
         "count": 24,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Saqawal's Flock",
@@ -153,7 +167,8 @@ export const Bestiary = [
         "detailsId": "saqawals-flock-silken-hood",
         "count": 13,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Saqawal's Nest",
@@ -162,7 +177,8 @@ export const Bestiary = [
         "detailsId": "saqawals-nest-blood-raiment",
         "count": 31,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Saqawal's Talons",
@@ -171,7 +187,8 @@ export const Bestiary = [
         "detailsId": "saqawals-talons-hydrascale-boots",
         "count": 32,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Saqawal, First of the Sky",
@@ -180,7 +197,8 @@ export const Bestiary = [
         "detailsId": "saqawal-first-of-the-sky",
         "count": 100,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ]
   },
@@ -194,7 +212,8 @@ export const Bestiary = [
         "detailsId": "fenumal-hybrid-arachnid",
         "count": 1,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ],
     "revenueItems": [
@@ -205,7 +224,8 @@ export const Bestiary = [
         "detailsId": "fenumus-shroud-widowsilk-robe",
         "count": 14,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Fenumus' Spinnerets",
@@ -214,7 +234,8 @@ export const Bestiary = [
         "detailsId": "fenumus-spinnerets-assassins-boots",
         "count": 23,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Fenumus' Toxins",
@@ -223,7 +244,8 @@ export const Bestiary = [
         "detailsId": "fenumus-toxins-necromancer-circlet",
         "count": 27,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Fenumus' Weave",
@@ -232,7 +254,8 @@ export const Bestiary = [
         "detailsId": "fenumus-weave-carnal-mitts",
         "count": 36,
         "total": 100,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Fenumus, First of the Night",
@@ -241,7 +264,8 @@ export const Bestiary = [
         "detailsId": "fenumus-first-of-the-night",
         "count": 100,
         "total": 100,
-        "type": "Beast"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Beast"
       }
     ]
   }

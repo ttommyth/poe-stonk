@@ -11,7 +11,8 @@ export const IndividualInvitations = [
         "detailsId": "mavens-invitation:-the-formed",
         "count": 1,
         "total": 50,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ],
     "revenueItems": [
@@ -22,7 +23,8 @@ export const IndividualInvitations = [
         "detailsId": "fragment-of-the-hydra",
         "count": 12,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of the Minotaur",
@@ -31,7 +33,8 @@ export const IndividualInvitations = [
         "detailsId": "fragment-of-the-minotaur",
         "count": 11,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of the Phoenix",
@@ -40,7 +43,8 @@ export const IndividualInvitations = [
         "detailsId": "fragment-of-the-phoenix",
         "count": 5,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of the Chimera",
@@ -49,7 +53,8 @@ export const IndividualInvitations = [
         "detailsId": "fragment-of-the-chimera",
         "count": 6,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Orb of Unmaking",
@@ -58,7 +63,8 @@ export const IndividualInvitations = [
         "detailsId": "orb-of-unmaking",
         "count": 59,
         "total": 50,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "The Maven's Writ",
@@ -67,7 +73,8 @@ export const IndividualInvitations = [
         "detailsId": "the-mavens-writ",
         "count": 24.6,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Rusted Shaper Scarab",
@@ -76,7 +83,8 @@ export const IndividualInvitations = [
         "detailsId": "rusted-shaper-scarab",
         "count": 22,
         "total": 50,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Shaper Scarab",
@@ -85,7 +93,8 @@ export const IndividualInvitations = [
         "detailsId": "polished-shaper-scarab",
         "count": 15,
         "total": 50,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Shaper Scarab",
@@ -94,7 +103,8 @@ export const IndividualInvitations = [
         "detailsId": "gilded-shaper-scarab",
         "count": 12,
         "total": 50,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Obscurantis",
@@ -103,7 +113,8 @@ export const IndividualInvitations = [
         "detailsId": "obscurantis-lion-pelt",
         "count": 8,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "The Scourge",
@@ -112,7 +123,8 @@ export const IndividualInvitations = [
         "detailsId": "the-scourge-terror-claw",
         "count": 5,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Razor of the Seventh Sun",
@@ -121,7 +133,8 @@ export const IndividualInvitations = [
         "detailsId": "razor-of-the-seventh-sun-midnight-blade",
         "count": 4,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "The Brass Dome",
@@ -130,7 +143,8 @@ export const IndividualInvitations = [
         "detailsId": "the-brass-dome-gladiator-plate",
         "count": 3,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Brain Rattler",
@@ -139,7 +153,8 @@ export const IndividualInvitations = [
         "detailsId": "brain-rattler-meatgrinder",
         "count": 3,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Slivertongue",
@@ -148,7 +163,8 @@ export const IndividualInvitations = [
         "detailsId": "slivertongue-harbinger-bow",
         "count": 1,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Snakepit",
@@ -157,7 +173,8 @@ export const IndividualInvitations = [
         "detailsId": "snakepit-sapphire-ring",
         "count": 1,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Perfection",
@@ -166,7 +183,8 @@ export const IndividualInvitations = [
         "detailsId": "perfection",
         "count": 3,
         "total": 50,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "Eye of Innocence",
@@ -175,7 +193,8 @@ export const IndividualInvitations = [
         "detailsId": "eye-of-innocence-citrine-amulet",
         "count": 4,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       }
     ],
     "info": "Loot from invitations rolled with 70% quantity and higher"
@@ -190,7 +209,8 @@ export const IndividualInvitations = [
         "detailsId": "mavens-invitation:-the-feared",
         "count": 1,
         "total": 50,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ],
     "revenueItems": [
@@ -201,7 +221,8 @@ export const IndividualInvitations = [
         "detailsId": "orb-of-unmaking",
         "count": 114,
         "total": 50,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "The Maven's Writ",
@@ -210,7 +231,8 @@ export const IndividualInvitations = [
         "detailsId": "the-mavens-writ",
         "count": 49.1,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Rusted Breach Scarab",
@@ -219,7 +241,8 @@ export const IndividualInvitations = [
         "detailsId": "rusted-breach-scarab",
         "count": 27,
         "total": 50,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Breach Scarab",
@@ -228,7 +251,8 @@ export const IndividualInvitations = [
         "detailsId": "polished-breach-scarab",
         "count": 13,
         "total": 50,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Breach Scarab",
@@ -237,7 +261,8 @@ export const IndividualInvitations = [
         "detailsId": "gilded-breach-scarab",
         "count": 9,
         "total": 50,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Impresence, Chaos",
@@ -247,7 +272,8 @@ export const IndividualInvitations = [
         "variant": "Chaos",
         "count": 1,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Impresence, Physical",
@@ -257,7 +283,8 @@ export const IndividualInvitations = [
         "variant": "Physical",
         "count": 0,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Impresence, Fire",
@@ -267,7 +294,8 @@ export const IndividualInvitations = [
         "variant": "Fire",
         "count": 1,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Impresence, Lightning",
@@ -277,7 +305,8 @@ export const IndividualInvitations = [
         "variant": "Lightning",
         "count": 0,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Impresence, Cold",
@@ -287,7 +316,8 @@ export const IndividualInvitations = [
         "variant": "Cold",
         "count": 1,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Watcher's Eye",
@@ -296,7 +326,8 @@ export const IndividualInvitations = [
         "detailsId": "watchers-eye-prismatic-jewel",
         "count": 12,
         "total": 50,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Hopeshredder",
@@ -305,7 +336,8 @@ export const IndividualInvitations = [
         "detailsId": "hopeshredder-ranger-bow",
         "count": 3,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Shimmeron",
@@ -314,7 +346,8 @@ export const IndividualInvitations = [
         "detailsId": "shimmeron-tornado-wand",
         "count": 3,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Fragment of Emptiness",
@@ -323,7 +356,8 @@ export const IndividualInvitations = [
         "detailsId": "fragment-of-emptiness",
         "count": 8,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Terror",
@@ -332,7 +366,8 @@ export const IndividualInvitations = [
         "detailsId": "fragment-of-terror",
         "count": 6,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Cyclopean Coil",
@@ -341,7 +376,8 @@ export const IndividualInvitations = [
         "detailsId": "cyclopean-coil-leather-belt",
         "count": 8,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Nebuloch",
@@ -350,7 +386,8 @@ export const IndividualInvitations = [
         "detailsId": "nebuloch-nightmare-mace",
         "count": 4,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Fragment of Shape",
@@ -359,7 +396,8 @@ export const IndividualInvitations = [
         "detailsId": "fragment-of-shape",
         "count": 12,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Fragment of Knowledge",
@@ -368,7 +406,8 @@ export const IndividualInvitations = [
         "detailsId": "fragment-of-knowledge",
         "count": 4,
         "total": 50,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Shaper's Touch",
@@ -377,7 +416,8 @@ export const IndividualInvitations = [
         "detailsId": "shapers-touch-crusader-gloves",
         "count": 10,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Voidwalker",
@@ -386,7 +426,8 @@ export const IndividualInvitations = [
         "detailsId": "voidwalker-murder-boots",
         "count": 8,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Dying Sun",
@@ -395,7 +436,8 @@ export const IndividualInvitations = [
         "detailsId": "dying-sun",
         "count": 6,
         "total": 50,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       },
       {
         "name": "Solstice Vigil",
@@ -404,7 +446,8 @@ export const IndividualInvitations = [
         "detailsId": "solstice-vigil-onyx-amulet",
         "count": 2,
         "total": 50,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "The Red Dream",
@@ -413,7 +456,8 @@ export const IndividualInvitations = [
         "detailsId": "the-red-dream-crimson-jewel",
         "count": 1,
         "total": 50,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "The Green Dream",
@@ -422,7 +466,8 @@ export const IndividualInvitations = [
         "detailsId": "the-green-dream-viridian-jewel",
         "count": 1,
         "total": 50,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "The Blue Dream",
@@ -431,7 +476,8 @@ export const IndividualInvitations = [
         "detailsId": "the-blue-dream-cobalt-jewel",
         "count": 1,
         "total": 50,
-        "type": "UniqueJewel"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueJewel"
       },
       {
         "name": "Severed in Sleep",
@@ -440,7 +486,8 @@ export const IndividualInvitations = [
         "detailsId": "severed-in-sleep-cutlass",
         "count": 9,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Skin of the Loyal",
@@ -449,7 +496,8 @@ export const IndividualInvitations = [
         "detailsId": "skin-of-the-loyal-simple-robe-6l",
         "count": 19,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Blessing of Chayula",
@@ -458,7 +506,8 @@ export const IndividualInvitations = [
         "detailsId": "blessing-of-chayula",
         "count": 8,
         "total": 50,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Bottled Faith",
@@ -467,7 +516,8 @@ export const IndividualInvitations = [
         "detailsId": "bottled-faith",
         "count": 6,
         "total": 50,
-        "type": "UniqueFlask"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueFlask"
       },
       {
         "name": "Offering to the Serpent",
@@ -476,7 +526,8 @@ export const IndividualInvitations = [
         "detailsId": "offering-to-the-serpent-legion-gloves",
         "count": 12,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Nebulis",
@@ -485,7 +536,8 @@ export const IndividualInvitations = [
         "detailsId": "nebulis-void-sceptre",
         "count": 10,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Garb of the Ephemeral",
@@ -494,7 +546,8 @@ export const IndividualInvitations = [
         "detailsId": "garb-of-the-ephemeral-savants-robe",
         "count": 1,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Atziri's Disfavour",
@@ -503,7 +556,8 @@ export const IndividualInvitations = [
         "detailsId": "atziris-disfavour-vaal-axe",
         "count": 3,
         "total": 50,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Atziri's Splendour",
@@ -513,7 +567,8 @@ export const IndividualInvitations = [
         "variant": "ES",
         "count": 7,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "The Vertex",
@@ -522,7 +577,8 @@ export const IndividualInvitations = [
         "detailsId": "the-vertex-vaal-mask",
         "count": 17,
         "total": 50,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       }
     ],
     "info": "Loot from invitations rolled with 70% quantity and higher"
@@ -537,7 +593,8 @@ export const IndividualInvitations = [
         "detailsId": "mavens-invitation:-the-hidden",
         "count": 1,
         "total": 29,
-        "type": "Invitation"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Invitation"
       }
     ],
     "revenueItems": [
@@ -548,7 +605,8 @@ export const IndividualInvitations = [
         "detailsId": "orb-of-unmaking",
         "count": 34,
         "total": 29,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "The Maven's Writ",
@@ -557,7 +615,8 @@ export const IndividualInvitations = [
         "detailsId": "the-mavens-writ",
         "count": 14.5,
         "total": 29,
-        "type": "Fragment"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Fragment"
       },
       {
         "name": "Rusted Breach Scarab",
@@ -566,7 +625,8 @@ export const IndividualInvitations = [
         "detailsId": "rusted-breach-scarab",
         "count": 54,
         "total": 29,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Polished Breach Scarab",
@@ -575,7 +635,8 @@ export const IndividualInvitations = [
         "detailsId": "polished-breach-scarab",
         "count": 17,
         "total": 29,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "Gilded Breach Scarab",
@@ -584,7 +645,8 @@ export const IndividualInvitations = [
         "detailsId": "gilded-breach-scarab",
         "count": 16,
         "total": 29,
-        "type": "Scarab"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "Scarab"
       },
       {
         "name": "The Infinite Pursuit",
@@ -593,7 +655,8 @@ export const IndividualInvitations = [
         "detailsId": "the-infinite-pursuit-goliath-greaves",
         "count": 4,
         "total": 29,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Voice of the Storm",
@@ -602,7 +665,8 @@ export const IndividualInvitations = [
         "detailsId": "voice-of-the-storm-lapis-amulet",
         "count": 1,
         "total": 29,
-        "type": "UniqueAccessory"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueAccessory"
       },
       {
         "name": "Blessing of Esh",
@@ -611,7 +675,8 @@ export const IndividualInvitations = [
         "detailsId": "blessing-of-esh",
         "count": 3,
         "total": 29,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Blessing of Xoph",
@@ -620,12 +685,14 @@ export const IndividualInvitations = [
         "detailsId": "blessing-of-xoph",
         "count": 4,
         "total": 29,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "Blesing of Tul",
         "count": 6,
-        "total": 29
+        "total": 29,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Blessing of Uul-Netol",
@@ -634,7 +701,8 @@ export const IndividualInvitations = [
         "detailsId": "blessing-of-uul-netol",
         "count": 1,
         "total": 29,
-        "type": "Currency"
+        "ninjaTypeGroup": "currency",
+        "ninjaType": "Currency"
       },
       {
         "name": "The Snowblind Grace",
@@ -643,7 +711,8 @@ export const IndividualInvitations = [
         "detailsId": "the-snowblind-grace-coronal-leather",
         "count": 1,
         "total": 29,
-        "type": "UniqueArmour"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueArmour"
       },
       {
         "name": "Hand of Thought and Motion",
@@ -652,7 +721,8 @@ export const IndividualInvitations = [
         "detailsId": "hand-of-thought-and-motion-blinder",
         "count": 3,
         "total": 29,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "Tulborn",
@@ -661,7 +731,8 @@ export const IndividualInvitations = [
         "detailsId": "tulborn-spiraled-wand",
         "count": 4,
         "total": 29,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       },
       {
         "name": "The Escape",
@@ -670,12 +741,14 @@ export const IndividualInvitations = [
         "detailsId": "the-escape",
         "count": 1,
         "total": 29,
-        "type": "DivinationCard"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "DivinationCard"
       },
       {
         "name": "The Formles Flame",
         "count": 3,
-        "total": 29
+        "total": 29,
+        "ninjaTypeGroup": "item"
       },
       {
         "name": "Xoph's Inception",
@@ -684,7 +757,8 @@ export const IndividualInvitations = [
         "detailsId": "xophs-inception-bone-bow",
         "count": 2,
         "total": 29,
-        "type": "UniqueWeapon"
+        "ninjaTypeGroup": "item",
+        "ninjaType": "UniqueWeapon"
       }
     ],
     "info": "Loot from invitations rolled with 70% quantity and higher"

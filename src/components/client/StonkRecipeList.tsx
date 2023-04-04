@@ -1,9 +1,22 @@
 'use client';
 import { CurrencyDetail } from "@/libs/fetchNinja";
 import { Recipe, getItemPrice } from "@/libs/fetchRecipe";
-import { maxBy, round, sortBy, sum } from "lodash-es";
-import { FC, useState } from "react";
+import { max, maxBy, orderBy, round, sortBy, sum } from "lodash-es";
+import { FC, useEffect, useMemo, useState } from "react";
+import { StonkRecipeCard } from "./StonkRecipeCard";
+import { atom, useAtom } from 'jotai'
+import { ArrowSmallDownIcon } from "@heroicons/react/20/solid";
 
+
+export const recipeStatsAtom = atom<{
+  maxCost:number,
+  maxRevenue:number,
+  maxProfit:number,
+}>({
+  maxCost: 0,
+  maxRevenue: 0,
+  maxProfit: 0,
+})
 export const StonkRecipeList: FC<{ 
   recipes: Recipe[],
   currencyReferences: { [key: string]: CurrencyDetail[] }, 
@@ -11,76 +24,58 @@ export const StonkRecipeList: FC<{
  }> = (props) => {
    const { recipes, currencyReferences, basicExchangeRate } = props;
    const [quickFilter, setQuickFilter] = useState("");
-
-   return <div className="flex flex-col gap-2 w-full">
-     <input type="text" />
-     {recipes?.map(recipe => {
-       const costSum = sum(recipe.costItems.map(it=>(it.payPrice?.chaosValue ?? 0 )* it.count));
-       const revenueSum = sum(recipe.revenueItems.map(it=>(it.receivePrice?.chaosValue ?? 0) * ((it.count / it.total )||0) ));
-       const roi = revenueSum / costSum;
-       const profit = revenueSum - costSum;
-       const isStonk = revenueSum>costSum;
-       const bestReward = maxBy(recipe.revenueItems, v=>v.receivePrice?.chaosValue );
-       return <div key={recipe.name} className="rounded-md dark:bg-slate-600 shadow-md daisy-collapse group" data-stonk={isStonk}>
-         <input type="checkbox" />
-         <div className="daisy-collapse-title m-0 flex gap-2">
-           <h3 className='grow'>{recipe.name}</h3>
-           <span className="border-red-500 rounded-md border">{round(costSum, 2)}c</span>
-           <span className="border-green-500 rounded-md border">{round(revenueSum, 2)}c</span>
-           <span className="group-data-[stonk~=true]:text-green-500 group-data-[stonk~=false]:text-red-500">{round(roi*100, 2)}%</span>
-           <span className="group-data-[stonk~=true]:text-green-500 group-data-[stonk~=false]:text-red-500">{round(profit, 2)}c</span>
-         </div>
-         <div className="daisy-collapse-content grid grid-cols-2">
-           <div className="flex flex-row">            
-             <table className="table-auto">
-               <thead>
-                 <tr>
-                   <th>Cost Item</th>
-                   <th>Qty</th>
-                   <th>Price</th>
-                   <th>Total</th>
-                 </tr>
-               </thead>
-               <tbody>
-                 {
-                   recipe.costItems.map(item => {
-                     return <tr key={item.name}>
-                       <td title={item.detailsId}>{item.name}</td>
-                       <td>{item.count}</td>
-                       <td>{item.payPrice?.chaosValue ?? "N/A"}</td>
-                       <td>{ item.payPrice?.chaosValue ?item.payPrice.chaosValue * item.count: "N/A"}</td>
-                     </tr>
-                   })
-                 }
-               </tbody>
-             </table> 
-           </div>
-           <div className="flex flex-col">
-             <table className="table-auto">
-               <thead>
-                 <tr>
-                   <th>Get Item</th>
-                   <th>Drop Chance</th>
-                   <th>Price</th>
-                   <th>Total</th>
-                 </tr>
-               </thead>
-               <tbody>
-                 {
-                   recipe.revenueItems.map(item => {
-                     return <tr key={item.name} onClick={v=>console.log(item)}>
-                       <td title={item.detailsId}>{item.name}</td>
-                       <td title={`${item.count} / ${item.total}`}>{round(((item.count / item.total)|| 0)*100, 2)}%</td>
-                       <td>{item.receivePrice?.chaosValue ?? "N/A"}</td>
-                       <td>{ item.receivePrice?.chaosValue ? round(item.receivePrice.chaosValue * (item.count / item.total), 2): "N/A"}</td>
-                     </tr>
-                   })
-                 }
-               </tbody>
-             </table>
-           </div>
-         </div>
-       </div>
-     })}
+   const [sorting, setSorting] = useState<{iterate:keyof Recipe, order:"asc"|"desc" }>({iterate:"profit", order:"desc"});
+   const [recipeStats, setRecipeStats] = useAtom(recipeStatsAtom)
+   const sortedRecipes = useMemo(()=>{
+     return orderBy(recipes, [sorting.iterate], [sorting.order]);
+   },[recipes, sorting.iterate, sorting.order]);
+   useEffect(()=>{
+     setRecipeStats ({
+       maxCost: maxBy(recipes, 'costSum')?.costSum??0,
+       maxRevenue: maxBy(recipes, 'revenueSum')?.revenueSum??0,
+       maxProfit: maxBy(recipes, 'profit')?.profit??0,
+     })
+   }, [recipes, setRecipeStats])
+   const triggerSorting=(iterate: keyof Recipe)=>{
+     if(sorting.iterate === iterate){
+       setSorting(s=>({
+         ...s,
+         order: s.order=="asc"?"desc":"asc"
+       }));
+     }else{      
+       setSorting(s=>({
+         iterate: iterate,
+         order:"asc"
+       }));
+     }
+   }
+   return <div className="flex flex-col w-full gap-4">
+     <input type="text" placeholder="Quick Search" className="daisy-input daisy-input-bordered daisy-input-lg w-full" />
+     <div>
+       <button type="button" className="daisy-btn" onClick={e=>triggerSorting("costSum")}>
+        sort by cost
+         {
+           sorting.iterate=="costSum"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
+    
+         }
+       </button>
+       <button type="button" className="daisy-btn" onClick={e=>triggerSorting("revenueSum")}>
+        sort by revenue
+         {
+           sorting.iterate=="revenueSum"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
+    
+         }
+       </button>
+       <button type="button" className="daisy-btn" onClick={e=>triggerSorting("profit")}>
+        sort by profit
+         {
+           sorting.iterate=="profit"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
+    
+         }
+       </button>
+     </div>
+     <div className="grid grid-cols-3 gap-2 w-full">
+       {sortedRecipes?.map((recipe,idx) => <StonkRecipeCard recipe={recipe} key={`${recipe.name}.${idx}`} />)}
+     </div>
    </div>
  }
