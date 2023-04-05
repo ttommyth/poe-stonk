@@ -6,6 +6,6 @@ export const PageHeader=(props :{ninjaIndexState: NinjaIndexState})=>{
   const {ninjaIndexState} = props;
   return <header className='rounded-b-md border-b border-gray-500 xl:mx-auto xl:container'>
     <Link href={"/"}>Home</Link>
-    <LeagueSelector leagues={ninjaIndexState.economyLeagues}/>
+    <LeagueSelector leagues={ninjaIndexState.economyLeagues} oldLeagues={ninjaIndexState.oldEconomyLeagues}/>
   </header>
 }
