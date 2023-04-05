@@ -63,7 +63,14 @@ const RevenueItemCard = (props:{item: RecipeItem})=>{
   console.log(item.receivePrice?.sparkline.data)
   return <div className="rounded-md bg-success/10 flex flex-col p-2">
     <div className="flex flex-row items-center">
-      {`${round(((item.count / item.total)|| 0)*100, 2)}% `}
+      {
+        item.total===1?<span>
+          {`${item.count} x`}
+        </span>:
+          <span>
+            {`${round(((item.count / item.total)|| 0)*100, 2)}% `}
+          </span>
+      }
       {item.imageUrl ?
         <ItemImageWithPopper item={item}/>:
         <div className="w-10 h-10 bg-base-200"/>}

@@ -2,7 +2,8 @@
 
 import { Modifier } from '@/libs/fetchNinja';
 import { RecipeItem } from '@/libs/fetchRecipe';
-import React, { FC, PropsWithChildren, createContext, useContext, useRef, useState } from 'react';
+import { delay } from 'lodash-es';
+import React, { FC, PropsWithChildren, createContext, useCallback, useContext, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
 
 const ItemLineDivider =(props:{rarity:string})=>{
@@ -43,13 +44,18 @@ const ItemPopperProvider:FC<PropsWithChildren<any>> = (props) => {
     setReferenceElement(ref);
     setDisplayingItem(item);
   }
+  const hidePopper=()=>{
+    setDisplayingItem(null);
+  }
   const currentItemRarity = displayingItem?.ninjaItem?.lineType=="currency"?"normal":"unique"//TODO:
-
+  
   return (
-    <ItemPopperContext.Provider value={{ displayItem, hidePopper:()=>setDisplayingItem(null) }}>
+    <ItemPopperContext.Provider value={{ displayItem, hidePopper }}>
       {props.children}
       
-      <div ref={setPopperElement} style={styles.popper} className="z-[1000]" {...attributes.popper} data-show={!!displayingItem}>
+      <div ref={setPopperElement} style={styles.popper} className="z-[1000]" {...attributes.popper} 
+        data-show={!!displayingItem}
+        onMouseLeave={(e)=>setDisplayingItem(null)}>
         {displayingItem?<div className={`backdrop-blur-lg backdrop-opacity-100 rounded-md 
         flex flex-col items-center justify-center border gap-2 max-w-xl w-full transform-gpu
         data-[rarity~=unique]:border-poe-unique data-[rarity~=unique]:bg-poe-unique  data-[rarity~=unique]:text-poe-unique

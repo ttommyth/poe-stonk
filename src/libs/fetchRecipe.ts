@@ -40,11 +40,14 @@ export type CurrencyDetailReferences = {[key in typeof CurrencyTypeList[number]]
 export const getRecipeCategories=()=>{
   return  Object.keys(RecipeCategories) as (keyof RecipeCategories)[];
 }
-export const fulfillRecipe= async (league: string, category:string)=>{
+export const fulfillPredefinedRecipes= async (league: string, category:string)=>{
   league = decodeURIComponent(league);
   category = decodeURIComponent(category);
   
-  const recipes = RecipeCategories[category as keyof RecipeCategories ] as Partial<Recipe>[]
+  const recipes = RecipeCategories[category as keyof RecipeCategories ] as Recipe[]
+  return fulfillRecipes(league, recipes);
+}
+export const fulfillRecipes= async (league: string, recipes:Recipe[])=>{
   const invokedType = recipes.reduce((cur, recipe)=>{
     recipe.costItems?.forEach(it=>{it.ninjaType && cur.add(it.ninjaType);});
     recipe.revenueItems?.forEach(it=>it.ninjaType && cur.add(it.ninjaType));
@@ -79,8 +82,9 @@ export const fulfillRecipe= async (league: string, category:string)=>{
       item.ninjaItem = indexedNinjaPrices[item.ninjaType].get(item.detailsId);
       item.payPrice = getItemPrice(item, "pay");
       item.receivePrice = getItemPrice(item, "receive");
-      if(item.ninjaTypeGroup==="currency"){
-        item.imageUrl = currencyReferences[item.ninjaType]?.find(it=>it.tradeId===item.ninjaItem?.detailsId)?.icon;
+      if(item.ninjaTypeGroup=="currency"){
+        item.imageUrl = currencyReferences[item.ninjaType]
+          ?.find(it=>it.name===item.ninjaItem?.currencyTypeName || it.tradeId===item.ninjaItem?.detailsId)?.icon;
       }else{
         item.imageUrl = item.ninjaItem?.icon;
       }
