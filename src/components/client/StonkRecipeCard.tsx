@@ -1,11 +1,11 @@
 import { Recipe } from "@/libs/fetchRecipe";
 import { sum, maxBy, round } from "lodash-es";
-import { recipeStatsAtom } from "./StonkRecipeList";
 import { useAtom } from "jotai";
 import { compactNumberFormat } from "@/libs/formatting";
 import { recipeModalAtom } from "./StonkRecipeModal";
 import { useEffect } from "react";
 import { ItemImageWithPopper } from "./provider/ItemPopperProvider";
+import { useStonkRecipes } from "./provider/StonkRecipesProvider";
 const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percentage: number})=>{
   const {type, sum, percentage} = props;
 
@@ -29,9 +29,9 @@ const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percent
 
 export const StonkRecipeCard = ( props:{recipe: Recipe})=>{  
   const {recipe} = props;     
-  const [recipeStats] = useAtom(recipeStatsAtom)
   const [recipeModal, setRecipeModal] = useAtom(recipeModalAtom)
-  const {maxCost, maxRevenue, maxProfit} = recipeStats;
+  const {recipesMetadata} = useStonkRecipes();
+  const {maxCost, maxRevenue, maxProfit} = recipesMetadata;
   const {costSum, revenueSum, profit} = recipe;
   const isStonk = revenueSum>costSum;
   const firstCostItem = recipe?.costItems?.[0];

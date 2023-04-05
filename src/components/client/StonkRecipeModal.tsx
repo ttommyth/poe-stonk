@@ -15,9 +15,9 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 
 const displaySettingAtom = atom<{
-  valueDisplayMode:"perItem" | "calucated"
+  valueDisplayMode:"perItem" | "calculated"
 }>({
-  valueDisplayMode: "calucated"
+  valueDisplayMode: "calculated"
 })
 
 const CostItemCard = (props:{item: RecipeItem})=>{
@@ -60,7 +60,6 @@ const CostItemCard = (props:{item: RecipeItem})=>{
 }
 const RevenueItemCard = (props:{item: RecipeItem})=>{
   const {item} = props;
-  console.log(item.receivePrice?.sparkline.data)
   return <div className="rounded-md bg-success/10 flex flex-col p-2">
     <div className="flex flex-row items-center">
       {

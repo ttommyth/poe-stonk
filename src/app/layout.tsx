@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { PageHeader } from '@/components/server/PageHeader';
 import { fetchNinjaIndex } from '@/libs/fetchNinja';
 import ItemPopperProvider from '@/components/client/provider/ItemPopperProvider';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 const notoSans = Noto_Sans({weight: ["200", "500", "900"],subsets:["latin", "latin-ext"]});
 
 export default async function RootLayout({

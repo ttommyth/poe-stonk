@@ -1,5 +1,3 @@
-import { ValueOf } from "next/dist/shared/lib/constants";
-
 export interface CurrencyOverview {
   lines:           CurrencyLine[];
   currencyDetails: CurrencyDetail[];

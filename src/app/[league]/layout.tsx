@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { NextAppPageProps } from '@/types/nextjsHelperType';
 import Link from 'next/link';
 import { getRecipeCategories } from '@/libs/fetchRecipe';
+import { CustomStonkNav } from '@/components/client/CustomStonk/CustomStonkNav';
 
 export async function generateMetadata({ params, searchParams }: NextAppPageProps<{category:string}>) {
   return { title: params.category };
@@ -22,6 +23,7 @@ export default function CategoryLayout({
         {
           allCategory.map(cat=><Link href={`/${params.league}/${cat}`} key={cat}>{cat}</Link>)
         }
+        <CustomStonkNav />
       </nav>
       <main className='grow'>
         {children}

@@ -8,26 +8,15 @@ import { atom, useAtom } from 'jotai'
 import { ArrowSmallDownIcon } from "@heroicons/react/20/solid";
 import MiniSearch from 'minisearch'
 import { StonkRecipeModal } from "./StonkRecipeModal";
+import { StonkRecipesProvider } from "./provider/StonkRecipesProvider";
 
 
-export const recipeStatsAtom = atom<{
-  maxCost:number,
-  maxRevenue:number,
-  maxProfit:number,
-}>({
-  maxCost: 0,
-  maxRevenue: 0,
-  maxProfit: 0,
-})
 export const StonkRecipeList: FC<{ 
   recipes: Recipe[],
-  currencyReferences: { [key: string]: CurrencyDetail[] }, 
-  basicExchangeRate: {[key:string]: number} //chaos equivalent 
  }> = (props) => {
-   const { recipes, currencyReferences, basicExchangeRate } = props;
+   const { recipes } = props;
    const [quickFilter, setQuickFilter] = useState("");
    const [sorting, setSorting] = useState<{iterate:keyof Recipe, order:"asc"|"desc" }>({iterate:"profit", order:"desc"});
-   const [recipeStats, setRecipeStats] = useAtom(recipeStatsAtom)
    const [searchResult, setSearchResult] = useState<any[]>([]);
    const sortedRecipes = useMemo(()=>{
      return orderBy(searchResult?.length>0?searchResult.map(it=>it.result): recipes, [sorting.iterate], [sorting.order]);
@@ -49,13 +38,6 @@ export const StonkRecipeList: FC<{
      }
    }, [recipes])
   
-   useEffect(()=>{
-     setRecipeStats ({
-       maxCost: maxBy(recipes, 'costSum')?.costSum??0,
-       maxRevenue: maxBy(recipes, 'revenueSum')?.revenueSum??0,
-       maxProfit: maxBy(recipes, 'profit')?.profit??0,
-     })
-   }, [recipes, setRecipeStats])
    const triggerSorting=(iterate: keyof Recipe)=>{
      if(sorting.iterate === iterate){
        setSorting(s=>({
@@ -73,7 +55,7 @@ export const StonkRecipeList: FC<{
      const res = miniSearch?.current?.search(str, {fuzzy: 0.2, prefix: true})
      setSearchResult( res as any);
    }
-   return <> 
+   return <StonkRecipesProvider recipes={recipes}> 
      <div className="flex flex-col w-full gap-4">
        <div className="daisy-form-control w-full">
          <input type="text" placeholder="Quick Search" onChange={e=>handleSearch(e.target.value)}
@@ -110,5 +92,5 @@ export const StonkRecipeList: FC<{
        </div>
      </div>
      <StonkRecipeModal/>
-   </>
+   </StonkRecipesProvider>
  }
