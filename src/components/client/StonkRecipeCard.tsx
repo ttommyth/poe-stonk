@@ -5,13 +5,14 @@ import { useAtom } from "jotai";
 import { compactNumberFormat } from "@/libs/formatting";
 import { recipeModalAtom } from "./StonkRecipeModal";
 import { useEffect } from "react";
+import { ItemImageWithPopper } from "./provider/ItemPopperProvider";
 const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percentage: number})=>{
   const {type, sum, percentage} = props;
 
   return  <div className={`group daisy-tooltip flex
   data-[type~=cost]:text-error 
   data-[type~=revenue]:text-warning 
-  data-[type~=profit]:text-success `} data-tip={sum+"c"} data-type={type}>
+  data-[type~=profit]:text-success `} data-tip={compactNumberFormat.format(sum)+"c"} data-type={type}>
     <span>{
       type==="cost"?"C":type==="revenue"?"R":"P"
     }</span>
@@ -43,7 +44,7 @@ export const StonkRecipeCard = ( props:{recipe: Recipe})=>{
   }}>
     <div className="flex flex-row items-center">
       {firstCostItem.imageUrl ?
-        <img src={firstCostItem?.imageUrl} className="object-contain w-10 h-10" alt={firstCostItem?.name}/>:
+        <ItemImageWithPopper item={firstCostItem}/>:
         <div className="w-10 h-10 bg-base-200"/>}
       <h3 className="grow line-clamp-1">{recipe.name}</h3>
       <div className="flex flex-col gap-1 [&>div]:text-xs">

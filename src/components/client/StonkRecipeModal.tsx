@@ -10,6 +10,8 @@ import MiniSearch from 'minisearch'
 import clsx from "clsx";
 import { XCircleIcon } from "@heroicons/react/20/solid";
 import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
+import { ItemImageWithPopper } from "./provider/ItemPopperProvider";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 const displaySettingAtom = atom<{
@@ -24,9 +26,10 @@ const CostItemCard = (props:{item: RecipeItem})=>{
     <div className="flex flex-row items-center">
       {`${item.count} x `}
       {item.imageUrl ?
-        <img src={item?.imageUrl} className="object-contain w-10 h-10" alt={item?.name}/>:
+        <ItemImageWithPopper item={item}/>:
         <div className="w-10 h-10 bg-base-200"/>}
       <h3 className="grow line-clamp-1">{item.name}</h3>
+
       <div className="flex flex-col items-end">
         <span className="daisy-tooltip text-xl font-bold" data-tip={"total"}>
           {item.payPrice?.chaosValue ?item.payPrice.chaosValue * item.count: "N/A"}
@@ -35,19 +38,36 @@ const CostItemCard = (props:{item: RecipeItem})=>{
           {item.payPrice?.chaosValue??"N/A"}
         </span>
       </div>
+      
+      <ResponsiveContainer width={80} height={"100%"}>        
+        <AreaChart
+          width={80}
+          height={100}
+          data={item.payPrice?.sparkline.data.map(it=>({v: it}))}
+          margin={{
+            top: 0,
+            right: 0,
+            left: 0,
+            bottom: 0,
+          }}
+        >
+          <Area isAnimationActive={false} type="monotone" dataKey="v" baseValue={"dataMin"} 
+            className="fill-poe-augmented/20 stroke-poe-augmented" />
+        </AreaChart>
+      </ResponsiveContainer>
     </div>
   </div>
 }
 const RevenueItemCard = (props:{item: RecipeItem})=>{
   const {item} = props;
+  console.log(item.receivePrice?.sparkline.data)
   return <div className="rounded-md bg-success/10 flex flex-col p-2">
     <div className="flex flex-row items-center">
       {`${round(((item.count / item.total)|| 0)*100, 2)}% `}
       {item.imageUrl ?
-        <img src={item?.imageUrl} className="object-contain w-10 h-10" alt={item?.name}/>:
+        <ItemImageWithPopper item={item}/>:
         <div className="w-10 h-10 bg-base-200"/>}
       <h3 className="grow line-clamp-1">{item.name}</h3>
-      
       <div className="flex flex-col items-end">
         <span className="daisy-tooltip text-xl font-bold" data-tip={"expected"}>
           {item.receivePrice?.chaosValue ? round(item.receivePrice.chaosValue * (item.count / item.total), 2): "N/A"}
@@ -56,6 +76,22 @@ const RevenueItemCard = (props:{item: RecipeItem})=>{
           {item.payPrice?.chaosValue??"N/A"}
         </span>
       </div>
+      <ResponsiveContainer width={80} height={"100%"}>        
+        <AreaChart
+          width={80}
+          height={100}
+          data={item.receivePrice?.sparkline.data.map(it=>({v: it}))}
+          margin={{
+            top: 0,
+            right: 0,
+            left: 0,
+            bottom: 0,
+          }}
+        >
+          <Area isAnimationActive={false} type="monotone" dataKey="v"  baseValue={"dataMin"} 
+            className="fill-poe-augmented/20 stroke-poe-augmented" />
+        </AreaChart>
+      </ResponsiveContainer>
     </div>
   </div>
 }
@@ -85,12 +121,12 @@ export const StonkRecipeModal: FC<any> = (props) => {
   }
   return <> 
     <div className={clsx("daisy-modal", recipe?"daisy-modal-open":"")} onClick={()=>setRecipeModal(undefined)}>
-      <div className="daisy-modal-box  max-w-6xl w-full"  onClick={(e)=>{
+      <div className="daisy-modal-box  max-w-6xl w-full flex flex-col gap-2"  onClick={(e)=>{
         e.stopPropagation();
       }}>
         {recipe?<>
           <div className="flex flex-row">
-            <h3 className="font-bold text-lg grow">Congratulations random Internet user!</h3>
+            <h3 className="font-bold text-lg grow">{recipe.name}</h3>
             <button className="rounded-full h-6 w-6" type="button" onClick={e=>setRecipeModal(undefined)}><XCircleIcon className="h-6 w-6 text-gray-500" /></button>
           </div>
           <div className="flex w-full">
