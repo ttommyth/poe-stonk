@@ -29,11 +29,10 @@ export default async function Page({
 }:NextAppPageProps<{league:string, category:string }>) {
   const {league, category} = params;
   const data = await fulfillPredefinedRecipes(league, category);
-  const basicExchangeRate = await getBasicCurrencyExchangeRate(league);
   return (
     <div className="w-full">
       <h1 className=''>{params.category}</h1>
-      <StonkRecipeList recipes={data.recipes} currencyReferences={data.currencyReferences} basicExchangeRate={basicExchangeRate}/>
+      <StonkRecipeList recipes={data.recipes}/>
     </div>
   )
 }
