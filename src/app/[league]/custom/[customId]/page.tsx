@@ -19,8 +19,8 @@ export default async function Page({
   params
 }:NextAppPageProps<{league:string, customId:string }>) {
   const {league, customId} = params;
-  const test = await prepareAllNinjaItem()
-  const test2 = JSON.stringify(test);
+  // const test = await prepareAllNinjaItem()
+  // const test2 = JSON.stringify(test);
   return (
     <ClientBoundary>
       
