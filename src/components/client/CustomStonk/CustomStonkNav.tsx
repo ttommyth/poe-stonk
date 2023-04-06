@@ -7,22 +7,22 @@ import { usePathname } from "next/navigation";
 import randomWords from "random-words";
 
 export const CustomStonkNav=()=>{
-  const customRecipes = useLiveQuery(
-    () => db.customRecipes.toArray()
+  const customRecipeBook = useLiveQuery(
+    () => db.customRecipeBooks.toArray()
   );
   const pathname = usePathname();
   return <div className="mt-4 w-full flex flex-col">
     <span className="w-full border-b-base-300">Custom Recipes</span>
     {
-      customRecipes?.map(it=><span key={it.id} className="w-full flex">
+      customRecipeBook?.map(it=><span key={it.id} className="w-full flex">
         <Link href={`/${pathname.split("/")[1]}/custom/${it.id}`} className="grow">
           {it.name}
         </Link>
-        <button onClick={()=>{db.customRecipes.delete(it.id!)}}>delete</button>
+        <button onClick={()=>{db.customRecipeBooks.delete(it.id!)}}>delete</button>
       </span>)
     }
     <button onClick={async ()=>{
-      const id = await db.customRecipes.add({
+      const id = await db.customRecipeBooks.add({
         name: randomWords(2).join(" "),
         recipes:[]
       });

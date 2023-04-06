@@ -11,6 +11,8 @@ import { db } from "@/libs/db";
 import { StonkRecipeList } from "../StonkRecipeList";
 import { useQuery } from "@tanstack/react-query";
 import { prepareAllNinjaItem } from "@/assets/ninja/prepare/ninjaFetching";
+import { useSearchParams } from "next/navigation";
+import { CustomStonkEditor } from "./CustomStonkEditor";
 
 
 export const CustomStonkRecipeList: FC<{ 
@@ -19,22 +21,30 @@ export const CustomStonkRecipeList: FC<{
  }> = (props) => {
    const {league, customId} = props;
    const [editMode, setEditMode] = useState<boolean>(false);
-   const customRecipe = useLiveQuery(
-     () => db.customRecipes.get(customId)
+   const customRecipes = useLiveQuery(
+     () => db.customRecipeBooks.get(customId)
    );
    const fulfilledRecipesQuery = useQuery(["custom", league, customId], async ()=>{
-     if(customRecipe?.recipes?.length)
-       return await fulfillRecipes(league, customRecipe?.recipes);
+     if(customRecipes?.recipes?.length)
+       return await fulfillRecipes(league, customRecipes?.recipes);
      else
        return undefined;
    })
 
    return <div className="flex flex-col">
-     <h2>
-       {customRecipe?.name}
-     </h2>
+     <div className="flex">
+       <div className="grow"></div>
+       <div className="daisy-form-control">
+         <label className="daisy-label cursor-pointer">
+           <span className="daisy-label-text">Edit Mode</span> 
+           <input type="checkbox" className="daisy-toggle" checked={editMode} onChange={v=>setEditMode(v.target.checked)} />
+   
+         </label>
+       </div>
+     </div>
      {
        editMode?<>
+         <CustomStonkEditor customId={customId} />
        </>:<>
          {
            fulfilledRecipesQuery.data?.recipes ?
