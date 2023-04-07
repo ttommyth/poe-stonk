@@ -17,7 +17,7 @@ export const StonkRecipeList: FC<{
  }> = (props) => {
    const { recipes } = props;
    const [quickFilter, setQuickFilter] = useState("");
-   const [sorting, setSorting] = useState<{iterate:keyof Recipe, order:"asc"|"desc" }>({iterate:"profit", order:"desc"});
+   const [sorting, setSorting] = useState<{iterate:keyof Recipe | "profitPerCostTrade", order:"asc"|"desc" }>({iterate:"profit", order:"desc"});
    const [searchResult, setSearchResult] = useState<(SearchResult & {result: Recipe})[]>([]);
    const {getPayEffort, getReceiveEffort} = useStonk();
    const sortedRecipes = useMemo(()=>{
@@ -25,7 +25,11 @@ export const StonkRecipeList: FC<{
        (searchResult?.length>0?searchResult.map(sr=>sr.result): recipes).map(recipe=>{      
          const costFee = getPayEffort(sum(recipe.costItems.map(it=>it.count * (it.tradeEffort??1))));
          const revenueFee = getReceiveEffort(sum(recipe.revenueItems.map(it=>(it.count/it.total) * (it.tradeEffort??1))));
-         return {...recipe, profit: recipe.profit-costFee-revenueFee, costFee, revenueFee}
+         return {...recipe, 
+           profit: recipe.profit-costFee-revenueFee, 
+           costFee, revenueFee, 
+           profitPerCostTrade: recipe.profit /sum(recipe.costItems.map(it=>it.count * (it.tradeEffort??1)))
+         }
        })
        , [sorting.iterate], [sorting.order])       ;
    },[searchResult, recipes, sorting.iterate, sorting.order, getPayEffort, getReceiveEffort]);
@@ -46,7 +50,7 @@ export const StonkRecipeList: FC<{
      }
    }, [recipes])
   
-   const triggerSorting=(iterate: keyof Recipe)=>{
+   const triggerSorting=(iterate: keyof Recipe | "profitPerCostTrade")=>{
      if(sorting.iterate === iterate){
        setSorting(s=>({
          ...s,
@@ -94,11 +98,19 @@ export const StonkRecipeList: FC<{
     
            }
          </button>
+         <button type="button" className="daisy-btn" onClick={e=>triggerSorting("profitPerCostTrade")}>
+        sort by profit per trade
+           {
+             sorting.iterate=="profitPerCostTrade"&&   <ArrowSmallDownIcon className="h-6 w-6 data-[asc=false]:rotate-180 transition-transform" data-asc={sorting.order=="asc"} />
+    
+           }
+         </button>
        </div>
        <div className="grid grid-cols-3 gap-2 w-full">
          {sortedRecipes?.map((recipe,idx) => <StonkRecipeCard 
            recipe={recipe} key={`${recipe.name}.${idx}`} 
-           costFee={recipe.costFee} revenueFee={recipe.revenueFee} />)}
+           costFee={recipe.costFee} revenueFee={recipe.revenueFee} 
+           profitPerCostTrade={recipe.profitPerCostTrade}/>)}
        </div>
      </div>
      <StonkRecipeModal/>

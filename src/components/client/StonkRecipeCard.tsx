@@ -33,8 +33,8 @@ const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percent
   </div>;
 }
 
-export const StonkRecipeCard = ( props:{recipe: Recipe, costFee: number, revenueFee:number})=>{  
-  const {recipe, costFee, revenueFee} = props;     
+export const StonkRecipeCard = ( props:{recipe: Recipe, costFee: number, revenueFee:number, profitPerCostTrade: number})=>{  
+  const {recipe, costFee, revenueFee, profitPerCostTrade} = props;     
   const [recipeModal, setRecipeModal] = useAtom(recipeModalAtom)
   const {recipesMetadata} = useStonkRecipes();
   const {maxCost, maxRevenue, maxProfit} = recipesMetadata;
@@ -57,6 +57,10 @@ export const StonkRecipeCard = ( props:{recipe: Recipe, costFee: number, revenue
         <CoolPriceBar type="cost" sum={costSum} percentage={costSum / maxCost}/>
         <CoolPriceBar type="revenue" sum={revenueSum} percentage={revenueSum / maxRevenue}/>
         <CoolPriceBar type="profit" sum={profit} percentage={profit / maxProfit}/>      
+        <div className="flex flex-col">
+          <CurrencySpan chaos={profitPerCostTrade} />
+          <span className="text-xs" title="profit per trade">ppt</span>
+        </div>
       </div>
     </div>
     <div className="flex justify-center">
