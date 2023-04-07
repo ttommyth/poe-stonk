@@ -6,13 +6,16 @@ import { recipeModalAtom } from "./StonkRecipeModal";
 import { useEffect } from "react";
 import { ItemImageWithPopper } from "./provider/ItemPopperProvider";
 import { useStonkRecipes } from "./provider/StonkRecipesProvider";
+import { CurrencySpan } from "./CurrencySpan";
+import { useStonk } from "./provider/StonkProvider";
 const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percentage: number})=>{
   const {type, sum, percentage} = props;
+  const {getAdjustedCurrencyString} = useStonk();
 
   return  <div className={`group daisy-tooltip flex
   data-[type~=cost]:text-error 
   data-[type~=revenue]:text-warning 
-  data-[type~=profit]:text-success `} data-tip={compactNumberFormat.format(sum)+"c"} data-type={type}>
+  data-[type~=profit]:text-success `} data-tip={type+" "+ getAdjustedCurrencyString(sum)} data-type={type}>
     <span>{
       type==="cost"?"C":type==="revenue"?"R":"P"
     }</span>
@@ -22,7 +25,9 @@ const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percent
   group-data-[type~=revenue]:daisy-progress-warning 
   group-data-[type~=profit]:daisy-progress-success
     `} value={percentage} max="1"></progress>
-      <span className="text-xs mix-blend-overlay i text-white absolute left-1/2 -translate-x-1/2">{compactNumberFormat.format(sum)}</span>
+      <span className="text-xs mix-blend-overlay i text-white absolute left-1/2 -translate-x-1/2">
+        {getAdjustedCurrencyString(sum)}
+      </span>
     </div>
   </div>;
 }

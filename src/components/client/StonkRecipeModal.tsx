@@ -12,6 +12,7 @@ import { XCircleIcon } from "@heroicons/react/20/solid";
 import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
 import { ItemImageWithPopper } from "./provider/ItemPopperProvider";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { CurrencySpan } from "./CurrencySpan";
 
 
 const displaySettingAtom = atom<{
@@ -32,10 +33,10 @@ const CostItemCard = (props:{item: RecipeItem})=>{
 
       <div className="flex flex-col items-end">
         <span className="daisy-tooltip text-xl font-bold" data-tip={"total"}>
-          {item.payPrice?.chaosValue ?item.payPrice.chaosValue * item.count: "N/A"}
+          <CurrencySpan chaos={item.payPrice?.chaosValue ?item.payPrice.chaosValue * item.count:undefined}/>
         </span>
         <span className="daisy-tooltip text-xs" data-tip={"each"}>
-          {item.payPrice?.chaosValue??"N/A"}
+          <CurrencySpan chaos={item.payPrice?.chaosValue}/>
         </span>
       </div>
       
@@ -76,10 +77,10 @@ const RevenueItemCard = (props:{item: RecipeItem})=>{
       <h3 className="grow line-clamp-1">{item.name}</h3>
       <div className="flex flex-col items-end">
         <span className="daisy-tooltip text-xl font-bold" data-tip={"expected"}>
-          {item.receivePrice?.chaosValue ? round(item.receivePrice.chaosValue * (item.count / item.total), 2): "N/A"}
+          <CurrencySpan chaos={item.receivePrice?.chaosValue ? round(item.receivePrice.chaosValue * (item.count / item.total), 2): undefined}/>
         </span>
         <span className="daisy-tooltip text-xs" data-tip={"each"}>
-          {item.payPrice?.chaosValue??"N/A"}
+          <CurrencySpan chaos={item.receivePrice?.chaosValue}/>
         </span>
       </div>
       <ResponsiveContainer width={80} height={"100%"}>        

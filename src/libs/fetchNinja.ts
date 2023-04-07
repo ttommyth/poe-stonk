@@ -157,13 +157,16 @@ export const fetchNinjaItem= async(league: string, type: typeof ItemTypeList[num
   });
 }
 export const fetchNinjaIndex= async(): Promise<NinjaIndexState>=>{
-  console.debug("invoked fetchNinjaIndex");
+  console.debug("invoked fetchNinjaIndex"); 
   const url = new URL("/api/data/getindexstate", process.env.NEXT_PUBLIC_NINJA_URL??"https://poe.ninja");
   return await fetch(url, {next:{revalidate: 60*30}}).then(it=>it.json()) as NinjaIndexState ;
 }
 export const getBasicCurrencyExchangeRate = async (league: string)=>{
   const currencyData = await fetchNinjaCurrency(league, "Currency");
-  const coolCurrency = ["divine-orb", "exalt-orb"]
+  const coolCurrency = [
+    "divine-orb", 
+    // "exalted-orb"
+  ]
   return coolCurrency.reduce((cur, it)=>{
     cur[it] = currencyData.lines.find(line=>line.detailsId === it)?.chaosEquivalent??0;
     return cur;

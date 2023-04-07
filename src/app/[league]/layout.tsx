@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { NextAppPageProps } from '@/types/nextjsHelperType';
 import Link from 'next/link';
 import { getRecipeCategories } from '@/libs/fetchRecipe';
-import { CustomStonkNav } from '@/components/client/CustomStonk/CustomStonkNav';
+import { CustomStonkNav } from '@/components/client/custom-stonk/CustomStonkNav';
 import { ClientBoundary } from '@/components/client/ClientBoundary';
 
 export async function generateMetadata({ params, searchParams }: NextAppPageProps<{category:string}>) {

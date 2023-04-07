@@ -26,4 +26,4 @@ export const NinjaProvider: FC<PropsWithChildren<any>> = (props) => {
     </NinjaContext.Provider>
   );
 };
-export const useStonk= ()=>useContext(NinjaContext);
+export const useNinja= ()=>useContext(NinjaContext);
