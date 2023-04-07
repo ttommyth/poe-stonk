@@ -61,7 +61,7 @@ const RevenueItemCard:FC<CustomStonkItemProps>= (props)=>{
       className="grow"/>
       <button className="daisy-btn" onClick={()=>onDelete()}><TrashIcon className="w-6 h-6 "/></button>
     </div>
-    <div className="flex">
+    <div className="flex w-full">
       <div className="daisy-form-control w-full basis-1">
         <label className="daisy-label-text">Count</label>
         <input type="number" placeholder="1" value={value?.count} onChange={e=>onChange({...value, count: +e.target.value})}
@@ -139,7 +139,7 @@ export const CustomStonkRecipeEditor:FC<CustomStonkRecipeEditorProps>=(props)=>{
             if(v && value.revenueItems){
               value.revenueItems[idx] = v;
             }
-            onChange({...value, costItems:[...value.revenueItems??[]]});
+            onChange({...value, revenueItems:[...value.revenueItems??[]]});
           }}
           onDelete={()=>{
             if(value.revenueItems){
