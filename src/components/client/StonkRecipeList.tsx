@@ -21,12 +21,13 @@ export const StonkRecipeList: FC<{
    const [searchResult, setSearchResult] = useState<(SearchResult & {result: Recipe})[]>([]);
    const {getPayEffort, getReceiveEffort} = useStonk();
    const sortedRecipes = useMemo(()=>{
-     return orderBy(searchResult?.length>0?searchResult.map(sr=>sr.result): recipes, [sorting.iterate], [sorting.order])
-       .map(recipe=>{      
+     return orderBy(
+       (searchResult?.length>0?searchResult.map(sr=>sr.result): recipes).map(recipe=>{      
          const costFee = getPayEffort(sum(recipe.costItems.map(it=>it.count * (it.tradeEffort??1))));
          const revenueFee = getReceiveEffort(sum(recipe.revenueItems.map(it=>(it.count/it.total) * (it.tradeEffort??1))));
-         return {...recipe, costFee, revenueFee}
-       });
+         return {...recipe, profit: recipe.profit-costFee-revenueFee, costFee, revenueFee}
+       })
+       , [sorting.iterate], [sorting.order])       ;
    },[searchResult, recipes, sorting.iterate, sorting.order, getPayEffort, getReceiveEffort]);
    const miniSearch = useRef(new MiniSearch({
      fields:['name', 'costName', 'revenueName'],

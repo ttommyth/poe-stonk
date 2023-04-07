@@ -38,6 +38,12 @@ const CostItemCard:FC<CustomStonkItemProps>= (props)=>{
           className="daisy-input daisy-input-bordered daisy-input-sm w-full" />
       </div>
     </div>
+    <div className="flex flex-col items-center">
+      <span className="daisy-label-text">Trade Effort Multiplier</span>
+      <input type="range" min="0" max="10" step={0.1} value={value?.tradeEffort??1} onChange={e=>onChange({...value, tradeEffort: +e.target.value})} 
+        className="daisy-range" />
+      <span className="text-xs">{value?.tradeEffort}</span>
+    </div>
   </div>
 }
 const RevenueItemCard:FC<CustomStonkItemProps>= (props)=>{
@@ -72,6 +78,12 @@ const RevenueItemCard:FC<CustomStonkItemProps>= (props)=>{
         <input type="number" placeholder="enter total here" value={value?.total} onChange={e=>onChange({...value, total: +e.target.value})}
           className="daisy-input daisy-input-bordered daisy-input-sm w-full" />
       </div>
+    </div>
+    <div className="flex flex-col items-center">
+      <span className="daisy-label-text">Trade Effort Multiplier</span>
+      <input type="range" min="0" max="10" step={0.1} value={value?.tradeEffort??1} onChange={e=>onChange({...value, tradeEffort: +e.target.value})} 
+        className="daisy-range" />
+      <span className="text-xs">{value?.tradeEffort}</span>
     </div>
   </div>
 }

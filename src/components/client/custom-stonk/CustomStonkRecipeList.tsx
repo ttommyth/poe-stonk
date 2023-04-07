@@ -46,6 +46,9 @@ export const CustomStonkRecipeList: FC<{
    },{
      enabled:!!customRecipeBook?.id
    })
+   useEffect(()=>{
+     fulfilledRecipesQuery.refetch();
+   }, [editMode, fulfilledRecipesQuery])
 
    return <div className="flex flex-col">
      <div className="flex">
