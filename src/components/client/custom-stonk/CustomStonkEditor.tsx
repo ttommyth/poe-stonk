@@ -60,9 +60,10 @@ const InputBoxDialog:FC<{onResult:(v:CustomRecipeBook)=>void}>=(props)=>{
 }
 
 export const CustomStonkEditor: FC<{
-  customId:string
+  customId:string,
+  onSaved?: ()=>void
  }> = (props) => {
-   const {customId} = props;
+   const {customId, onSaved} = props;
    const {showCustomDialog} = useDialog();
    const customRecipeBook = useLiveQuery(
      () => db.customRecipeBooks.get(customId)
@@ -76,6 +77,8 @@ export const CustomStonkEditor: FC<{
      if(!localRecipeBook)
        return;
      db.customRecipeBooks.update(customId, localRecipeBook);
+     toast("saved to indexedDb", {type:"success"})
+     onSaved?.();
    }
    const handleAddRecipe=()=>{
      setLocalRecipeBook(v=>{

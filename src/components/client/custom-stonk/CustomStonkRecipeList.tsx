@@ -13,6 +13,7 @@ import { useQuery } from "@tanstack/react-query";
 import { prepareAllNinjaItem } from "@/assets/ninja/prepare/ninjaFetching";
 import { useSearchParams } from "next/navigation";
 import { CustomStonkEditor } from "./CustomStonkEditor";
+import { useDialog } from "../provider/dialog/DialogProvider";
 
 
 export const CustomStonkRecipeList: FC<{ 
@@ -20,6 +21,7 @@ export const CustomStonkRecipeList: FC<{
   customId:string
  }> = (props) => {
    const {league, customId} = props;
+   const {askYesNo} = useDialog();
    const [editMode, setEditMode] = useState<boolean>(false);
    const customRecipeBook = useLiveQuery(
      () => db.customRecipeBooks.get(customId),
@@ -48,7 +50,7 @@ export const CustomStonkRecipeList: FC<{
    })
    useEffect(()=>{
      fulfilledRecipesQuery.refetch();
-   }, [editMode, fulfilledRecipesQuery])
+   }, [editMode])
 
    return <div className="flex flex-col">
      <div className="flex">
@@ -56,7 +58,12 @@ export const CustomStonkRecipeList: FC<{
        <div className="daisy-form-control">
          <label className="daisy-label cursor-pointer">
            <span className="daisy-label-text">Edit Mode</span> 
-           <input type="checkbox" className="daisy-toggle" checked={editMode} onChange={v=>setEditMode(v.target.checked)} />
+           <input type="checkbox" className="daisy-toggle" checked={editMode}
+             onChange={(v)=>editMode? askYesNo({title:"exit edit mode?", content:""}).then(res=>{
+               if(res==="yes")
+                 setEditMode(false);
+             }): setEditMode(v.target.checked)}
+           />
    
          </label>
        </div>
@@ -68,7 +75,12 @@ export const CustomStonkRecipeList: FC<{
          {
            fulfilledRecipesQuery.data?.recipes ?<>
 
-             <h2 className=''>{customRecipeBook?.name}</h2>
+             <div className="flex relative">
+               <h2 className='grow'>{customRecipeBook?.name}</h2>
+               {fulfilledRecipesQuery.isFetching?
+                 <progress className="daisy-progress w-56 py-2"></progress>:
+                 <></>}
+             </div>
              <StonkRecipeList recipes={fulfilledRecipesQuery.data?.recipes}  />
            </>:<>
            </>
