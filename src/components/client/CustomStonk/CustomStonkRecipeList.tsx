@@ -21,14 +21,30 @@ export const CustomStonkRecipeList: FC<{
  }> = (props) => {
    const {league, customId} = props;
    const [editMode, setEditMode] = useState<boolean>(false);
-   const customRecipes = useLiveQuery(
-     () => db.customRecipeBooks.get(customId)
+   const customRecipeBook = useLiveQuery(
+     () => db.customRecipeBooks.get(customId),
+     [customId]
    );
-   const fulfilledRecipesQuery = useQuery(["custom", league, customId], async ()=>{
-     if(customRecipes?.recipes?.length)
-       return await fulfillRecipes(league, customRecipes?.recipes as any);
+   const fulfilledRecipesQuery = useQuery(["custom", league, customRecipeBook?.id], async ()=>{
+     if(customRecipeBook?.recipes?.length){
+       try{
+         return await fetch(`/api/fulfillRecipes?league=${league}`, {
+           method:"POST",
+           headers:{
+             "Content-Type":"application/json"
+           },
+           body: JSON.stringify(customRecipeBook?.recipes)
+         }).then(it=>it.json());
+       }
+       catch(err){
+         console.error(err)
+       }
+       //  return await fulfillRecipes(league, customRecipes?.recipes as any);
+     }        
      else
        return undefined;
+   },{
+     enabled:!!customRecipeBook?.id
    })
 
    return <div className="flex flex-col">

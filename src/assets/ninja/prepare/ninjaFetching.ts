@@ -32,7 +32,7 @@ export const prepareAllNinjaItem = async ()=>{
       name: item.name,
       detailsId: item.detailsId,
       imageUrl: item?.icon,
-      ninjaTypeGroup:"currency" as any,
+      ninjaTypeGroup:"item" as any,
       ninjaType: itemType
     })));
   }

@@ -1,6 +1,6 @@
 import { CustomRecipe } from "@/libs/db";
 import { Recipe, RecipeItem } from "@/libs/fetchRecipe";
-import { ArrowSmallRightIcon, BanknotesIcon, TrashIcon } from "@heroicons/react/20/solid";
+import { ArrowSmallRightIcon, BanknotesIcon, PlusIcon, TrashIcon } from "@heroicons/react/20/solid";
 import { FC } from "react";
 import { NinjaMiniSearchSelect } from "./NinjaMiniSearchSelect";
 import { remove } from "lodash-es";
@@ -34,7 +34,7 @@ const CostItemCard:FC<CustomStonkItemProps>= (props)=>{
     <div className="flex">
       <div className="daisy-form-control grow w-full">
         <label className="daisy-label-text">Count</label>
-        <input type="number" placeholder="1" value={value?.count} onChange={e=>onChange({...value, count: +e.target.value})}
+        <input type="number" placeholder="enter count here" value={value?.count} onChange={e=>onChange({...value, count: +e.target.value})}
           className="daisy-input daisy-input-bordered daisy-input-sm w-full" />
       </div>
     </div>
@@ -62,14 +62,14 @@ const RevenueItemCard:FC<CustomStonkItemProps>= (props)=>{
       <button className="daisy-btn" onClick={()=>onDelete()}><TrashIcon className="w-6 h-6 "/></button>
     </div>
     <div className="flex w-full">
-      <div className="daisy-form-control w-full basis-1">
+      <div className="daisy-form-control w-full basis-1/2">
         <label className="daisy-label-text">Count</label>
-        <input type="number" placeholder="1" value={value?.count} onChange={e=>onChange({...value, count: +e.target.value})}
+        <input type="number" placeholder="enter count here" value={value?.count} onChange={e=>onChange({...value, count: +e.target.value})}
           className="daisy-input daisy-input-bordered daisy-input-sm w-full" />
       </div>
-      <div className="daisy-form-control w-full basis-1">
+      <div className="daisy-form-control w-full basis-1/2">
         <label className="daisy-label-text">Total</label>
-        <input type="number" placeholder="1" value={value?.total} onChange={e=>onChange({...value, total: +e.target.value})}
+        <input type="number" placeholder="enter total here" value={value?.total} onChange={e=>onChange({...value, total: +e.target.value})}
           className="daisy-input daisy-input-bordered daisy-input-sm w-full" />
       </div>
     </div>
@@ -127,7 +127,7 @@ export const CustomStonkRecipeEditor:FC<CustomStonkRecipeEditorProps>=(props)=>{
           />
           )}
         <button className="daisy-btn w-full" type="button" 
-          onClick={()=>handleAddCostItem()}>+</button>
+          onClick={()=>handleAddCostItem()}><PlusIcon className="h-6 w-6 text-gray-500"/></button>
       </div>
       <div className=" daisy-divider daisy-divider-horizontal grow-0 px-2 ">
         <ArrowSmallRightIcon className="h-32 w-32 text-gray-500" />
@@ -149,7 +149,7 @@ export const CustomStonkRecipeEditor:FC<CustomStonkRecipeEditorProps>=(props)=>{
           }}/>
           )}
         <button className="daisy-btn w-full" type="button" 
-          onClick={()=>handleAddRevenueItem()}>+</button>
+          onClick={()=>handleAddRevenueItem()}><PlusIcon className="h-6 w-6 text-gray-500"/></button>
       </div>
     </div>
   </div>
