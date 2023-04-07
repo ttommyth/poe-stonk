@@ -24,9 +24,7 @@ export default function CategoryLayout({
         {
           allCategory.map(cat=><Link href={`/${params.league}/${cat}`} key={cat}>{cat}</Link>)
         }
-        <ClientBoundary>
-          <CustomStonkNav />
-        </ClientBoundary>
+        <CustomStonkNav />
       </nav>
       <main className='grow'>
         {children}

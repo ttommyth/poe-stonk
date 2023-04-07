@@ -35,11 +35,9 @@ export default async function Page({
   return (
     <div className="w-full">
       <h1 className=''>{params.category}</h1>
-      <ClientBoundary>        
-        <StonkProvider basicExchangeRate={basicExchangeRate}>
-          <StonkRecipeList recipes={data.recipes}/>
-        </StonkProvider>
-      </ClientBoundary>
+      <StonkProvider basicExchangeRate={basicExchangeRate}>
+        <StonkRecipeList recipes={data.recipes}/>
+      </StonkProvider>
     </div>
   )
 }
