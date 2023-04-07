@@ -26,7 +26,7 @@ export default async function Page({
       
       <div className="w-full">
         <h1 className=''>🧑‍🍳Custom Recipe</h1>
-        <CustomStonkRecipeList league={league} customId={+customId}/>
+        <CustomStonkRecipeList league={league} customId={customId}/>
       </div>
     </ClientBoundary>
   )

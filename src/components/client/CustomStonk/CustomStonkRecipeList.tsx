@@ -17,7 +17,7 @@ import { CustomStonkEditor } from "./CustomStonkEditor";
 
 export const CustomStonkRecipeList: FC<{ 
   league:string
-  customId:number
+  customId:string
  }> = (props) => {
    const {league, customId} = props;
    const [editMode, setEditMode] = useState<boolean>(false);
@@ -26,7 +26,7 @@ export const CustomStonkRecipeList: FC<{
    );
    const fulfilledRecipesQuery = useQuery(["custom", league, customId], async ()=>{
      if(customRecipes?.recipes?.length)
-       return await fulfillRecipes(league, customRecipes?.recipes);
+       return await fulfillRecipes(league, customRecipes?.recipes as any);
      else
        return undefined;
    })

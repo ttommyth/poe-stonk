@@ -2,10 +2,13 @@
 import Dexie, { Table } from 'dexie';
 import { Recipe } from './fetchRecipe';
 
+export type CustomRecipe = Partial<Recipe> & {
+  id: string;
+}
 export interface CustomRecipeBook {
-  id?: number;
+  id: string;
   name: string;
-  recipes: Recipe[];
+  recipes: CustomRecipe[];
 }
 
 export class MySubClassedDexie extends Dexie {
@@ -16,7 +19,7 @@ export class MySubClassedDexie extends Dexie {
   constructor() {
     super('myDatabase');
     this.version(1).stores({
-      customRecipeBooks: '++id, name' // Primary key and indexed props
+      customRecipeBooks: '&id' // Primary key and indexed props
     });
   }
 }

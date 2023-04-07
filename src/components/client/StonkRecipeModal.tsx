@@ -136,13 +136,13 @@ export const StonkRecipeModal: FC<any> = (props) => {
             <button className="rounded-full h-6 w-6" type="button" onClick={e=>setRecipeModal(undefined)}><XCircleIcon className="h-6 w-6 text-gray-500" /></button>
           </div>
           <div className="flex w-full">
-            <div className="flex flex-col gap-2 pr-2 flex-1 ">
+            <div className="flex flex-col gap-2 basis-2/5 ">
               {recipe.costItems.map((item,idx)=><CostItemCard item={item} key={item.name+idx}/>)}
             </div>
-            <div className=" daisy-divider daisy-divider-horizontal grow-0 ">
+            <div className=" daisy-divider daisy-divider-horizontal grow-0 px-2">
               <ArrowSmallRightIcon className="h-32 w-32 text-gray-500" />
             </div>
-            <div className="flex flex-col gap-2 pl-2 flex-3">
+            <div className="flex flex-col gap-2 basis-3/5">
               <div>
                 <button type="button" className="daisy-btn"
                   onClick={e=>triggerSorting("dropChance", (v:RecipeItem)=>v.count / v.total)}>
