@@ -28,7 +28,11 @@ const CostItemCard = (props:{item: RecipeItem})=>{
       {item.imageUrl ?
         <ItemImageWithPopper item={item}/>:
         <div className="w-10 h-10 bg-base-200"/>}
-      <h3 className="grow line-clamp-1">{item.name}</h3>
+      <span className="grow daisy-tooltip" data-tip={item.detailsId}>
+        <span className="w-full line-clamp-1">
+          {item.name}
+        </span>
+      </span>
 
       <div className="flex flex-col items-end">
         <span className="daisy-tooltip text-xl font-bold" data-tip={"total"}>
@@ -73,7 +77,11 @@ const RevenueItemCard = (props:{item: RecipeItem})=>{
       {item.imageUrl ?
         <ItemImageWithPopper item={item}/>:
         <div className="w-10 h-10 bg-base-200"/>}
-      <h3 className="grow line-clamp-1">{item.name}</h3>
+      <span className="grow daisy-tooltip" data-tip={item.detailsId}>
+        <span className="w-full line-clamp-1">
+          {item.name}
+        </span>
+      </span>
       <div className="flex flex-col items-end">
         <span className="daisy-tooltip text-xl font-bold" data-tip={"expected"}>
           <CurrencySpan chaos={item.receivePrice?.chaosValue ? round(item.receivePrice.chaosValue * (item.count / item.total), 2): undefined}/>

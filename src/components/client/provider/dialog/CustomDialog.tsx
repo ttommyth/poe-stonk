@@ -54,8 +54,8 @@ export const CustomDialog: FC<{
         >
 
           <div className=" z-10 relative text-center   mx-auto">
-            {ableToCancel && (
-              <div className="flex flex-row-reverse">
+            <div className="flex flex-row-reverse justify-center items-center">
+              {ableToCancel && (
                 <button
                   className={clsx(
                     "daisy-btn  rounded-full p-2 h-auto min-h-min ",
@@ -66,9 +66,9 @@ export const CustomDialog: FC<{
                 >
                   <XMarkIcon className="h-6 w-6 text-gray-500" />
                 </button>
-              </div>
-            )}
-            <h2 className={clsx("m-0", titleClass)}>{title}</h2>
+              )}
+              <h2 className={clsx("m-0 grow", titleClass)}>{title}</h2>
+            </div>
             {Content && (
               <Content
                 onResult={onResult}

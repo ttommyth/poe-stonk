@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import randomWords from "random-words";
 import { v4 as uuidv4 } from 'uuid';
 import { useDialog } from "../provider/dialog/DialogProvider";
+import { PlusIcon, TrashIcon } from "@heroicons/react/20/solid";
 
 export const CustomStonkNav=()=>{
   const customRecipeBook = useLiveQuery(
@@ -22,9 +23,9 @@ export const CustomStonkNav=()=>{
           {it.name}
         </Link>
         <button onClick={async()=>{
-          if(await askYesNo({title:"confirm delete?", content:""})==="yes"){
+          if(await askYesNo({title:`confirm delete ${it.name}?`, content:""})==="yes"){
             db.customRecipeBooks.delete(it.id!)
-          }}}>delete</button>
+          }}}><TrashIcon className="w-4 h-4 text-gray-500"/></button>
       </span>)
     }
     <button onClick={async ()=>{
@@ -33,6 +34,6 @@ export const CustomStonkNav=()=>{
         name: randomWords(2).join(" "),
         recipes:[]
       });
-    }} className="daisy-btn w-full">add</button>
+    }} className="daisy-btn w-full"><PlusIcon className="w-6 h-6 text-gray-500"/></button>
   </div>
 }

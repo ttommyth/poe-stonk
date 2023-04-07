@@ -5,7 +5,7 @@ import { debounce } from "lodash-es";
 import MiniSearch, { SearchResult } from "minisearch";
 import { FC, useCallback, useEffect, useState } from "react";
 import AsyncSelect from 'react-select/async';
-const ninjaMiniSearchAtom = atom((get)=>{
+export const ninjaMiniSearchAtom = atom((get)=>{
   const search= new MiniSearch({
     fields:['name', 'detailsId'],
     storeFields:['name', 'detailsId', 'ninjaTypeGroup', 'ninjaType', 'imageUrl'],

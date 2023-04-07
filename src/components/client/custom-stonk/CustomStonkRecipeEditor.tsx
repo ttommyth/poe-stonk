@@ -12,7 +12,7 @@ type CustomStonkItemProps={
 }
 const CostItemCard:FC<CustomStonkItemProps>= (props)=>{
   const {value, onChange, onDelete} = props;
-  return <div className="flex flex-col">
+  return <div className="flex flex-col border border-base-100 p-2 rounded-md">
     <div className="flex">
       <NinjaMiniSearchSelect onChange={v=>{
         if(v){
@@ -48,7 +48,7 @@ const CostItemCard:FC<CustomStonkItemProps>= (props)=>{
 }
 const RevenueItemCard:FC<CustomStonkItemProps>= (props)=>{
   const {value, onChange, onDelete} = props;
-  return <div className="flex flex-col">
+  return <div className="flex flex-col border border-base-100 p-2 rounded-md">
     <div className="flex">
       <NinjaMiniSearchSelect onChange={v=>{
         if(v){
@@ -96,12 +96,12 @@ export type CustomStonkRecipeEditorProps={
 export const CustomStonkRecipeEditor:FC<CustomStonkRecipeEditorProps>=(props)=>{
   const {value, onChange, onDelete} = props;
   const handleAddCostItem= ()=>{
-    onChange({...value, costItems:[...(value.costItems??[]), {} as RecipeItem]})
+    onChange({...value, costItems:[...(value.costItems??[]), {count:1, tradeEffort:1} as RecipeItem]})
   }
   const handleAddRevenueItem= ()=>{
-    onChange({...value, revenueItems:[...(value.revenueItems??[]), {} as RecipeItem]})
+    onChange({...value, revenueItems:[...(value.revenueItems??[]), {count:1, total:1, tradeEffort:0} as RecipeItem]})
   }
-  return <div className="rounded-md flex flex-col border-base-100 border">
+  return <div className="rounded-md flex flex-col border-base-100 border p-4">
     <div className="flex">
       <div className="daisy-form-control grow w-full">
         <label className="daisy-label-text">Recipe Name</label>
