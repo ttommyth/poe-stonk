@@ -4,7 +4,7 @@ import { Recipe, fulfillPredefinedRecipes, fulfillRecipes, getItemPrice } from "
 import { max, maxBy, orderBy, round, sortBy, sum } from "lodash-es";
 import { FC, useEffect, useMemo, useRef, useState } from "react";
 import { atom, useAtom } from 'jotai'
-import { ArrowDownTrayIcon, ArrowSmallDownIcon, PlusIcon } from "@heroicons/react/20/solid";
+import { ArchiveBoxArrowDownIcon, ArrowDownTrayIcon, ArrowSmallDownIcon, PlusIcon } from "@heroicons/react/20/solid";
 import MiniSearch from 'minisearch'
 import { useLiveQuery } from "dexie-react-hooks";
 import { CustomRecipeBook, db } from "@/libs/db";
@@ -47,7 +47,7 @@ export const CustomStonkEditor: FC<{
     
      <div className="flex">
        <div className="grow"></div>
-       <button className="daisy-btn" type="button" onClick={e=>handleSave()}><ArrowDownTrayIcon className="h-6 w-6 text-gray-500" /></button>
+       <button className="daisy-btn" type="button" title="save" onClick={e=>handleSave()}><ArchiveBoxArrowDownIcon  className="h-6 w-6 text-gray-500" /></button>
      </div>
 
      <div className="daisy-form-control w-full">

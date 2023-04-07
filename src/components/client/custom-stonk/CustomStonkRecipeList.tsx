@@ -63,9 +63,12 @@ export const CustomStonkRecipeList: FC<{
          <CustomStonkEditor customId={customId} />
        </>:<>
          {
-           fulfilledRecipesQuery.data?.recipes ?
-             <StonkRecipeList recipes={fulfilledRecipesQuery.data?.recipes}  />:<>
-             </>
+           fulfilledRecipesQuery.data?.recipes ?<>
+
+             <h2 className=''>{customRecipeBook?.name}</h2>
+             <StonkRecipeList recipes={fulfilledRecipesQuery.data?.recipes}  />
+           </>:<>
+           </>
          }
        </>
      }

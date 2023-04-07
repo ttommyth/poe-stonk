@@ -7,7 +7,8 @@ import { useEffect } from "react";
 import { ItemImageWithPopper } from "./provider/ItemPopperProvider";
 import { useStonkRecipes } from "./provider/StonkRecipesProvider";
 import { CurrencySpan } from "./CurrencySpan";
-import { useStonk } from "./provider/StonkProvider";
+import { CurrencyIcon, useStonk } from "./provider/StonkProvider";
+import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
 const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percentage: number})=>{
   const {type, sum, percentage} = props;
   const {getAdjustedCurrencyString} = useStonk();
@@ -32,8 +33,8 @@ const CoolPriceBar = (props:{type:"cost"|"revenue"|"profit", sum:number, percent
   </div>;
 }
 
-export const StonkRecipeCard = ( props:{recipe: Recipe})=>{  
-  const {recipe} = props;     
+export const StonkRecipeCard = ( props:{recipe: Recipe, costFee: number, revenueFee:number})=>{  
+  const {recipe, costFee, revenueFee} = props;     
   const [recipeModal, setRecipeModal] = useAtom(recipeModalAtom)
   const {recipesMetadata} = useStonkRecipes();
   const {maxCost, maxRevenue, maxProfit} = recipesMetadata;
@@ -57,6 +58,27 @@ export const StonkRecipeCard = ( props:{recipe: Recipe})=>{
         <CoolPriceBar type="revenue" sum={revenueSum} percentage={revenueSum / maxRevenue}/>
         <CoolPriceBar type="profit" sum={profit} percentage={profit / maxProfit}/>      
       </div>
+    </div>
+    <div className="flex justify-center">
+      {costFee?
+        <div className="flex text-xs">
+          (
+          {costFee}
+          <img src={CurrencyIcon["chaos-orb"]} className="w-3 h-3 object-contain" />
+          )
+        </div>:<>
+        </>}
+      <CurrencySpan chaos={costSum+(costFee??0)}/>
+      <ArrowSmallRightIcon className="w-6 h-6 text-gray-500"/>
+      <CurrencySpan chaos={revenueSum-(revenueFee??0)}/>
+      {revenueFee?
+        <div className="flex text-xs">
+        (
+          {revenueFee}
+          <img src={CurrencyIcon["chaos-orb"]} className="w-3 h-3 object-contain" />
+        )
+        </div>:<>
+        </>}
     </div>
   </div>
   return <div key={recipe.name} className="rounded-md dark:bg-slate-600 shadow-md daisy-collapse group" data-stonk={isStonk}>

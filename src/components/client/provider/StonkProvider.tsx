@@ -7,7 +7,7 @@ import { atomWithStorage } from 'jotai/utils'
 
 import { round, sortBy } from 'lodash-es';
 import { usePopper } from 'react-popper';
-const CurrencyIcon:{[key:string]:string} ={
+export const CurrencyIcon:{[key:string]:string} ={
   "chaos-orb": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d119a0d734/CurrencyRerollRare.png",
   "exalted-orb":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBZGRNb2RUb1JhcmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/b102771c23/CurrencyAddModToRare.png",
   "divine-orb":"https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNb2RWYWx1ZXMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e1a54ff97d/CurrencyModValues.png",
@@ -18,15 +18,21 @@ export const StonkContext = createContext<{
   getAdjustedCurrency:(chaos:number)=>{value:number, currency:string, currencyShortForm: string, currencyImageUrl: string} 
   getAdjustedCurrencyString:(chaos:number)=>string ,
   displayChaos:(ref: HTMLElement, chaos:number)=>void,
-  hidePopper: ()=>void
+  hidePopper: ()=>void,
+  getPayEffort: (tradeCount: number, multipier?:number)=>number;
+  getReceiveEffort: (tradeCount: number, multipier?:number)=>number;
     } | undefined>(undefined);
 
-export const exchangeBorderLineAtom = atomWithStorage<{[currencyType:string]:number}>('exchangeBorderLine', {})
+export const exchangeBorderLineAtom = atomWithStorage<{[currencyType:string]:number}>('exchangeBorderLine', {});
+export const payTradeEffortAtom= atomWithStorage<number>('payTradeEffort', 1);
+export const receiveTradeEffortAtom= atomWithStorage<number>('receiveTradeEffortAtom', 0);
 export const StonkProvider: FC<PropsWithChildren<{
   basicExchangeRate: {[key:string]: number}
 }>> = (props) => {
   const {basicExchangeRate} = props;
   const [exchangeBorderLine] = useAtom(exchangeBorderLineAtom)
+  const [payTradeEffort] = useAtom(payTradeEffortAtom)
+  const [receiveTradeEffort] = useAtom(receiveTradeEffortAtom)
   
   const [referenceElement, setReferenceElement] = useState<HTMLElement|null>(null);
   const [popperElement, setPopperElement] = useState<HTMLElement|null>(null);
@@ -68,8 +74,18 @@ export const StonkProvider: FC<PropsWithChildren<{
     const c= getAdjustedCurrency(chaos);
     return `${c.value}${c.currencyShortForm}`
   }
+  const getPayEffort= (count:number, multipier?:number)=>{
+    return ( payTradeEffort * count ) * (multipier??1);
+  }
+  const getReceiveEffort= (count:number, multipier?:number)=>{
+    return ( receiveTradeEffort * count ) * (multipier??1);
+  }
   return (
-    <StonkContext.Provider value={{basicExchangeRate, getAdjustedCurrency, getAdjustedCurrencyString, displayChaos, hidePopper}}>
+    <StonkContext.Provider value={{
+      basicExchangeRate, getAdjustedCurrency, getAdjustedCurrencyString,
+      displayChaos, hidePopper,
+      getPayEffort, getReceiveEffort
+    }}>
       {props.children}
       
       <div ref={setPopperElement} style={styles.popper} className="z-[1000]" {...attributes.popper} 

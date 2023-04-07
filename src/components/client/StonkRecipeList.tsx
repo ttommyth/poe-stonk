@@ -6,9 +6,10 @@ import { FC, useEffect, useMemo, useRef, useState } from "react";
 import { StonkRecipeCard } from "./StonkRecipeCard";
 import { atom, useAtom } from 'jotai'
 import { ArrowSmallDownIcon } from "@heroicons/react/20/solid";
-import MiniSearch from 'minisearch'
+import MiniSearch, { SearchResult } from 'minisearch'
 import { StonkRecipeModal } from "./StonkRecipeModal";
 import { StonkRecipesProvider } from "./provider/StonkRecipesProvider";
+import { useStonk } from "./provider/StonkProvider";
 
 
 export const StonkRecipeList: FC<{ 
@@ -17,10 +18,16 @@ export const StonkRecipeList: FC<{
    const { recipes } = props;
    const [quickFilter, setQuickFilter] = useState("");
    const [sorting, setSorting] = useState<{iterate:keyof Recipe, order:"asc"|"desc" }>({iterate:"profit", order:"desc"});
-   const [searchResult, setSearchResult] = useState<any[]>([]);
+   const [searchResult, setSearchResult] = useState<(SearchResult & {result: Recipe})[]>([]);
+   const {getPayEffort, getReceiveEffort} = useStonk();
    const sortedRecipes = useMemo(()=>{
-     return orderBy(searchResult?.length>0?searchResult.map(it=>it.result): recipes, [sorting.iterate], [sorting.order]);
-   },[searchResult, sorting.iterate, sorting.order, recipes]);
+     return orderBy(searchResult?.length>0?searchResult.map(sr=>sr.result): recipes, [sorting.iterate], [sorting.order])
+       .map(recipe=>{      
+         const costFee = getPayEffort(sum(recipe.costItems.map(it=>it.count * (it.tradeEffort??1))));
+         const revenueFee = getReceiveEffort(sum(recipe.revenueItems.map(it=>(it.count/it.total) * (it.tradeEffort??1))));
+         return {...recipe, costFee, revenueFee}
+       });
+   },[searchResult, recipes, sorting.iterate, sorting.order, getPayEffort, getReceiveEffort]);
    const miniSearch = useRef(new MiniSearch({
      fields:['name', 'costName', 'revenueName'],
      storeFields:['name', 'result']
@@ -88,7 +95,9 @@ export const StonkRecipeList: FC<{
          </button>
        </div>
        <div className="grid grid-cols-3 gap-2 w-full">
-         {sortedRecipes?.map((recipe,idx) => <StonkRecipeCard recipe={recipe} key={`${recipe.name}.${idx}`} />)}
+         {sortedRecipes?.map((recipe,idx) => <StonkRecipeCard 
+           recipe={recipe} key={`${recipe.name}.${idx}`} 
+           costFee={recipe.costFee} revenueFee={recipe.revenueFee} />)}
        </div>
      </div>
      <StonkRecipeModal/>

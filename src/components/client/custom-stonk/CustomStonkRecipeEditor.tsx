@@ -29,7 +29,7 @@ const CostItemCard:FC<CustomStonkItemProps>= (props)=>{
         }
       }} detailsId={value.detailsId}
       className="grow"/>
-      <button className="daisy-btn" onClick={()=>onDelete()}><TrashIcon className="w-6 h-6 "/></button>
+      <button className="daisy-btn" onClick={()=>onDelete()}><TrashIcon className="w-6 h-6 text-gray-500 "/></button>
     </div>
     <div className="flex">
       <div className="daisy-form-control grow w-full">
@@ -59,7 +59,7 @@ const RevenueItemCard:FC<CustomStonkItemProps>= (props)=>{
         }
       }} detailsId={value.detailsId}
       className="grow"/>
-      <button className="daisy-btn" onClick={()=>onDelete()}><TrashIcon className="w-6 h-6 "/></button>
+      <button className="daisy-btn" onClick={()=>onDelete()}><TrashIcon className="w-6 h-6 text-gray-500"/></button>
     </div>
     <div className="flex w-full">
       <div className="daisy-form-control w-full basis-1/2">

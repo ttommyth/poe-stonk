@@ -3,7 +3,6 @@ import { CurrencyDetail } from "@/libs/fetchNinja";
 import { Recipe, RecipeItem, getItemPrice } from "@/libs/fetchRecipe";
 import { max, maxBy, orderBy, round, sortBy, sum } from "lodash-es";
 import { FC, useEffect, useMemo, useRef, useState } from "react";
-import { StonkRecipeCard } from "./StonkRecipeCard";
 import { atom, useAtom } from 'jotai'
 import { ArrowSmallDownIcon } from "@heroicons/react/20/solid";
 import MiniSearch from 'minisearch'

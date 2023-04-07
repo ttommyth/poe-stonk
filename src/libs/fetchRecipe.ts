@@ -16,6 +16,7 @@ export type RecipeItem = PathOfProfitRecipeItem & {
   payPrice?:ItemPrice;
   receivePrice?:ItemPrice;
   imageUrl?: string;
+  tradeEffort?:number;
 } & (
   {
   ninjaTypeGroup: "currency",
